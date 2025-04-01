@@ -1,0 +1,27 @@
+---
+interface Partner {
+  link?: string
+  src?: string
+  alt?: string
+  width?: number
+  height?: number // Hacemos height opcional
+}
+
+interface Props {
+  logos: Partner[]
+}
+
+const { logos } = Astro.props
+---
+
+<div
+  class='grid grid-cols-2 sm:flex sm:flex-wrap gap-8 justify-center *:bg-white *:rounded-lg *:shadow-lg *:px-8 *:py-3 *:flex *:justify-center *:items-center *:w-48 *:mx-auto'
+>
+  {
+    logos.map((element) => (
+      <a href={element.link} target='_blank' rel='noopener noreferrer'>
+        <img src={element.src} alt={element.alt} width={element.width} />
+      </a>
+    ))
+  }
+</div>

@@ -1,0 +1,17 @@
+---
+import { SliderSummit } from './SliderSummit.jsx'
+import i18next from 'i18next'
+---
+
+<section
+  class='bg-[url(/img/bg_amof_summit.webp)] bg-cover bg-no-repeat text-white'
+>
+  <div class='border-b-2 w-fit ps-10 pt-5'>Summit AMOF</div>
+  <div class='md:flex flex-col md:flex-row py-20'>
+    <div>
+      <img src='/img/charger_amof.webp' class='w-full md:w-auto' />
+    </div>
+
+    <SliderSummit language={i18next.language} client:only />
+  </div>
+</section>

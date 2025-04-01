@@ -1,0 +1,16 @@
+---
+import { t } from 'i18next'
+import { SliderSwiper } from './SliderSwiper'
+
+const registerTranslations = t('home', { returnObjects: true })
+---
+
+<section
+  class='py-20 bg-gradient-to-r from-blue-800 to-blue-500 text-white'
+  id='perfil-expositor'
+>
+  <p class='font-bold uppercase text-4xl text-center mb-10'>
+    {t('home.title3')}
+  </p>
+  <SliderSwiper t={registerTranslations} client:only />
+</section>

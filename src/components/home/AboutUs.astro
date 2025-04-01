@@ -1,0 +1,91 @@
+---
+import { t } from 'i18next'
+import Marquee from '@/components/shared/Marquee.astro'
+import { visitors } from '@/data/logos.js'
+---
+
+<section class='mt-20'>
+  <div class='grid md:grid-cols-2 gap-10'>
+    <div>
+      <div class='ps-10 pb-3 border-b-2 border-[#252B3B] w-fit text-2xl'>
+        {t('about_amof.title')}
+      </div>
+      <p class='ps-10 mt-10 text-2xl' set:html={t('about_amof.description')} />
+      <p class='ps-10 mt-5 text-blue-500 font-bold'>{t('about_amof.title1')}</p>
+    </div>
+    <video
+      src='/video/SUMMIT-amofv1-opt.mp4'
+      class='w-full rounded-xl shadow-2xl flex mx-auto'
+      autoplay
+      muted
+      loop></video>
+  </div>
+  <div class='container mx-auto px-4 mt-20 grid md:grid-cols-2'>
+    <div class='text-center py-10'>
+      <div class='relative'>
+        <div class='circle'></div>
+        <div class='circle'></div>
+        <div class='circle'></div>
+        <div class='circle'></div>
+        <p class='text-[#077BFA] text-9xl font-extrabold'>84 %</p>
+        <p set:html={t('home.visitor_description')} />
+      </div>
+    </div>
+    <div>
+      <p class='text-right text-3xl uppercase font-semibold'>
+        {t('home.visitor_profile')}
+      </p>
+      <Marquee logos={visitors} isLeftToRight={true} />
+      <p class='text-center'>* Empresas que ya han explorado AMOF</p>
+    </div>
+  </div>
+</section>
+<style>
+  .circle {
+    position: absolute;
+    border: 10px solid #f0f0f0; /* circle color */
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: spin 6s infinite linear;
+    z-index: -1;
+  }
+
+  /* Sizes for the circles */
+  .circle:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    animation-duration: 6s;
+  }
+  .circle:nth-child(2) {
+    width: 250px;
+    height: 250px;
+    animation-duration: 5s;
+  }
+  .circle:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    animation-duration: 4s;
+  }
+  .circle:nth-child(4) {
+    width: 150px;
+    height: 150px;
+    animation-duration: 3s;
+  }
+
+  /* Center the circles */
+  .circle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Animation for spinning effect */
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+</style>

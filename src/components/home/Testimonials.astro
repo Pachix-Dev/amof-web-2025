@@ -1,0 +1,38 @@
+---
+import { t } from 'i18next'
+---
+
+<section class='mt-10 py-10 container mx-auto'>
+  <p class='text-3xl text-center font-bold text-gray-600 uppercase'>
+    {t('home.testimonial')}
+  </p>
+  <div class='mt-5 grid md:grid-cols-4'>
+    <div class='p-4'>
+      <lite-youtube
+        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
+        videoid='M0B11f_T6n4'
+        videotitle='CII IA'></lite-youtube>
+    </div>
+    <div class='p-4'>
+      <lite-youtube
+        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
+        videoid='-KUgZBE8uo8'
+        videotitle='Siemens'></lite-youtube>
+    </div>
+    <div class='p-4'>
+      <lite-youtube
+        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
+        videoid='8rhpeCXaK70'
+        videotitle='Air mobility'></lite-youtube>
+    </div>
+    <div class='p-4'>
+      <lite-youtube
+        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
+        videoid='9HbPYEh6f3w'
+        videotitle='Air mobility'></lite-youtube>
+    </div>
+  </div>
+</section>
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>

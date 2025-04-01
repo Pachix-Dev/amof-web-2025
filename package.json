@@ -3,12 +3,30 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "i18n": "npx astro-i18next generate",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.5.5"
+    "@astrojs/react": "^4.2.2",
+    "@justinribeiro/lite-youtube": "^1.7.1",
+    "@tailwindcss/vite": "^4.0.17",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "astro": "^5.5.5",
+    "astro-i18next": "^1.0.0-beta.21",
+    "astro-navbar": "^2.3.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.484.0",
+    "motion": "^12.6.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swiper": "^11.2.6",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.17",
+    "tw-animate-css": "^1.2.4"
   }
 }

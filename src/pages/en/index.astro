@@ -1,0 +1,25 @@
+---
+import { changeLanguage } from "i18next";
+import Hero from "@/components/home/Hero.astro";
+import Layout from "../../layouts/Layout.astro";
+import BecomeExhibitor from "@/components/home/BecomeExhibitor.astro";
+import AboutUs from "@/components/home/AboutUs.astro";
+import Testimonials from "@/components/home/Testimonials.astro";
+import Categories from "@/components/home/Categories.astro";
+import Summit from "@/components/home/Summit.astro";
+import SocialMedia from "@/components/home/SocialMedia.astro";
+import Program from "@/components/home/Program.astro";
+
+changeLanguage("en");
+---
+
+<Layout>
+  <Hero />
+  <BecomeExhibitor />
+  <AboutUs />
+  <Testimonials />
+  <Categories />
+  <Summit />
+  <SocialMedia />
+  <Program />
+</Layout>
