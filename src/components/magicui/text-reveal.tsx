@@ -9,10 +9,12 @@ import { cn } from "@/lib/utils";
 import './styles.css';
 
 export interface TextRevealProps extends ComponentPropsWithoutRef<"div"> {
-  text: string;  
+  text: string;
+  text_1: string;
+  text_2: string;  
 }
 
-export const TextReveal: FC<TextRevealProps> = ({ text, className }) => {
+export const TextReveal: FC<TextRevealProps> = ({ text, className , text_1, text_2}) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const paragraphRef = useRef<HTMLParagraphElement | null>(null); // Referencia para el párrafo
   const inView = useInView(paragraphRef, { once: false, margin: "-150px" }); // Detecta si el párrafo está en pantalla
@@ -52,9 +54,9 @@ export const TextReveal: FC<TextRevealProps> = ({ text, className }) => {
             transition={{ duration: 2, ease: "easeOut" }}
             ref={paragraphRef}
           >
-            Únete a la <strong>3ra edición</strong> de la feria de movilidad del futuro. Aprovecha la oportunidad de conectar con tomadores de decisión y explorar las últimas tendencias que están redefiniendo la forma en que nos movemos. <br /><br />
+            <span dangerouslySetInnerHTML={{__html: text_1}}></span> <br /><br />
             <a href="" className="text-white hover:text-[#151924] hover:border-[#151924] p-2 border-2 rounded-xl flex justify-center items-center gap-2 mx-auto w-fit">
-              QUIERO SER EXPOSITOR 
+            {text_2} 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
