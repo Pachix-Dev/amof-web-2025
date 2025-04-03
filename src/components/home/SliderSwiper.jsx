@@ -8,7 +8,7 @@ import './styles.css'
 import { Pagination } from 'swiper/modules'
 
 export function SliderSwiper({ t }) {
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(1)
   const [swiperInstance, setSwiperInstance] = useState(null)
 
   // Function to toggle visibility
@@ -19,6 +19,12 @@ export function SliderSwiper({ t }) {
     }
   }
 
+  // Handle slide change
+  const handleSlideChange = (swiper) => {
+    const currentIndex = swiper.activeIndex
+    toggleInfo(currentIndex)
+  }
+
   return (
     <Swiper
       centeredSlides={true}
@@ -26,7 +32,11 @@ export function SliderSwiper({ t }) {
       pagination={{ clickable: true }}
       modules={[Pagination]}
       className='mySwiper'
-      onSwiper={setSwiperInstance} // Store Swiper instance
+      onSwiper={(swiper) => {
+        setSwiperInstance(swiper)
+        handleSlideChange(swiper) // Call toggleInfo on initial load
+      }}
+      onSlideChange={handleSlideChange} // Call toggleInfo on slide change
       speed={1000}
       breakpoints={{
         640: {
