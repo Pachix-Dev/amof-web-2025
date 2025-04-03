@@ -13,6 +13,17 @@ import DraggableWidget from '@/components/shared/DraggableWidget.astro'
     <link rel='icon' type='image/png' href='/img/amof_favicon.png' />
     <meta name='generator' content={Astro.generator} />
     <title>AMOF</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-NT8G2S5RNG'
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-NT8G2S5RNG')
+    </script>
   </head>
   <body class='overflow-x-hidden'>
     <DraggableWidget />
