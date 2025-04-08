@@ -55,7 +55,7 @@ export const TextReveal: FC<TextRevealProps> = ({ text, className , text_1, text
             ref={paragraphRef}
           >
             <span dangerouslySetInnerHTML={{__html: text_1}}></span> <br /><br />
-            <a href="" className="text-white hover:text-[#151924] hover:border-[#151924] p-2 border-2 rounded-xl flex justify-center items-center gap-2 mx-auto w-fit">
+            <a href="https://expositor.amofexpo.igeco.mx/" target="_blank" className="text-white hover:text-[#151924] hover:border-[#151924] p-2 border-2 rounded-xl flex justify-center items-center gap-2 mx-auto w-fit">
             {text_2} 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
