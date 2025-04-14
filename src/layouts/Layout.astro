@@ -13,18 +13,6 @@ import DraggableWidget from '@/components/shared/DraggableWidget.astro'
     <link rel='icon' type='image/png' href='/img/amof_favicon.png' />
     <meta name='generator' content={Astro.generator} />
     <title>AMOF</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=G-NT8G2S5RNG'
-    ></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-      gtag('config', 'G-NT8G2S5RNG')
-    </script>
-
     <!-- Meta Pixel Code -->
     <script is:inline>
       !(function (f, b, e, v, n, t, s) {
@@ -50,7 +38,7 @@ import DraggableWidget from '@/components/shared/DraggableWidget.astro'
         'script',
         'https://connect.facebook.net/en_US/fbevents.js'
       )
-      fbq('init', '1727846354778897')
+      fbq('init', '1182698889657044')
       fbq('track', 'PageView')
     </script>
     <noscript
@@ -58,10 +46,21 @@ import DraggableWidget from '@/components/shared/DraggableWidget.astro'
         height='1'
         width='1'
         style='display:none'
-        src='https://www.facebook.com/tr?id=1727846354778897&ev=PageView&noscript=1'
+        src='https://www.facebook.com/tr?id=1182698889657044&ev=PageView&noscript=1'
       /></noscript
     >
     <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-NT8G2S5RNG'
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-NT8G2S5RNG')
+    </script>
   </head>
   <body class='overflow-x-hidden'>
     <DraggableWidget />
