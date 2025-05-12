@@ -29,6 +29,7 @@
     "swiper": "^11.2.6",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.17",
-    "tw-animate-css": "^1.2.4"
+    "tw-animate-css": "^1.2.4",
+    "zustand": "^5.0.4"
   }
 }
