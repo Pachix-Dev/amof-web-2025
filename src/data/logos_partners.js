@@ -90,8 +90,14 @@ const exhibitors = [
     { link:'', src: '/img/logos/exhibitors/BCRlogo.webp', alt:'', width: 200, height: 124},
     { link:'', src: '/img/logos/exhibitors/jetbike.webp', alt:'', width: 200, height: 124},
     { link:'', src: '/img/logos/exhibitors/conecta_sostenible.webp', alt:'', width: 200, height: 124},
-    
-                            
+
 ]
 
-export {partners, exhibitors ,visitors}
+const sponsors = [
+    { src: '/img/sponsors/mitsubishi_white.png', alt: 'MISUMI', link: 'http://www.misumimex.com/', width: 200 },  
+    { src: '/img/sponsors/mitsubishi_white.png', alt: 'Mitsubishi', link: 'https://mx.mitsubishielectric.com/fa/en/', width: 200 },  
+    { src: '/img/sponsors/mitsubishi_white.png', alt: 'Schneider', link: 'https://www.se.com/ww/en/', width: 200 },
+    { src: '/img/sponsors/mitsubishi_white.png', alt: 'NSK', link: 'https://www.siemens.com/mx/', width: 200 },                              
+]
+
+export {partners, exhibitors ,visitors, sponsors}
