@@ -410,7 +410,12 @@
         "download_pass": "Descargar tu gafete"        
     },
     "directory": {
-      "title": "Bienvenid@ al directorio digital de AMOF 2025S"
+      "title": "Bienvenid@ al directorio digital de AMOF 2025",
+      "validar_txt1": "Valida tus datos",
+      "validar_txt2": "Ingresa el corre con el que te registraste",
+      "validar_txt3": "Si aún no te has registrado ingresa aquí",
+      "validar_btn1": "Validar",
+      "validar_btn2": "Registro aquí"
     },
     "programaSummiTCCE": {
         "title": "PROGRAMA DE CONFERENCIAS",

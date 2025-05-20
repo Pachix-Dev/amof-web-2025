@@ -405,7 +405,12 @@
         "download_pass": "Download your pass"        
     },
     "directory": {
-      "title": "Welcome to the AMOF 2025 digital directory"
+      "title": "Welcome to the AMOF 2025 digital directory",
+      "validar_txt1": "Validate your data",
+      "validar_txt2": "Enter the email address you registered with",
+      "validar_txt3": "If you have not registered yet, enter here",
+      "validar_btn1": "Verify",
+      "validar_btn2": "Register here"
     },
     "programaSummiTCCE": {
         "title": "CONFERENCE PROGRAM",

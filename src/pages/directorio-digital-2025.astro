@@ -1,15 +1,17 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import i18next, { changeLanguage, t } from "i18next";
-import { SearchExihibitor } from "../components/shared/SearchExihibitor.jsx";
 import { Particles } from "@/components/magicui/particles";
+import { CheckoutEmail } from "@/components/directorio-digital/CheckoutEmail.jsx";
 
 changeLanguage("es");
+const currentLanguage = i18next.language;
+const translations = t("directory", { returnObjects: true });
 ---
 
 <Layout title="ITM | Directorio Digital 2025">
   <main class="relative">
-    <Particles className="fixed inset-0 z-0" client:only size={1.5}/> 
+    <Particles className="fixed inset-0 z-0" client:only size={1.5} />
     <section class="bg-black py-10 md:py-20">
       <div
         data-aos="fade-in"
@@ -23,10 +25,15 @@ changeLanguage("es");
         </p>
       </div>
     </section>
+    
     <section
       class="container mx-auto px-4 py-10 relative md:grid md:grid-flow-col gap-10"
     >
-      <SearchExihibitor language={i18next.language} client:idle />
+      <CheckoutEmail 
+        currentLanguage={currentLanguage}
+        translates={translations}
+        client:only
+      />
       <!-- <div class="relative w-96">
         <div class="sticky top-0">
           <a href="https://www.se.com/mx/es/" target="_blank">
@@ -45,8 +52,7 @@ changeLanguage("es");
           </a>
         </div>
       </div> -->
-    </section>
-  </main>
+    </section>  </main>
 </Layout>
 
 <style>
@@ -56,11 +62,11 @@ changeLanguage("es");
     overflow-x: hidden;
   }
 
-.square_red {
+  .square_red {
     display: grid;
     place-items: center;
-    background: rgb(0, 29, 221);
+    background: #0353FF;
     overflow: hidden;
     transform: skew(-10deg);
-}
+  }
 </style>

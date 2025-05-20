@@ -138,6 +138,65 @@ export class RegisterModel {
     }
   }
 
+  // esta funcion es para el proceso de compra
+  static async get_user_by_email(email) {
+    const connection = await mysql.createConnection(config);
+    try {
+      const [users] = await connection.query(
+        "SELECT * FROM users WHERE email = ?",
+        [email]
+      );
+      if (users.length === 0) {
+        return {
+          status: false,
+          error: "No se encontró el usuario",
+        };
+      }
+
+      const [vipUsers] = await connection.query(
+        "SELECT * FROM users_vip WHERE user_id = ?",
+        [users[0].id]
+      );
+
+      if (vipUsers.length > 0) {
+        return {
+          status: false,
+          error: "Ya eres usuario VIP",
+        };
+      }
+
+      return {
+        status: true,
+        ...users[0],
+      };
+    } finally {
+      await connection.end();
+    }
+  }
+  // esta funcion es para el proceso de ver el directorio digital
+  static async verify_user_register(email) {
+    const connection = await mysql.createConnection(config);
+    try {
+      const [users] = await connection.query(
+        "SELECT * FROM users WHERE email = ?",
+        [email]
+      );
+
+      if (users.length === 0) {
+        return {
+          status: false,
+          error: "No se encontró el usuario",
+        };
+      }
+
+      return {
+        status: true,
+        ...users[0],
+      };
+    } finally {
+      await connection.end();
+    }
+  }
   static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
     const connection = await mysql.createConnection(config);
     const total = 300;
