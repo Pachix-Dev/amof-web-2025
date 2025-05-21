@@ -197,6 +197,7 @@ export class RegisterModel {
       await connection.end();
     }
   }
+
   static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
     const connection = await mysql.createConnection(config);
     const total = 300;
