@@ -25,7 +25,7 @@ export function CheckoutEmail({ currentLanguage, translates }) {
     
     const urlbase = import.meta.env.DEV
     ? 'http://localhost:3010/'
-    : 'https://re-plus-yucatan.igeco.mx/server/'
+    : 'https://amofexpo.igeco.mx/server/'
 
     const verifyUser = async () => {
         clear()
