@@ -6,6 +6,7 @@ dist/
 
 # dependencies
 node_modules/
+invoices
 
 # logs
 npm-debug.log*

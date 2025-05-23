@@ -1,0 +1,11 @@
+.PhoneInputInput{
+    background-color: transparent;
+    padding: 1rem;
+    padding-inline-end: 3rem;
+}
+.PhoneInputInput:focus{
+    outline: none;
+}
+.PhoneInputCountrySelect{
+    color: black;
+}

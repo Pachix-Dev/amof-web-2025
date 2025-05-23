@@ -1,0 +1,66 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import i18next, { changeLanguage, t } from "i18next";
+import { SearchExihibitor } from "../../components/shared/SearchExihibitor.jsx";
+import { Particles } from "@/components/magicui/particles";
+
+changeLanguage("en");
+---
+
+<Layout title="ITM | Directorio Digital 2025">
+  <main class="relative">
+    <Particles className="fixed inset-0 z-0" client:only size={1.5}/> 
+    <section class="bg-black py-10 md:py-20">
+      <div
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        class="container mx-auto px-4"
+      >
+        <p
+          class="square_red text-white text-center text-4xl font-extrabold place-items-start py-5"
+        >
+          {t("directory.title")}
+        </p>
+      </div>
+    </section>
+    <section
+      class="container mx-auto px-4 py-10 relative md:grid md:grid-flow-col gap-10"
+    >
+      <SearchExihibitor language={i18next.language} client:idle />
+      <!-- <div class="relative w-96">
+        <div class="sticky top-0">
+          <a href="https://www.se.com/mx/es/" target="_blank">
+            <img
+              src="/img/banner-directorio-digital-2.webp"
+              alt="Schneider"
+              class="w-96"
+            />
+          </a>
+          <a href="https://www.telcel.com/empresas" target="_blank">
+            <img
+              src="/img/telcel_empresas_itm.webp"
+              alt="Schneider"
+              class="mt-5 w-96"
+            />
+          </a>
+        </div>
+      </div> -->
+    </section>
+  </main>
+</Layout>
+
+<style>
+  body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+  }
+
+.square_red {
+    display: grid;
+    place-items: center;
+    background: rgb(0, 29, 221);
+    overflow: hidden;
+    transform: skew(-10deg);
+}
+</style>
