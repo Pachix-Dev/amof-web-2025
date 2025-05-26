@@ -4,7 +4,6 @@ import PhoneInputWithCountry from 'react-phone-number-input'
 import { countries } from '../../data/list_countries'
 import 'react-phone-number-input/style.css'
 import './Form.css'
-import { useEffect } from 'react'
 export function StepOne({ translates }) {
   const {
     name,
@@ -34,42 +33,6 @@ export function StepOne({ translates }) {
     handleSubmit,
     formState: { errors },
   } = useForm({})
-  const url = new URL(window.location.href) 
-  const codigoAguascalientes = url.searchParams.get('code_invitation') || ''
-  const param1 = url.searchParams.get('name') || ''
-  const param2 = url.searchParams.get('paternName') || ''
-  const param3 = url.searchParams.get('maternName') || ''
-  const param4 = url.searchParams.get('email') || ''
-  const param5 = url.searchParams.get('phone') || ''
-  const param6 = url.searchParams.get('nacionality') || ''
-  const param7 = url.searchParams.get('typeRegister') || ''
-
-  useEffect(() => {
-    if (codigoAguascalientes != '') setCodeInvitation(codigoAguascalientes)
-    if (param1 === '') return
-    setName(param1)
-    if (param2 === '') return
-    setPaternSurname(param2)
-    if (param4 === '') return
-    setEmail(param4)
-    if (param6 === '') return
-    setNacionality(param6)
-    if (param7 === '') return
-    setTypeRegister(param7)
-    if (param5 === '') return
-    setPhone(param5)
-    if (param3 === '') return
-    setMaternSurname(param3)
-  }, [
-    param1,
-    param2,
-    param3,
-    param4,
-    param5,
-    param6,
-    param7,
-    codigoAguascalientes,
-  ])
 
   return (
     <>
