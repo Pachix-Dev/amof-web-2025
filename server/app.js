@@ -7,11 +7,6 @@ import { v4 as uuidv4 } from "uuid";
 import { RegisterModel } from "./db.js";
 import {
   generatePDFInvoice,
-  generatePDF_freePass,
-  generatePDF_freePass_amof,
-  generatePDF_freePass_futuristic,
-  generateQRDataURL,
-  generatePDFInvoiceOktoberfest,
 } from "./generatePdf.js";
 import { email_template_amof } from "./TemplateEmailAmof.js";
 import { email_template_amof_eng } from "./TemplateEmailAmofEng.js";
@@ -243,14 +238,14 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null) {
         ? await email_template_amof({ ...data })
         : await email_template_amof_eng({ ...data });
     await resend.emails.send({
-      from: "AMOF 2025 <noreply@industrialtransformation.mx>",
+      from: "AMOF 2025 <noreply@igeco.mx>",
       to: data.email,
       subject: "Confirmación de pre registro AMOF 2025",
       html: emailContent,
       attachments: [
         {
           filename: `${paypal_id_transaction}.pdf`,
-          path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+          path: `https://https://amofexpo.igeco.mx/invoices/${paypal_id_transaction}.pdf`,
           content_type: "application/pdf",
         },
       ],

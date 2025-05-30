@@ -92,12 +92,12 @@ export function StepFour({ translates, currentLanguage }) {
         typeRegister,
         user_id,
         total,
-        currentLanguage
+        currentLanguage,
       }),
     })
     const orderData = await response.json()
     if (orderData.status) {
-      //clear()
+      clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
       currentLanguage === 'es'

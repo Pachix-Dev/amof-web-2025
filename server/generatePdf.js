@@ -49,7 +49,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
 
     const doc = new PDFDocument();
     const pdfStream = fs.createWriteStream(pdfSave);            
-    const logoVev = path.resolve(__dirname, 'img/Logo_ITM.jpg');     
+    const logoVev = path.resolve(__dirname, 'img/logo_amof.png');     
       
     doc.pipe(pdfStream);             
     doc.image(logoVev, 50, 45, { width: 100 });    
@@ -164,7 +164,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      doc.restore();
  
  
-     doc.image('img/bannerGafete.jpg', 0, 0, { width: 305 });
+      body.typeRegister === 'VISITANTE' ? doc.image('img/gafete_visitante_2025_header.png', 0, 0, { width: 305 }) : doc.image('img/gafete_prensa_2025_header.png', 0, 0, { width: 305 }); 
      // aqui iria el QR con info del usuario    
      doc.image(qrMainUser, 90, 120, { width: 120 });
      
@@ -179,7 +179,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .moveDown(0.5)
      .text(body.company);
  
-     doc.image('img/footer_programa_vip.jpg', 0, 328, { width: 305 });
+      body.typeRegister === 'VISITANTE' ? doc.image('img/gafete_visitante_2025_footer_1.png', 0, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_1.png', 0, 328, { width: 305 });
      doc
      .font('Helvetica-Bold')
      .fontSize(17)
@@ -198,11 +198,11 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .fontSize(8)
      .text('1.', 330)
      .font('Helvetica')
-     .text('Tu gafete es tu pase a la exposición de ITM 2025. Deberás portarlo en todo momento.', 345, 75, {
+     .text('Tu gafete es tu pase a la exposición de AMOF 2025. Deberás portarlo en todo momento.', 345, 75, {
          width: 250,
          align: 'justify'
      })  
-     doc.text('Your badge is your access pass to ITM 2025 tradeshow. You must wear it at all times.',{
+     doc.text('Your badge is your access pass to AMOF 2025 tradeshow. You must wear it at all times.',{
          width: 250,
          align: 'justify'
      })
@@ -231,7 +231,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      })
      .fillColor('#1E92D0')
      .font('Helvetica-Bold')
-     .text(' #ITM2024 ', { continued: true })
+     .text(' #AMOF2025 ', { continued: true })
      .fillColor('black')
      .font('Helvetica')
      .text(' en tus posteos en redes sociales.')
@@ -241,7 +241,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      })
      .fillColor('#1E92D0')
      .font('Helvetica-Bold')
-     .text(' #ITM2024 ', { continued: true })
+     .text(' #AMOF2025 ', { continued: true })
      .fillColor('black')
      .font('Helvetica')
      .text(' on your social media posts.')
@@ -254,17 +254,15 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
          align: 'center'
      })
      .moveDown(1)
-     .text('Octubre')
-     .text('October')
-     .text('(9)   11:00 am – 19:00 hrs', 330, 250, {
+     .text('Martes / Tuesday   11:00 am – 19:00 hrs', 330, 250, {
          width: 250,    
          align: 'center'
      })
-     .text('(10)  11:00 am – 19:00 hrs', 330, 260, {
+     .text('Miércoles / Wednesday  11:00 am – 19:00 hrs', 330, 260, {
          width: 250,    
          align: 'center'
      })
-     .text('(11)  11:00 am – 17:00 hrs', 330, 270, {
+     .text('Jueves / Thursday  11:00 am – 17:00 hrs', 330, 270, {
          width: 250,    
          align: 'center'
      })
@@ -274,7 +272,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
          align: 'center'
      });
  
-     doc.image('img/footer2_programa_vip-new.jpg', 307, 328, { width: 306 });;
+     body.typeRegister === 'VISITANTE' ? doc.image('img/gafete_visitante_2025_footer_2.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2.png', 307, 328, { width: 305 });
      
      doc.save();
      // Rotate and draw some text

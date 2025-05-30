@@ -44,22 +44,15 @@ export function StepThree({ translates }) {
   } = useRegisterForm()
 
   const options = [
-    { label: 'Expo Manufactura', value: 'Expo Manufactura' },
-    { label: 'Expomaq', value: 'Expomaq' },
-    { label: 'Fabtech', value: 'Fabtech' },
-    { label: 'Tecma', value: 'Tecma' },
+    { label: 'Smartcities', value: 'Smartcities' },
     { label: 'The Logistics World', value: 'The Logistics World' },
-    { label: 'Automate', value: 'Automate' },
     {
-      label: 'Expo Logística y Transporte',
-      value: 'Expo Logística y Transporte',
+      label: 'Expo del transporte y logística',
+      value: 'Expo del transporte y logística',
     },
-    { label: 'Expo Pack', value: 'Expo Pack' },
-    { label: 'Expo Eléctrica', value: 'Expo Eléctrica' },
-    { label: 'Meximold', value: 'Meximold' },
-    { label: 'Fitma', value: 'Fitma' },
-    { label: 'ITMS', value: 'ITMS' },
-    { label: 'Hannover Messe (Alemania)', value: 'Hannover Messe (Alemania)' },
+    { label: 'Expo foro movilidad', value: 'Expo foro movilidad' },
+    { label: 'Latam Mobility', value: 'Latam Mobility' },
+    { label: 'International Automotive', value: 'International Automotive' },
   ]
 
   const [message, setMessage] = useState('')
@@ -139,14 +132,16 @@ export function StepThree({ translates }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='ESPECTACULAR'>{translates.spectacular}</option>
-            <option value='PAGINA WEB'>{translates.website}</option>
-            <option value='CORREO ELÉCTRONICO/MAILING'>MAILING</option>
             <option value='FACEBOOK'>FACEBOOK</option>
+            <option value='INSTAGRAM'>INSTAGRAM</option>
+            <option value='WHATSAPP'>WHATSAPP</option>
+            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
+            <option value='TIKTOK'>TIKTOK</option>
+
+            <option value='PAGINA WEB'>{translates.website}</option>
             <option value='TWITTER'>TWITTER</option>
             <option value='LINKEDIN'>LINKEDIN</option>
-            <option value='INSTAGRAM'>INSTAGRAM</option>
-            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
+
             <option value='INVITADO POR EXPOSITOR'>
               {translates.guest_by_exhibitor}
             </option>
@@ -154,7 +149,7 @@ export function StepThree({ translates }) {
             <option value='TELEVISIÓN'>{translates.television}</option>
             <option value='PRENSA'>{translates.press}</option>
             <option value='ANUNCIO EN REVISTA'>{translates.magazine_ad}</option>
-            <option value='TELEMARKETING'>TELEMARKETING</option>
+            <option value='ESPECTACULAR'>{translates.spectacular}</option>
           </select>
           {errors.eventKnowledge && (
             <p className='text-[#ffe200] font-light'>
@@ -234,7 +229,7 @@ export function StepThree({ translates }) {
         </div>
       </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
-      <div>
+        <div>
           <p className='font-semibold text-white'>
             {translates.wanna_be_exhibitor}{' '}
             <span className='text-red-600'>*</span>
@@ -260,7 +255,7 @@ export function StepThree({ translates }) {
       </div>
       <div className='flex justify-between'>
         <button
-          className='px-3 py-2 bg-[#212ee4] hover:bg-blue-900 rounded-2xl font-bold text-white  mt-5 flex gap-2'
+          className='px-3 py-2 bg-[#212ee4] hover:bg-blue-900 rounded-2xl font-bold text-white  mt-5 flex gap-2 cursor-pointer'
           onClick={decrementStep}
         >
           <svg
@@ -280,7 +275,7 @@ export function StepThree({ translates }) {
           {translates.back}
         </button>
         <button
-          className='px-3 py-2 bg-[#212ee4] hover:bg-blue-900 rounded-2xl text-white font-bold mt-5 flex gap-2'
+          className='px-3 py-2 bg-[#212ee4] hover:bg-blue-900 rounded-2xl text-white font-bold mt-5 flex gap-2 cursor-pointer'
           onClick={handleSubmit(saveUser)}
         >
           {translates.continue}
