@@ -405,8 +405,8 @@
       "instructions": "Instrucciones",
       "instructions_text": "1. Accede a tu banca en línea.",
       "instructions_text_2": "2. Da de alta la CLABE en esta ficha. <strong>El banco deberá de ser BanBajío.</strong>",
-      "instructions_text_3": "3. Realiza la transferencia correspondiente por la cantidad exacta de esta ficha de lo contrario se rechazará el cargo.",
-      "instructions_text_4": "4. Al confirmar tu pago, el portal de tu banco generará un comprobante digital. <strong>En el podrás verificar que se haya realizado correctamente.</strong> Conserva este comprobante de pago.",
+      "instructions_text_3": "3. Realiza la transferencia a nombre de <strong>IGECO </strong> por la cantidad exacta de esta ficha de lo contrario se rechazará el cargo.",
+      "instructions_text_4": "4. Al confirmar tu pago, el portal de tu banco generará un comprobante digital, <strong>en el podrás verificar que se haya realizado correctamente, </strong> conserva este comprobante de pago.",
       "instructions_text_5": "Al completar estos pasos envia un correo a <strong><a href='mailto:emmanuel.heredia@igeco.mx' target='_blank'>emmanuel.heredia@igeco.mx</a></strong> con el comprobante de pago, tu nombre completo y el correo electronico que usaste para el registro para que podamos validar tu pago y enviarte tu acceso.",
       "copy": "Copiar",
   "copy_success": "Copiado"
@@ -414,7 +414,7 @@
     "thanks_page":{
         "title": "Gracias por registrarte",
         "title2": "Gracias_por_registrarte",
-        "description": "¡Fantástico! haz obtenido tu boleto de acceso al evento AMOF 2025, ITM 2025 y Drone Innovators Forum 2025.",
+        "description": "¡Fantástico! ya tienes tu acceso para AMERICAS´ MOBILITY OF THE FUTURE, INDUSTRIAL TRANSFORMATION MEXICO y DRONE INNOVATORS FORUM MX",
         "download_pass": "Descarga tu gafete",
         "download_pass_text": "¡Pronto recibiras un correo de confirmación!",
         "purchase": "Gracias por tu compra"
