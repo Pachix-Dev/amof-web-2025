@@ -28,8 +28,10 @@ const email_template_amof = async ({ name, paternSurname, maternSurname }) => {
               </p>
               <div style="background: #001A78;color:white;border-radius: 20px;padding:20px;">               
                <p><strong>HORARIOS:</strong></p>
-               <p>martes 11, miércoles 12 y jueves 13 de  11:00 am - 7:00 pm hrs</p>
-              </div>
+               <p>Martes 11:00 am – 19:00 hrs<br />
+                  Miércoles 11:00 am – 19:00 hrs<br />
+                  Jueves 11:00 am – 17:00 hrs
+              </p>   
             </div>               
             <p style="font-weight:bold;font-size:20px;text-align: center;">AÑADIR AL CALENDARIO</p>
             <div style="text-align:center;padding:20px;margin: 20px;">
@@ -85,8 +87,8 @@ const email_template_amof = async ({ name, paternSurname, maternSurname }) => {
           </td>
           <td style="padding:20px;" align="center">
             <div style="background: #001A78;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://amofexpo.igeco.mx/files/Plano-AMOF-2025.pdf" target="_blank">
-                PLANO ITM 2025
+              <a style="text-decoration:none;color:white;" href="https://amofexpo.igeco.mx/files/Floorplan-ITM-2025-16-05-2025-V4-0.pdf" target="_blank">
+                PLANO AMOF 2025
               </a>
             </div>         
           </td>
@@ -94,7 +96,7 @@ const email_template_amof = async ({ name, paternSurname, maternSurname }) => {
         <tr>
           <td style="padding:20px;" align="center">
            <div style="background: #001A78;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-            <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
+            <a style="text-decoration:none;color:white;" href="https://amofexpo.igeco.mx/" target="_blank">
               RESERVA AQUÍ TU HOSPEDAJE <br />CON TARIFA PREFERENCIAL
             </a>
            </div>           

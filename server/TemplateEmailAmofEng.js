@@ -32,7 +32,10 @@ const email_template_amof_eng = async ({
                    </p>
                    <div style="background: #001A78;color:white;border-radius: 20px;padding:20px;">               
                     <p><strong>SCHEDULES:</strong></p>
-                    <p>Tuesday 11, Wednesday 12 and Thursday 13 from  11:00 am - 7:00 pm hrs</p>
+                    <p>Tuesday 11:00 am – 19:00 hrs<br />
+                  Wednesday 11:00 am – 19:00 hrs<br />
+                  Thursday 11:00 am – 17:00 hrs
+                </p> 
                    </div>
                  </div>               
                  <p style="font-weight:bold;font-size:20px;text-align: center;">ADD TO CALENDAR</p>
@@ -89,7 +92,7 @@ const email_template_amof_eng = async ({
                </td>
                <td style="padding:20px;" align="center">
                  <div style="background: #001A78;border-radius: 20px;padding:20px;margin:auto;">
-                   <a style="text-decoration:none;color:white;" href="https://amofexpo.igeco.mx/files/Plano-AMOF-2025.pdf" target="_blank">
+                   <a style="text-decoration:none;color:white;" href="https://amofexpo.igeco.mx/files/Floorplan-ITM-2025-16-05-2025-V4-0.pdf" target="_blank">
                      FLOORPLAN AMOF 2025
                    </a>
                  </div>         
@@ -98,7 +101,7 @@ const email_template_amof_eng = async ({
              <tr>
                <td style="padding:20px;" align="center">
                 <div style="background: #001A78;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-                 <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
+                 <a style="text-decoration:none;color:white;" href="https://amofexpo.igeco.mx/" target="_blank">
                    BOOK YOUR ACCOMMODATION HERE <br />WITH PREFERENTIAL RATE
                  </a>
                 </div>           
