@@ -38,6 +38,7 @@
       }
     },    
     "home":{
+      "proximo": "Próximamente...",
       "hotels": "Special Hotel Rates",
       "days": "days",
       "hours": "hours",
@@ -51,6 +52,7 @@
       "credential": "You must present a company credential to have access to the fair.",
       "event_date_video": "11 – 13 de november de 2025",
       "slogan": "The Fair of the <span>Mobility of the Future",
+      "date_text_cost": "Registration will open on June 1 and will have a cost of $300 pesos including taxes.",
       "about_title":"About us",
       "description":"Americas' mobility of the future is the showcase for the mobility of the future, with a comprehensive program of keynotes, panel discussions and project presentations, seeking to develop the intersection between the current form of mobility and the future of mobility; Industry 4.0. Learn about the latest advances in the electromobility industry, smart cities and mobility technology developments on the exhibition floor.",      
       "title1":"Expo",
