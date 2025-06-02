@@ -71,12 +71,12 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
   >
     <a
       href={i18next.language === 'es'
-        ? '/files/ITM-FACTSHEET-ESP-V2-2025_compressed.pdf'
-        : '/files/ITM-FACTSHEET-ENG-V2-2025_compressed.pdf'}
+        ? '/files/AMOF-2025-FACTSHEET-2025-ESP-V6_compressed.pdf'
+        : '/files/AMOF-2025-FACTSHEET-2025-ENG-V6_compressed.pdf'}
       target='_blank'
       class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
-      {t('menu.option2.option2')}
+      {t('menu.option2.subMenu.option2')}
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
@@ -92,31 +92,11 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
       </svg>
     </a>
     <a
-      href='/files/Floorplan-ITM-2025-21-05-2025-V4-0.pdf'
+      href='/files/Floorplan-ITM-2025-16-05-2025-V4-0.pdf'
       target='_blank'
       class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
-      {t('menu.option2.option3')}
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        fill='none'
-        viewBox='0 0 24 24'
-        stroke-width='1.5'
-        stroke='currentColor'
-        class='size-6'
-      >
-        <path
-          stroke-linecap='round'
-          stroke-linejoin='round'
-          d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
-      </svg>
-    </a>
-    <a
-      href=`/files/ITM2025-SpaceAgreement.pdf`
-      target='_blank'
-      class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
-    >
-      {t('menu.option2.option7')}
+      {t('menu.option2.subMenu.option3')}
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
@@ -132,7 +112,28 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
       </svg>
     </a>
     {
-      /*<a
+      /*
+    <a
+      href=`/files/ITM2025-SpaceAgreement.pdf`
+      target='_blank'
+      class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
+    >
+      {t('menu.option2.subMenu.option7')}
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='size-6'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
+      </svg>
+    </a>
+   <a
       href={`${base}/directorio-digital-2025`}
       class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
