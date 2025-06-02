@@ -272,7 +272,7 @@
       "placeholder_surname": "Ingresa tu apellido materno",
       "code_invitation": "Código de invitación",
       "placeholder_code_invitation": "Ingresa tu código de invitación (opcional)",
-      "email": "Correo electrónico",
+      "email": "CORREO ELECTRÓNICO",
       "placeholder_email": "Ingresa tu correo electrónico",
       "no_email_valid": "Por favor ingresa un correo valido",
       "text_email": "Por favor ingresa un correo valido, a este correo se te enviara tu acceso",
@@ -343,7 +343,7 @@
           "MOVILIDAD DEL FUTURO, TRANSPORTES Y VEHÍCULOS LIGEROS",
           "INFRAESTRUCTURA Y SUSTENTABILIDAD",
           "SERVICIOS DE MOVILIDAD E INNOVACIONES",
-          "ECOMSISTEMAS DE MOVILIDAD Y PROVEEDORES DE SERVICIOS" 
+          "ECOSISTEMAS DE MOVILIDAD Y PROVEEDORES DE SERVICIOS" 
       ],
       "spectacular": "ESPECTACULAR",
       "webpage": "PÁGINA WEB",        
@@ -373,6 +373,9 @@
       "industry_option_16": "CÁMARAS Y ASOCIACIONES",
       "industry_option_17": "EMBALAJE",
       "industry_option_18": "BIOTECNOLOGÍA Y FARMACÉUTICA",
+      "industry_option_19": "ALMACENAMIENTO DE ENERGÍA",
+      "industry_option_20": "CLOUD COMPUTING",
+      "industry_option_21": "DESARROLLADORES",
       "position_1": "CEO / PRESIDENTE",
       "position_2": "DIRECTOR / COORDINADOR DE AREA",
       "position_3": "JEFE / GERENTE DE AREA",
@@ -411,8 +414,11 @@
     "thanks_page":{
         "title": "Gracias por registrarte",
         "title2": "Gracias_por_registrarte",
-        "description": "Tu registro ha sido exitoso, te hemos enviado un correo con tu gafete de acceso al evento. <br /> <br /> ¡Nos vemos en AMERICAS´ mobility of the future 2024!",
-        "download_pass": "Descargar tu gafete"        
+        "description": "¡Fantástico! haz obtenido tu boleto de acceso al evento AMOF 2025, ITM 2025 y Drone Innovators Forum 2025.",
+        "download_pass": "Descarga tu gafete",
+        "download_pass_text": "¡Pronto recibiras un correo de confirmación!",
+        "purchase": "Gracias por tu compra"
+
     },
     "directory": {
       "title": "Bienvenid@ al directorio digital de AMOF 2025",

@@ -3,7 +3,7 @@ import i18next, { changeLanguage, t } from "i18next";
 import { RegisterForm } from "../components/register/RegisterForm.jsx";
 import LayoutRegister from "../layouts/LayoutRegister.astro";
 import MarqueeSponsors from "../components/register/MarqueeSponsors.astro";
-import { sponsors } from "../data/logos_partners.js"; //EDITAR LOS SPONSORS!!!
+import { sponsors } from "../data/logos_partners.js";
 
 changeLanguage("es");
 
@@ -13,37 +13,33 @@ const currentLanguage = i18next.language;
 
 <LayoutRegister title='ITM | Registro 2024'>
   <video
-    src="/video/bg_registro2.mp4"
+    src='/video/bg_registro2.mp4'
     autoplay
     loop
     muted
     playsinline
-    class="w-full h-full object-fill fixed top-0 z-[-1]" >
+    class='w-full h-full object-fill fixed top-0 z-[-1]'
+  >
   </video>
   <main class='py-5 grid w-full content-center container mx-auto px-4'>
-    <section class='mb-10  mx-auto'>
-      <p class='text-center font-extrabold text-3xl mb-5'>
-        {t('register.title-sponsors')}
-      </p>
-      <MarqueeSponsors partners={sponsors} isLeftToRight/>
-    </section>
     <section>
+      <MarqueeSponsors partners={sponsors} isLeftToRight={true} />
       <h1 class='text-center font-extrabold text-4xl'>
         {t('register.title')}
       </h1>
-      <p class='text-center text  -2xl font-bold'>
+      <p class='text-center text -2xl font-bold'>
         {t('register.description')}
       </p>
-      <RegisterForm 
-          translates={registerTranslations} 
-          currentLanguage={currentLanguage}
-          client:only="'react" />
+      <RegisterForm
+        translates={registerTranslations}
+        currentLanguage={currentLanguage}
+        client:only="'react"
+      />
     </section>
   </main>
 </LayoutRegister>
 <style>
   body {
-    
     color: white;
   }
 

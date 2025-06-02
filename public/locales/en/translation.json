@@ -339,7 +339,7 @@
           "MOBILITY OF THE FUTURE, TRANSPORT AND VEHICLES",
           "INFRASTRUCTURE AND SUSTAINABILITY",
           "MOBILITY SERVICES AND INNOVATIONS",
-          "MOBILITY ECOMSYSTEMS AND SERVICE PROVIDERS" 
+          "MOBILITY ECOSYSTEMS AND SERVICE PROVIDERS" 
       ],
       "spectacular": "SPECTACULAR",
       "webpage": "WEBPAGE",
@@ -368,7 +368,10 @@
       "industry_option_15": "FACILITIES AND INFRASTRUCTURE AND URBAN SOLUTIONS",
       "industry_option_16": "CHAMBERS AND ASSOCIATIONS",
       "industry_option_17": "PACKAGING",
-      "industry_option_18": "BIOTECHNOLOGY & PHARMACEUTICALS",
+      "industry_option_18": "BIOTECHNOLOGY & PHARMACEUTICALS",      
+      "industry_option_19": "ENERGY STORAGE",
+      "industry_option_20": "CLOUD COMPUTING",
+      "industry_option_21": "DEVELOPERS",
       "position_1": "CEO / PRESIDENT",
       "position_2": "DIRECTOR / AREA COORDINATOR",
       "position_3": "CHIEF / AREA MANAGER",
@@ -407,8 +410,10 @@
     "thanks_page":{
         "title": "Thank you for registering",
         "title2": "Thank_you_for_registering",
-        "description": "Your registration has been successfully completed. We will send you an email with your access to the event.<br /> <br /> We look forward to seeing you at AMERICAS´ mobility of the future 2024.",
-        "download_pass": "Download your pass"        
+        "description": "Fantastic! you have obtained your access ticket to the AMOF 2025, ITM 2025 and Drone Innovators Forum 2025 events.",
+        "download_pass": "Download your pass",
+        "download_pass_text": "You will receive a confirmation email soon!",
+        "purchase": "Thanks for your purchase"
     },
     "directory": {
       "title": "Welcome to the AMOF 2025 digital directory",

@@ -94,10 +94,14 @@ const exhibitors = [
 ]
 
 const sponsors = [
-    { src: '/img/sponsors/mitsubishi_white.png', alt: 'MISUMI', link: 'http://www.misumimex.com/', width: 200 },  
-    { src: '/img/sponsors/mitsubishi_white.png', alt: 'Mitsubishi', link: 'https://mx.mitsubishielectric.com/fa/en/', width: 200 },  
-    { src: '/img/sponsors/mitsubishi_white.png', alt: 'Schneider', link: 'https://www.se.com/ww/en/', width: 200 },
-    { src: '/img/sponsors/mitsubishi_white.png', alt: 'NSK', link: 'https://www.siemens.com/mx/', width: 200 },                              
+    { src: '/img/italianExhibitionGroup.webp', alt: 'MISUMI', link: 'https://www.iegexpo.it/en/', width: 150 },  
+    { src: '/img/deutscheMesse.webp', alt: 'Mitsubishi', link: 'https://www.messe.de/en/', width: 200 },  
+    { src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
+    { src: '/img/logos/exhibitors/airmobility.webp', alt: 'NSK', link: 'https://airmobility.com.mx/', width: 200 },
+    { src: '/img/italianExhibitionGroup.webp', alt: 'MISUMI', link: 'https://www.iegexpo.it/en/', width: 150 },  
+    { src: '/img/deutscheMesse.webp', alt: 'Mitsubishi', link: 'https://www.messe.de/en/', width: 200 },  
+    { src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
+    { src: '/img/logos/exhibitors/airmobility.webp', alt: 'NSK', link: 'https://airmobility.com.mx/', width: 200 },                              
 ]
 
 export {partners, exhibitors ,visitors, sponsors}
