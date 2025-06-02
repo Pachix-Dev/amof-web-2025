@@ -46,21 +46,22 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
       <div
         class='container mx-auto py-5 px-4 backdrop-blur-sm bg-white/30 rounded-xl'
       >
+        <a
+          href={`${base}/registro`}
+          class='card p-5 hover:scale-105 ease-in-out duration-300'
+        >
+          <span class='text-white z-10 font-extrabold text-xl'
+            >{t('register.title')}</span
+          >
+        </a>
+
         {
           /* 
-          <a
-            href={`${base}/registro`}
-            class='card p-5 hover:scale-105 ease-in-out duration-300'
-          >
-            <span class='text-white z-10 font-extrabold text-xl'
-              >{t('register.title')}</span
-            >
-          </a>
-          */
-        }
         <p class='text-white text-center text-2xl font-bold'>
           {t('home.proximo')}
         </p>
+        */
+        }
       </div>
     </div>
   </div>
