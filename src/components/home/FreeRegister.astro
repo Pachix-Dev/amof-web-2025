@@ -44,7 +44,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         segundos={t('home.seconds')}
       />
       <div
-        class='container mx-auto py-5 px-4 backdrop-blur-sm bg-white/30 rounded-xl'
+        class='container mx-auto py-5 px-4 rounded-xl flex justify-center items-center gap-5'
       >
         <a
           href={`${base}/registro`}
@@ -153,7 +153,8 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
       </svg>
     </a>
-    
+    */
+    }
   </div>
 </section>
 <style>
@@ -172,7 +173,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
     content: '';
     position: absolute;
     width: 250px;
-    background-image: linear-gradient(45deg, rgb(0, 183, 255), #e42128);
+    background-image: linear-gradient(45deg, rgb(0, 183, 255), #030101);
     height: 30px;
     animation: rotBGimg 3s linear infinite;
     transition: all 0.2s linear;
@@ -191,7 +192,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
   .card::after {
     content: '';
     position: absolute;
-    background: #e42128;
+    background: #183574;
     inset: 5px;
     border-radius: 15px;
   }
@@ -199,6 +200,4 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
   background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
   animation: rotBGimg 3.5s linear infinite;
 } */
-    }
-  </div>
-</section>
+</style>
