@@ -66,7 +66,7 @@ export function StepThree({ translates }) {
 
   const urlbase = import.meta.env.DEV
     ? 'http://localhost:3010/'
-    : 'https://industrialtransformation.mx/server/'
+    : 'https://amofexpo.igeco.mx/server/'
 
   async function saveUser() {
     setProcessing(true)
