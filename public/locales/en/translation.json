@@ -329,6 +329,10 @@
           "ADMINISTRATION",
           "SECRETARIAT"
       ],
+      "area_1": "DOCTORATE",
+      "area_2": "MASTER'S",
+      "area_3": "BACHELOR'S DEGREE / ENGINEERING",
+      "area_4": "SECONDARY SCHOOL",
       "list_interest_product": [
           "MOBILITY OF THE FUTURE, TRANSPORT AND VEHICLES",
           "INFRASTRUCTURE AND SUSTAINABILITY",
@@ -367,6 +371,9 @@
       "position_2": "DIRECTOR / AREA COORDINATOR",
       "position_3": "CHIEF / AREA MANAGER",
       "position_4": "OPERATING PERSONNEL",
+      "position_5": "TEACHER",
+      "position_6": "STUDENT",
+      "position_7": "RESEARCH INSTITUTE",
       "disclamer_1": "No changes, cancellations or refunds are accepted.",
       "disclamer_2": "Remember you must present an official ID and the invoice.",        
       "disclamer_3": "Minors must be accompanied by 1 adult",

@@ -334,6 +334,10 @@
           "ADMINISTRACIÓN",
           "SECRETARÍA"
       ],
+      "area_1": "DOCTORADO",
+      "area_2": "MAESTRÍA",
+      "area_3": "LICENCIATURA / INGENIERÍA",
+      "area_4": "EDUCACIÓN MEDIA",
       "list_interest_product": [
           "MOVILIDAD DEL FUTURO, TRANSPORTES Y VEHÍCULOS LIGEROS",
           "INFRAESTRUCTURA Y SUSTENTABILIDAD",
@@ -372,6 +376,9 @@
       "position_2": "DIRECTOR / COORDINADOR DE AREA",
       "position_3": "JEFE / GERENTE DE AREA",
       "position_4": "PERSONAL OPERATIVO",
+      "position_5": "DOCENTE",
+      "position_6": "ESTUDIANTE",
+      "position_7": "INSTITUTO DE INVESTIGACIÓN",
       "disclamer_1": "No se aceptan cambios, cancelaciones o devoluciones.",
       "disclamer_2": "Recuerda que deberás presentar una identificación oficial y tu comprobante de pago.",
       "disclamer_3": "Los menores de edad deben ingresar en compañía de 1 adulto",
