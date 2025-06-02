@@ -245,7 +245,7 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null) {
       attachments: [
         {
           filename: `${paypal_id_transaction}.pdf`,
-          path: `https://https://amofexpo.igeco.mx/invoices/${paypal_id_transaction}.pdf`,
+          path: `https://amofexpo.igeco.mx/invoices/${paypal_id_transaction}.pdf`,
           content_type: "application/pdf",
         },
       ],
