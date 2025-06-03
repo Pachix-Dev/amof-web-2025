@@ -3,6 +3,12 @@ import Menu from '@/components/shared/Menu.astro'
 import '../styles/global.css'
 import Footer from '@/components/shared/Footer.astro'
 import DraggableWidget from '@/components/shared/DraggableWidget.astro'
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
 ---
 
 <!doctype html>
@@ -13,7 +19,7 @@ import DraggableWidget from '@/components/shared/DraggableWidget.astro'
     <link rel='icon' type='image/png' href='/img/amof_favicon.png' />
     <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' />
     <meta name='generator' content={Astro.generator} />
-    <title>AMOF</title>
+    <title>{title}</title>
     <!-- Meta Pixel Code -->
     <script is:inline>
       !(function (f, b, e, v, n, t, s) {
