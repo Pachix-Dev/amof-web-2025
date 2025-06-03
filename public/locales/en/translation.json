@@ -23,7 +23,8 @@
         "title":"SUMMIT"              
       },
       "option4":{
-        "title":"VISITORS"        
+        "title":"VISITORS",
+        "testimonios": "TESTIMONIALS"        
       },      
       "option5":{
         "title":"EDITIONS",
@@ -52,7 +53,7 @@
       "credential": "You must present a company credential to have access to the fair.",
       "event_date_video": "11 – 13 de november de 2025",
       "slogan": "The Fair of the <span>Mobility of the Future",
-      "date_text_cost": "Registration will open on June 1 and will have a cost of $300 pesos including taxes.",
+      "date_text_cost": "Registration is open and has a cost of $300 pesos including VAT.",
       "about_title":"About us",
       "description":"Americas' mobility of the future is the showcase for the mobility of the future, with a comprehensive program of keynotes, panel discussions and project presentations, seeking to develop the intersection between the current form of mobility and the future of mobility; Industry 4.0. Learn about the latest advances in the electromobility industry, smart cities and mobility technology developments on the exhibition floor.",      
       "title1":"Expo",
@@ -241,6 +242,7 @@
       "speech": "Speech"    
     },
     "register":{
+      "button_register": "REGISTER NOW",
       "title": "Registration",
       "description": "Please check that your information is correct",
       "button": "Register for free",
@@ -437,7 +439,8 @@
     "hotels":{
         "title": "Special Hotel Rates",
         "description": "We are pleased to announce that we have secured preferential rates at quality hotels to make your experience even more comfortable and affordable.<br /><br />Strategically located around the event venue, these hotels offer not only comfort, but also the opportunity to fully immerse yourself in the atmosphere of the event. We have negotiated special rates for our attendees, ensuring that your stay will be as unforgettable as the event itself.",
-        "code_reservation": "Reservation code: HANNOVER"
+        "code_reservation": "Reservation code: HANNOVER",
+        "button": "Book now"
     }
   }
   
