@@ -1,5 +1,5 @@
 ---
-import { exhibitors, partners } from '@/data/logos'
+import { exhibitors, partners, partners2 } from '@/data/logos'
 import Sponsors from './Sponsors.astro'
 import { t } from 'i18next'
 import { Suscribe } from './Suscribe.jsx'
@@ -62,11 +62,19 @@ import { Suscribe } from './Suscribe.jsx'
       <Sponsors logos={exhibitors} />
     </div>
   </div>
+
   <div class='py-10 container mx-auto px-4'>
     <p class='font-bold uppercase text-4xl text-center mb-6 text-white'>
-      MEDIA PARTNERS
+      {t('home.media_oro')}
     </p>
     <Sponsors logos={partners} />
+  </div>
+
+  <div class='py-10 container mx-auto px-4'>
+    <p class='font-bold uppercase text-4xl text-center mb-6 text-white'>
+      {t('home.media_platino')}
+    </p>
+    <Sponsors logos={partners2} />
   </div>
 
   <div class='container mx-auto p-4 md:py-5 relative z-50 text-white'>

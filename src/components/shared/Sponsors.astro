@@ -15,7 +15,7 @@ const { logos } = Astro.props
 ---
 
 <div
-  class='grid grid-cols-2 sm:flex sm:flex-wrap gap-8 justify-center *:bg-white *:rounded-lg *:shadow-lg *:px-8 *:py-3 *:flex *:justify-center *:items-center *:w-48 *:mx-auto'
+  class='grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2'
 >
   {
     logos.map((element) => (

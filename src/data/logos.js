@@ -11,27 +11,35 @@ const visitors = [
 ]
 
 const partners = [
-    {  src: '/img/logos/exhibitors/cluster-industrial-nuevo.webp', alt:'', width: 200, height: 190 },
-    {  src: '/img/logos/heraldo_group.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/logos/exhibitors/cluster-industrial-nuevo.webp', alt:'', width: 150, height: 190 },
+    {  src: '/img/logos/cuatrocero_v2.webp', alt:'', width: 150, },
+    {  src: '/img/logos/global-energy-v2.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/logos/global-industries_v2.webp', alt:'', width: 200, height: 190 },
+
+    /*{  src: '/img/logos/heraldo_group.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/vanguardia-industrial.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/negocio-motor.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/negocio-transporte.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/logistic-delivery.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/dpl-news.webp', alt:'', width: 200, height: 190 },
-    {  src: '/img/logos/global-industries_v2.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/consultoria.webp', alt:'', width: 200, height: 190 }, 
-    {  src: '/img/logos/global-energy-v2.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/energia-hoy.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/empresas-verdes.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/Energy-Commerce.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/directorioauto.webp', alt:'', width: 150, height: 190 },
     {  src: '/img/logos/Milenio.webp', alt:'', width: 200, height: 190 },
-    {  src: '/img/logos/Industria360.webp', alt:'', width: 250, height: 190 },
-    {  src: '/img/logos/cuatrocero_v2.webp', alt:'', width: 200, },
     {  src: '/img/logos/mexicoindustry.webp', alt:'', width: 120,  },
-    {  src: '/img/logos/movilidad3.webp', alt:'', width: 200,  },
+    {  src: '/img/logos/movilidad3.webp', alt:'', width: 200,  },*/
 ]
-
+const partners2 = [
+    {  src: '/img/logos/Energy-Commerce.webp', alt:'', width: 100, height: 190 },
+    {  src: '/img/INDUSTRY_NEWS_MEX.webp', alt:'', width: 100, height: 190 },
+    {  src: '/img/madeinchina.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/logos/Industria360.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/manufacturalatam.webp', alt:'', width: 250, height: 190 },
+    {  src: '/img/metalmecanica.webp', alt:'', width: 250, height: 190 },
+    
+] 
 
 const exhibitors = [
     {  src: '/img/logos/exhibitors/toyota.webp', alt:'', width: 150},
@@ -45,9 +53,9 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/weg.webp', alt:'', width: 80, height: 124},
     {  src: '/img/logos/exhibitors/allride.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/element.webp', alt:'', width: 200, height: 124},
-    {  src: '/img/logos/exhibitors/sgs.webp', alt:'', width: 200, height: 124 },    
-    {  src: '/img/logos/exhibitors/piaggio-commercial.webp', alt:'', width: 200, height: 124},
-    {  src: '/img/logos/exhibitors/byd.webp', alt:'', width: 200, height: 124},
+    {  src: '/img/logos/exhibitors/sgs.webp', alt:'', width: 150, height: 124 },    
+    {  src: '/img/logos/exhibitors/piaggio-commercial.webp', alt:'', width: 150, height: 124},
+    {  src: '/img/logos/exhibitors/byd.webp', alt:'', width: 150, height: 124},
     {  src: '/img/logos/exhibitors/v-on.webp', alt:'', width: 80, height: 124},
     {  src: '/img/logos/exhibitors/airmobility.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/3m.webp', alt:'', width: 200, height: 124 },
@@ -96,4 +104,4 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/conecta_sostenible.webp', alt:'', width: 200, height: 124},*/                                
 ]
 
-export {partners, exhibitors ,visitors}
+export {partners, exhibitors ,visitors,partners2}
