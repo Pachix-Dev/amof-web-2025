@@ -36,8 +36,8 @@ const partners2 = [
     {  src: '/img/INDUSTRY_NEWS_MEX.webp', alt:'', width: 100, height: 190 },
     {  src: '/img/madeinchina.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/logos/Industria360.webp', alt:'', width: 200, height: 190 },
-    {  src: '/img/manufacturalatam.webp', alt:'', width: 250, height: 190 },
-    {  src: '/img/metalmecanica.webp', alt:'', width: 250, height: 190 },
+    {  src: '/img/manufacturalatamv2.webp', alt:'', width: 250, height: 190 },
+    {  src: '/img/metalmecanicav2.webp', alt:'', width: 250, height: 190 },
     
 ] 
 
