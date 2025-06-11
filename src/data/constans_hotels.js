@@ -18,6 +18,25 @@ const hotels = [
       flyer_esp: '/files/flyer-novotel-esp.pdf',
       flyer_eng: '/files/flyer-novotel-eng.pdf'
     },
+    {
+      src: '/img/hoteles/camino_real_polanco.webp',
+      name: 'Camino Real Polanco',
+      address: 'Mariano Escobedo No. 700 Col. Anzures, México D.F. C.P. 11590',
+      rate_es: '',
+      rate_en: '',
+      phone_international: '',
+      phone_mexico: '',
+      celular: '',
+      email: '',
+      cc:'',
+      code: 'HANNOVER',
+      time_walk: '1h 20min',
+      time_car: '20 min',
+      start: 5,
+      link: 'https://www.caminoreal.com/caminoreal/camino-real-polanco-mexico',
+      flyer_esp: '/files/flyer_camino_real_esp.pdf',
+      flyer_eng: '/files/flyer_camino_real_eng.pdf'
+    },
     /*{
       src: '/img/hoteles/BARCELO_REFORMA.webp',
       name: 'Barceló México Reforma',
@@ -35,23 +54,7 @@ const hotels = [
       start: 5,
       link: 'https://www.barcelo.com/es-mx/barcelo-mexico-reforma/'
     },
-    {
-      src: '/img/hoteles/camino_real_polanco.webp',
-      name: 'Camino Real Polanco',
-      address: 'Mariano Escobedo No. 700 Col. Anzures, México D.F. C.P. 11590',
-      rate_es: '',
-      rate_en: '',
-      phone_international: '',
-      phone_mexico: '',
-      celular: '',
-      email: '',
-      cc:'',
-      code: 'HANNOVER',
-      time_walk: '1h 20min',
-      time_car: '20 min',
-      start: 5,
-      link: 'https://www.caminoreal.com/caminoreal/camino-real-polanco-mexico'
-    },
+    
     {
       src: '/img/hoteles/KIMPTON_VIRGILIO.webp',
       name: 'Kimpton Virgilio Polanco',
