@@ -8,6 +8,7 @@ import {
 
 import { Resume } from './Resume'
 import { Total } from './Total'
+import { Coupon } from './Coupon'
 
 export function StepFour({ translates, currentLanguage }) {
   const {
@@ -68,6 +69,7 @@ export function StepFour({ translates, currentLanguage }) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        items,
         total: total,
       }),
     })
@@ -210,7 +212,7 @@ export function StepFour({ translates, currentLanguage }) {
                     </div>
                     <button
                       onClick={handleCopy}
-                      className='text-black px-3 py-1 rounded  transition'
+                      className='text-black px-3 py-1 rounded  transition cursor-pointer'
                     >
                       {copied ? (
                         translates.copy_success + ' ✅'
@@ -272,9 +274,12 @@ export function StepFour({ translates, currentLanguage }) {
             )}
           </div>
         </div>
-        <div className='border-2 rounded-xl flex flex-col justify-between bg-white text-black'>
-          <Resume currentLanguage={currentLanguage} />
-          <Total />
+        <div className='  flex flex-col justify-between gap-5'>
+          <Coupon currentLanguage={currentLanguage} />
+          <div className='bg-white text-black border-2 rounded-xl'>
+            <Resume currentLanguage={currentLanguage} />
+            <Total />
+          </div>
         </div>
       </div>
       <div className='flex justify-between'>
