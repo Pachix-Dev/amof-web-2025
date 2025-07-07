@@ -1,0 +1,204 @@
+---
+import i18next, { t } from 'i18next'
+import { CounterDown } from './CounterDown'
+
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
+---
+
+<section
+  class='relative lab-bg py-10 container mx-auto px-4 bg-center bg-cover overflow-hidden bg-transparent bg-opacity-50 backdrop-blur-sm'
+>
+  <div class='grid md:grid-cols-2 gap-6'>
+    <div class='grid place-content-between gap-5'>
+      <p
+        data-aos='fade-right'
+        data-aos-duration='1000'
+        class='text-white text-3xl xl:text-5xl font-extrabold'
+      >
+        {t('home.titleITM')}
+      </p>
+      <div data-aos='fade-down' data-aos-duration='1000'>
+        <p class='font-extrabold text-white text-3xl'>
+          {t('home.titleCounter')}
+        </p>
+        {/*<p class='text-white text-xl' set:html={t('home.dateEvent')} />*/}
+        <p class='mt-5 text-white text-xl pe-5'>
+          * {t('home.credential')}
+        </p>
+        <p class='mt-5 text-white text-xl pe-5'>
+          * {t('home.date_text_cost')}
+        </p>
+      </div>
+    </div>
+    <div
+      data-aos='fade-up'
+      data-aos-duration='1000'
+      class='grid gap-6 place-content-center place-items-center'
+    >
+      <CounterDown
+        client:only='react'
+        dias={t('home.days')}
+        horas={t('home.hours')}
+        minutos={t('home.minutes')}
+        segundos={t('home.seconds')}
+      />
+      <div
+        class='container mx-auto py-5 px-4 rounded-xl flex justify-center items-center gap-5'
+      >
+        <a
+          href={`${base}/registro`}
+          class='card p-5 hover:scale-105 ease-in-out duration-300'
+        >
+          <span class='text-white z-10 font-extrabold text-3xl'
+            >{t('register.button_register')}</span
+          >
+        </a>
+
+        {
+          /* 
+        <p class='text-white text-center text-2xl font-bold'>
+          {t('home.proximo')}
+        </p>
+        */
+        }
+      </div>
+    </div>
+  </div>
+  <div
+    data-aos='fade-up'
+    data-aos-duration='1000'
+    class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-3 gap-10 backdrop-blur-sm bg-white/10 rounded-xl uppercase'
+  >
+    <a
+      href={i18next.language === 'es'
+        ? '/files/AMOF-2025-FACTSHEET-2025-ESP-V7_compressed.pdf'
+        : '/files/AMOF-2025-FACTSHEET-2025-ENG-V7_compressed.pdf'}
+      target='_blank'
+      class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
+    >
+      {t('menu.option2.subMenu.option2')}
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='size-6'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
+      </svg>
+    </a>
+    <a
+      href='/files/Floorplan-ITM-2025-01-07-2025-V5-0.pdf'
+      target='_blank'
+      class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
+    >
+      {t('menu.option2.subMenu.option3')}
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='size-6'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
+      </svg>
+    </a>
+    <a
+      href=`/files/SpaceAgreement_AMOF2024_ED.pdf`
+      target='_blank'
+      class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
+    >
+      {t('menu.option2.subMenu.option7')}
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='size-6'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
+      </svg>
+    </a>
+    {
+      /*
+    
+   <a
+      href={`${base}/directorio-digital-2025`}
+      class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
+    >
+      {t('menu.directorio')}
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='size-6'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
+      </svg>
+    </a>
+    */
+    }
+  </div>
+</section>
+<style>
+  .card {
+    width: fit-content;
+    background: #f6f6f6;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    background-image: linear-gradient(45deg, rgb(0, 183, 255), #030101);
+    height: 30px;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #183574;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  /* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+</style>

@@ -90,8 +90,18 @@ const exhibitors = [
     { link:'', src: '/img/logos/exhibitors/BCRlogo.webp', alt:'', width: 200, height: 124},
     { link:'', src: '/img/logos/exhibitors/jetbike.webp', alt:'', width: 200, height: 124},
     { link:'', src: '/img/logos/exhibitors/conecta_sostenible.webp', alt:'', width: 200, height: 124},
-    
-                            
+
 ]
 
-export {partners, exhibitors ,visitors}
+const sponsors = [
+    { src: '/img/italianExhibitionGroup.webp', alt: 'MISUMI', link: 'https://www.iegexpo.it/en/', width: 150 },  
+    { src: '/img/deutscheMesse.webp', alt: 'Mitsubishi', link: 'https://www.messe.de/en/', width: 200 },  
+    { src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
+    { src: '/img/logos/exhibitors/airmobility.webp', alt: 'NSK', link: 'https://airmobility.com.mx/', width: 200 },
+    { src: '/img/italianExhibitionGroup.webp', alt: 'MISUMI', link: 'https://www.iegexpo.it/en/', width: 150 },  
+    { src: '/img/deutscheMesse.webp', alt: 'Mitsubishi', link: 'https://www.messe.de/en/', width: 200 },  
+    { src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
+    { src: '/img/logos/exhibitors/airmobility.webp', alt: 'NSK', link: 'https://airmobility.com.mx/', width: 200 },                              
+]
+
+export {partners, exhibitors ,visitors, sponsors}

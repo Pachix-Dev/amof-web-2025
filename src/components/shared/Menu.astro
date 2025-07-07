@@ -37,13 +37,13 @@ const menu: MenuItem[] = [
         title: t('menu.option2.subMenu.option2'),
         href:
           i18next.language === 'en'
-            ? '/files/AMOF-2025-FACTSHEET-2025-ESP-V5_compressed.pdf'
-            : '/files/AMOF-2025-FACTSHEET-2025-ENG-V5_compressed.pdf',
+            ? '/files/AMOF-2025-FACTSHEET-2025-ENG-V7_compressed.pdf'
+            : '/files/AMOF-2025-FACTSHEET-2025-ESP-V7_compressed.pdf',
         target: '_blank',
       },
       {
         title: t('menu.option2.subMenu.option3'),
-        href: '/files/Floorplan_AMOF_ITM.pdf.pdf',
+        href: '/files/Floorplan-ITM-2025-01-07-2025-V5-0.pdf',
         target: '_blank',
       },
       {
@@ -72,7 +72,16 @@ const menu: MenuItem[] = [
   },
   {
     title: t('menu.option4.title'),
-    href: '/#visitantes',
+    items: [
+      {
+        title: t('menu.option4.testimonios'),
+        href: '#visitantes',
+      },
+      {
+        title: t('hotels.title'),
+        href: '/tarifas-especiales-para-hoteles',
+      },
+    ],
   },
   {
     title: t('menu.option5.title'),
@@ -259,23 +268,7 @@ const menu: MenuItem[] = [
           ))
         }
         <li class='flex items-center md:order-2 button-language'>
-          {
-            i18next.language === 'en' ? (
-              <img
-                src='/img/flag-us.svg'
-                alt='us flag'
-                class='h-6 w-6 rounded-full mr-2'
-              />
-            ) : (
-              <img
-                src='/img/flag-mexico.svg'
-                alt='México flag'
-                class='h-6 w-6 rounded-full mr-2'
-              />
-            )
-          }
           <LanguageSelector
-            showFlag={true}
             aria-label='Select language'
             class='block w-full p-2.5 rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500'
           />
