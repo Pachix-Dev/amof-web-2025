@@ -74,7 +74,34 @@ app.post("/free-register", async (req, res) => {
     });
   }
 });
+app.post("/free-register-summit", async (req, res) => {
+  const { body } = req;
 
+  try {
+    const data = {
+      uuid: uuidv4(),
+      ...body,
+    };
+    const userResponse = await RegisterModel.create_user_summit({ ...data });
+
+    if (!userResponse.status) {
+      return res.status(500).send({
+        ...userResponse,
+      });
+    }
+
+    return res.send({
+      ...userResponse,
+    });
+  } catch (e) {
+    console.log(e);
+    res.status(500).send({
+      status: false,
+      message:
+        "Hubo un error con el registro, por favor intentalo más tarde...",
+    });
+  }
+});
 app.post("/create-order", async (req, res) => {
   const { body } = req;
 
@@ -155,7 +182,7 @@ app.post("/create-order", async (req, res) => {
     });
 });
 
-app.post("/complete-order", async (req, res) => { 
+app.post("/complete-order", async (req, res) => {
   const { body } = req;
   try {
     const userResponse = await RegisterModel.get_user_by_id(body.user_id);
