@@ -1,13 +1,13 @@
 ---
 import i18next, { t } from "i18next";
-import { CounterDown } from "./CounterDown";
+import { CounterDown } from "../home/CounterDown.jsx";
 
 const lang = i18next.language;
 const base = i18next.language === "es" ? "" : `/${lang}`;
 ---
 
 <section
-  class="relative lab-bg py-10 container mx-auto px-4 bg-center bg-cover overflow-hidden bg-transparent bg-opacity-50 backdrop-blur-sm"
+  class="relative lab-bg py-20 container mx-auto px-4 bg-center bg-cover overflow-hidden bg-transparent bg-opacity-50 backdrop-blur-sm"
 >
   <div class="grid md:grid-cols-2 gap-6">
     <div class="grid place-content-between gap-5">
@@ -20,7 +20,7 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       </p>
       <div data-aos="fade-down" data-aos-duration="1000">
         <p class="font-extrabold text-white text-3xl">
-          {t("home.titleCounter")}
+          {t("summit.date")}
         </p>
         {/*<p class='text-white text-xl' set:html={t('home.dateEvent')} />*/}
         <p class="mt-5 text-white text-xl pe-5">
@@ -42,13 +42,13 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
         horas={t("home.hours")}
         minutos={t("home.minutes")}
         segundos={t("home.seconds")}
-        fecha="11 nov 2025 09:00:00"
+        fecha="30 sep 2025 08:30:00"
       />
       <div
         class="container mx-auto py-5 px-4 rounded-xl flex justify-center items-center gap-5"
       >
         <a
-          href={`${base}/registro`}
+          href={`${base}/registro-summit`}
           class="card p-5 hover:scale-105 ease-in-out duration-300"
         >
           <span class="text-white z-10 font-extrabold text-3xl"
@@ -66,7 +66,7 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       </div>
     </div>
   </div>
-  <div
+  <!-- <div
     data-aos="fade-up"
     data-aos-duration="1000"
     class="mt-20 container mx-auto py-5 px-4 grid md:grid-cols-3 gap-10 backdrop-blur-sm bg-white/10 rounded-xl uppercase"
@@ -157,7 +157,7 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
     </a>
     */
     }
-  </div>
+  </div> -->
 </section>
 <style>
   .card {

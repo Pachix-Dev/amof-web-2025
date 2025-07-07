@@ -1,16 +1,14 @@
 ---
 import { changeLanguage } from "i18next";
-import LayoutSummit from "../layouts/LayoutSummit.astro";
+import LayoutSummit from "../../layouts/LayoutSummit.astro";
 import S_Hero from "@/components/summit/S_Hero.astro";
 import AboutSummit from "@/components/summit/AboutSummit.astro";
-import Categories from "@/components/home/Categories.astro";
 
-changeLanguage("es");
+changeLanguage("en");
 ---
 
 <LayoutSummit title="AMOF | Summit">
   <!-- Aquí se encuentra el contador y el text reveal -->
   <S_Hero />
   <AboutSummit />
-  <Categories />
 </LayoutSummit>

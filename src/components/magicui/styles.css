@@ -10,6 +10,19 @@
     top: 7px;
 }
 
+.textFicotrece :nth-child(9),
+.textFicotrece :nth-child(10),
+.textFicotrece :nth-child(11)  {
+    font-size: 2.5rem;
+}
+
+.textFicotrece :nth-child(9) :first-child,
+.textFicotrece :nth-child(10) :first-child,
+.textFicotrece :nth-child(11) :first-child {
+    top: 7px;
+}
+
+
 @media screen and (max-width: 768px) {
     .textBanamex :nth-child(7),
     .textBanamex :nth-child(8),
@@ -19,6 +32,17 @@
     .textBanamex :nth-child(7) :first-child,
     .textBanamex :nth-child(8) :first-child,
     .textBanamex :nth-child(9) :first-child {
+        top: 0px;
+    }
+
+    .textFicotrece :nth-child(9),
+    .textFicotrece :nth-child(10),
+    .textFicotrece :nth-child(11) {
+        font-size: 1.5rem;
+    }
+    .textFicotrece :nth-child(9) :first-child,
+    .textFicotrece :nth-child(10) :first-child,
+    .textFicotrece :nth-child(11) :first-child {
         top: 0px;
     }
 }
@@ -32,6 +56,17 @@
     .textBanamex :nth-child(7) :first-child,
     .textBanamex :nth-child(8) :first-child,
     .textBanamex :nth-child(9) :first-child {
+        top: 0px;
+    }
+
+    .textFicotrece :nth-child(9),
+    .textFicotrece :nth-child(10),
+    .textFicotrece :nth-child(11) {
+        font-size: 1rem;
+    }
+    .textFicotrece :nth-child(9) :first-child,
+    .textFicotrece :nth-child(10) :first-child,
+    .textFicotrece :nth-child(11) :first-child {
         top: 0px;
     }
 }

@@ -453,6 +453,22 @@
         "aifapass": "AIFAPASS - Zero toll rate",
         "destiny": "LAND DESTINATIONS OF FOREIGNERS",
         "airport": "International airport"
-    }
+    },
+    "summit": {
+      "title": "AMOF 2025 - SUMMIT",
+      "title2": "Welcome to the third edition of the mobility fair of the future!",
+      "date": "September 30 th - October 1 st",
+      "about_summit": "<strong>AMOF – SUMMIT seeks to drive the transformation of the current mobility</strong> in Mexico and Latin America, bringing innovation, technology and sustainability together in a single platform where all decision makers of the mobility future ecosystem converge. <br /><br /> This summit traces the path towards a more sustainable and efficient mobility in the region, addressing the segments of smart cities, electric vehicles and charging solutions, as well as new transportation and micromobility technologies",
+      "text_reveal_1": "Join to our event <strong>Summit & Showroom</strong>. Take the opportunity to connect with decision makers and explore the latest trends that are redefining the way we move.",
+      "day_1": "1st day: 08:30 - 20:00 hrs",
+      "day_2": "2nd day: 08:30 - 14:00 hrs",
+      "goals": "G O A L S",
+      "cifra_1": "days",
+        "cifra_1_1": "of conferences specialized",
+        "cifra_2": "exhibitors",
+        "cifra_2_1": "national and international",
+        "cifra_3": "profesional ",
+        "cifra_3_1": "exhibitors"
+  }
   }
   

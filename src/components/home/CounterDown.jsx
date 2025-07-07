@@ -1,7 +1,7 @@
 import { useCountdown } from '../../hooks/useCounterDown.js'
 
-export function CounterDown({ dias, horas, minutos, segundos }) {
-  const { days, hours, minutes, seconds } = useCountdown('11 nov 2025 09:00:00')
+export function CounterDown({ dias, horas, minutos, segundos, fecha }) {
+  const { days, hours, minutes, seconds } = useCountdown(fecha)
   return (
     <div className='text-white bg-transparent bg-opacity-50 backdrop-blur-xl flex text-center md:grid md:grid-cols-2 md:text-left lg:flex lg:text-center justify-center gap-6 text-md md:text-3xl font-semibold py-5 px-0 sm:px-5 md:px-8 lg:px-2 xl:px-8 border rounded-lg'>
       <div>

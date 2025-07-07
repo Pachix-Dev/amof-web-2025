@@ -1,14 +1,14 @@
 ---
 import { TextReveal } from "../magicui/text-reveal";
 import { t } from "i18next";
-import FreeRegister from "./FreeRegister.astro";
+import S_FreeRegister from "./S_FreeRegister.astro";
 ---
 
 <section
   class="lg:h-screen relative flex items-center justify-center lab-bg bg-cover bg-center bg-no-repeat overflow-hidden"
 >
   <img
-    src="/img/bg_amof_nuevo_2025.webp"
+    src="/img/summit/bg_summit_2025.webp"
     class="w-full h-full object-cover mt-[1px] absolute top-0 left-0"
   />
 </section>
@@ -16,13 +16,13 @@ import FreeRegister from "./FreeRegister.astro";
   class="bg-[url(/img/bg_amof_gradient.webp)] bg-top bg-no-repeat relative"
   style="background-size: 100% 100%;"
 >
-  <FreeRegister />
+  <S_FreeRegister />
   <TextReveal
     client:only
-    text={`${t("home.titleCounter")}, 2025 CENTRO BANAMEX, CDMX`}
-    text_1={t("home.more_info_2")}
-    text_2={t("home.more_info_3")}
-    day_1=""
-    day_2=""
+    text={`${t("summit.date")}, 2025 Ficotrece, Aguascalientes, México`}
+    text_1={t("summit.text_reveal_1")}
+    text_2=""
+    day_1={t("summit.day_1")}
+    day_2={t("summit.day_2")}
   />
 </div>

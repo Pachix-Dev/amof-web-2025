@@ -459,6 +459,22 @@
         "aifapass": "AIFAPASS - Tarifa cero en peaje",
         "destiny": "DESTINOS TERRESTES DE FORÁNEOS",
         "airport": "Aeropuerto internacional"
+    }, 
+    "summit": {
+        "title": "AMOF 2025 - SUMMIT",
+        "title2": "¡Bienvenido a la tercera edición de la feria de movilidad del futuro!",
+        "date": "30 de Septiembre - 1 de Octubre",
+        "about_summit": "<strong>AMOF – SUMMIT busca impulsar la transformación de la movilidad actual</strong> en México y América Latina, reuniendo la innovación, la tecnología y la sustentabilidad en su congreso, creando una plataforma única donde convergen todos los tomadores de decisiones del ecosistema de la movilidad del futuro. <br /><br /> Este congreso traza el camino hacia una movilidad más sostenible y eficiente en la región, abordando los segmentos de Ciudades Inteligentes, Eléctricos y Soluciones de Carga, así como nuevas tecnologías de transporte y micromovilidad",
+        "text_reveal_1": "Únete a nuestro evento <strong>Summit & Showroom</strong>. Aprovecha la oportunidad de conectar con tomadores de decisión y explorar las últimas tendencias que están redefiniendo la forma en que nos movemos.",
+        "day_1": "1er día: 08:30 - 20:00 hrs",
+        "day_2": "2do día: 08:30 - 14:00 hrs",
+        "goals": "M E T A S",
+        "cifra_1": "días",
+        "cifra_1_1": "de conferencias especializadas",
+        "cifra_2": "expositores",
+        "cifra_2_1": "nacionales y internacionales",
+        "cifra_3": "visitantes ",
+        "cifra_3_1": "profesionales"
     }
 }
   
