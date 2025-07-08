@@ -1,0 +1,55 @@
+---
+import { summitProfile } from "../../data/summit";
+import i18next, { t } from "i18next";
+
+const idioma = i18next.language;
+---
+
+<section class="mt-15 mb-20">
+  <div class="flex justify-start mb-10">
+    <p
+      class="text-center text-white text-4xl bg-[#0578F9] rounded-tr-[40px]
+      rounded-br-[40px] w-full max-w-4xl py-4 px-8 uppercase font-bold"
+    >
+      {t("summit.profile")}
+    </p>
+  </div>
+  <div class="flex flex-row px-20">
+    <div class="flex-1 flex flex-col space-y-4">
+      {
+        summitProfile.map((item) => (
+          <div class="flex items-center space-x-4">
+            <div>
+              <div class="flex-shrink-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="text-[22px] text-gray-800">
+              {idioma === "es" ? item.es : item.en}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+    <div class="flex-1 flex justify-center items-center">
+      <img
+        src="/img/summit/stands_amof.jpg"
+        alt="Amof stands"
+        class="max-w-full h-auto rounded-2xl"
+      />
+    </div>
+  </div>
+</section>
