@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:AMOF - SUMMIT 2025
+BEGIN:VEVENT
+DTSTART:20250930T143000Z
+DTEND:20251001T200000Z
+DTSTAMP:20250708T212844Z
+SUMMARY:AMOF - SUMMIT 2025
+DESCRIPTION:Te esperamos en el evento AMERICAS´ mobility of the future del 30 de septiembre al 1 de octubre, Ficotrece, Aguascalientes, México. ¡No te lo pierdas!
+LOCATION:Ficotrece, Aguascalientes.
+UID:54990
+END:VEVENT
+END:VCALENDAR

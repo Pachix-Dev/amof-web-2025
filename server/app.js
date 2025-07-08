@@ -8,7 +8,8 @@ import { RegisterModel } from "./db.js";
 import { generatePDFInvoice, generatePDF_freePass } from "./generatePdf.js";
 import { email_template_amof } from "./TemplateEmailAmof.js";
 import { email_template_amof_eng } from "./TemplateEmailAmofEng.js";
-import { email_template_summit } from "./TemplateEmailAmofSummit.js";
+import { email_template_summit } from "./TemplateEmailSummit.js";
+import { email_template_summit_eng } from "./TemplateEmailSummitEng.js";
 import { Resend } from "resend";
 
 // const
@@ -610,11 +611,11 @@ async function sendEmailSummit(
     const emailContent =
       data.currentLanguage === "es"
         ? await email_template_summit({ ...data })
-        : await email_template_amof_eng({ ...data });
+        : await email_template_summit_eng({ ...data });
     await resend.emails.send({
-      from: "Summit AMOF 2025 <noreply@igeco.mx>",
+      from: "SUMMIT AMOF 2025 <noreply@igeco.mx>",
       to: data.email,
-      subject: "Confirmación de pre registro AMOF Summit 2025",
+      subject: "Confirmación de pre registro AMOF SUMMIT 2025",
       html: emailContent,
       // attachments: [
       //   {
