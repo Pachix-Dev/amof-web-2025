@@ -138,7 +138,7 @@ export class RegisterModel {
     const connection = await mysql.createConnection(config);
     try {
       const [result] = await connection.query(
-        "INSERT INTO users_summit(uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        "INSERT INTO users_summit (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         [
           uuid,
           name,
@@ -350,7 +350,12 @@ export class RegisterModel {
     }
   }
   // esta funcion es para gurdar el proceso de compra
-  static async save_order(user_id, paypal_id_order, paypal_id_transaction, id_code = 0) {
+  static async save_order(
+    user_id,
+    paypal_id_order,
+    paypal_id_transaction,
+    id_code = 0
+  ) {
     const connection = await mysql.createConnection(config);
     try {
       const [registers] = await connection.query(
@@ -363,7 +368,12 @@ export class RegisterModel {
     }
   }
   // esta funcion es para gurdar el proceso de compra en el summit
-  static async save_order_summit(user_id, paypal_id_order, paypal_id_transaction, id_code = 0) {
+  static async save_order_summit(
+    user_id,
+    paypal_id_order,
+    paypal_id_transaction,
+    id_code = 0
+  ) {
     const connection = await mysql.createConnection(config);
     try {
       const [registers] = await connection.query(
@@ -382,7 +392,7 @@ export class RegisterModel {
     try {
       // Verifica si el código existe en codigos_cortesia
       const [result] = await connection.query(
-        'SELECT * FROM codigos_cortesia WHERE code = ?',
+        "SELECT * FROM codigos_cortesia WHERE code = ?",
         [code_cortesia]
       );
 
@@ -395,7 +405,7 @@ export class RegisterModel {
 
       // Cuenta cuántas veces se ha usado el código en users_vip
       const [countResult] = await connection.query(
-        'SELECT COUNT(*) as count FROM users_vip WHERE id_code = ?',
+        "SELECT COUNT(*) as count FROM users_vip WHERE id_code = ?",
         [result[0].id]
       );
 
@@ -410,7 +420,6 @@ export class RegisterModel {
         status: true,
         result: result[0],
       };
-
     } finally {
       await connection.end(); // Close the connection
     }
@@ -421,7 +430,7 @@ export class RegisterModel {
     try {
       // Verifica si el código existe en codigos_cortesia
       const [result] = await connection.query(
-        'SELECT * FROM codigos_cortesia WHERE code = ?',
+        "SELECT * FROM codigos_cortesia WHERE code = ?",
         [code_cortesia]
       );
 
@@ -434,7 +443,7 @@ export class RegisterModel {
 
       // Cuenta cuántas veces se ha usado el código en users_vip
       const [countResult] = await connection.query(
-        'SELECT COUNT(*) as count FROM users_vip_summit WHERE id_code = ?',
+        "SELECT COUNT(*) as count FROM users_vip_summit WHERE id_code = ?",
         [result[0].id]
       );
 
@@ -449,7 +458,6 @@ export class RegisterModel {
         status: true,
         result: result[0],
       };
-
     } finally {
       await connection.end(); // Close the connection
     }

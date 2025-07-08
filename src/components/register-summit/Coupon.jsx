@@ -43,7 +43,7 @@ export function Coupon({ currentLanguage }) {
         ? 'Aplicando código de descuento...'
         : 'Applying code discount...'
     )
-    const response = await fetch(urlbase + 'check-cortesia', {
+    const response = await fetch(urlbase + 'check-cortesia-summit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

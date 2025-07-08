@@ -63,7 +63,7 @@ export function StepFour({ translates, currentLanguage }) {
   }
 
   async function createOrder() {
-    const response = await fetch(urlbase + 'create-order', {
+    const response = await fetch(urlbase + 'create-order-summit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ export function StepFour({ translates, currentLanguage }) {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(urlbase + 'complete-order', {
+    const response = await fetch(urlbase + 'complete-order-summit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
