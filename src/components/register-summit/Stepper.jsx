@@ -1,7 +1,7 @@
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 
 export function Stepper({ translates }) {
-  const { step } = useRegisterForm()
+  const { step } = useRegisterFormSummit()
   return (
     <div className='p-4 text-white font-bold'>
       <ol className='flex items-center w-full text-sm font-medium text-center text-gray-500 sm:text-base'>

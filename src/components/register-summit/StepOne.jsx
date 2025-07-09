@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 import PhoneInputWithCountry from 'react-phone-number-input'
 import { countries } from '../../data/list_countries'
 import 'react-phone-number-input/style.css'
@@ -25,7 +25,7 @@ export function StepOne({ translates }) {
     setGenre,
     setNacionality,
     incrementStep,
-  } = useRegisterForm()
+  } = useRegisterFormSummit()
 
   const {
     register,

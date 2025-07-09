@@ -1,4 +1,4 @@
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 
 import { StepOne } from './StepOne'
 import { StepTwo } from './StepTwo'
@@ -7,7 +7,7 @@ import { StepFour } from './SetpFour'
 import { Stepper } from './Stepper'
 
 export function RegisterForm({ translates, currentLanguage }) {
-  const { step } = useRegisterForm()
+  const { step } = useRegisterFormSummit()
 
   return (
     <section className='py-5'>

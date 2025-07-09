@@ -1,4 +1,4 @@
-import { useRegisterForm } from '@/store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 import { useState } from 'react'
 import {
   PayPalScriptProvider,
@@ -27,7 +27,7 @@ export function StepFour({ translates, currentLanguage }) {
     setInvoiceDownToLoad,
     decrementStep,
     clear,
-  } = useRegisterForm()
+  } = useRegisterFormSummit()
 
   const [message, setMessage] = useState('')
   const [processing, setProcessing] = useState(false)
@@ -106,8 +106,8 @@ export function StepFour({ translates, currentLanguage }) {
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
       currentLanguage === 'es'
-        ? (window.location.href = '/gracias-por-tu-compra')
-        : (window.location.href = '/en/gracias-por-tu-compra')
+        ? (window.location.href = '/summit-gracias-por-tu-compra')
+        : (window.location.href = '/en/summit-gracias-por-tu-compra')
     } else {
       setProcessing(false)
       setMessage(orderData?.message)
