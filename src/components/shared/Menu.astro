@@ -7,92 +7,92 @@ import {
   DropdownItems,
   DropdownSubmenu,
   StickyHeader,
-} from "astro-navbar";
-import i18next, { t } from "i18next";
-import { LanguageSelector } from "astro-i18next/components";
+} from 'astro-navbar'
+import i18next, { t } from 'i18next'
+import { LanguageSelector } from 'astro-i18next/components'
 
-const lang = i18next.language;
-const base = i18next.language === "es" ? "" : `/${lang}`;
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
 
 interface MenuItem {
-  title: string;
-  href?: string;
-  target?: string;
-  items?: MenuItem[];
+  title: string
+  href?: string
+  target?: string
+  items?: MenuItem[]
 }
 
 const menu: MenuItem[] = [
   {
-    title: t("menu.option1.title"),
-    href: "/#nosotros",
+    title: t('menu.option1.title'),
+    href: '/#nosotros',
   },
   {
-    title: t("menu.option2.title"),
+    title: t('menu.option2.title'),
     items: [
       {
-        title: t("menu.option2.subMenu.option1"),
-        href: "/#perfil-expositor",
+        title: t('menu.option2.subMenu.option1'),
+        href: '/#perfil-expositor',
       },
       {
-        title: t("menu.option2.subMenu.option2"),
+        title: t('menu.option2.subMenu.option2'),
         href:
-          i18next.language === "en"
-            ? "/files/AMOF-2025-FACTSHEET-2025-ENG-V7_compressed.pdf"
-            : "/files/AMOF-2025-FACTSHEET-2025-ESP-V7_compressed.pdf",
-        target: "_blank",
+          i18next.language === 'en'
+            ? '/files/AMOF-2025-FACTSHEET-2025-ENG-V7_compressed.pdf'
+            : '/files/AMOF-2025-FACTSHEET-2025-ESP-V7_compressed.pdf',
+        target: '_blank',
       },
       {
-        title: t("menu.option2.subMenu.option3"),
-        href: "/files/Floorplan-ITM-2025-01-07-2025-V5-0.pdf",
-        target: "_blank",
+        title: t('menu.option2.subMenu.option3'),
+        href: '/files/Floorplan-ITM-2025-10-07-2025-V5-0.pdf',
+        target: '_blank',
       },
       {
-        title: t("menu.option2.subMenu.option4"),
+        title: t('menu.option2.subMenu.option4'),
         href:
-          i18next.language === "en"
-            ? "/files/PATROCINIOS-AMOF-2025-ENG-V3_compressed.pdf"
-            : "/files/PATROCINIOS-AMOF-2025-V3_compressed.pdf",
-        target: "_blank",
+          i18next.language === 'en'
+            ? '/files/PATROCINIOS-AMOF-2025-ENG-V3_compressed.pdf'
+            : '/files/PATROCINIOS-AMOF-2025-V3_compressed.pdf',
+        target: '_blank',
       },
       {
-        title: t("menu.option2.subMenu.option5"),
-        href: "/files/PATROCINIOS-CONFERENCIAS-AMOF-2025_compressed.pdf",
-        target: "_blank",
+        title: t('menu.option2.subMenu.option5'),
+        href: '/files/PATROCINIOS-CONFERENCIAS-AMOF-2025_compressed.pdf',
+        target: '_blank',
       },
       {
-        title: t("menu.option2.subMenu.option6"),
-        href: "/files/PATROCINIO-CIRCUITO-AMOF.pdf",
-        target: "_blank",
+        title: t('menu.option2.subMenu.option6'),
+        href: '/files/PATROCINIO-CIRCUITO-AMOF.pdf',
+        target: '_blank',
       },
     ],
   },
   {
-    title: t("menu.option3.title"),
-    href: "/summit",
+    title: t('menu.option3.title'),
+    href: '/summit',
   },
   {
-    title: t("menu.option4.title"),
+    title: t('menu.option4.title'),
     items: [
       {
-        title: t("menu.option4.testimonios"),
-        href: "#visitantes",
+        title: t('menu.option4.testimonios'),
+        href: '#visitantes',
       },
       {
-        title: t("hotels.title"),
-        href: "/tarifas-especiales-para-hoteles",
+        title: t('hotels.title'),
+        href: '/tarifas-especiales-para-hoteles',
       },
     ],
   },
   {
-    title: t("menu.option5.title"),
+    title: t('menu.option5.title'),
     items: [
       {
-        title: t("menu.option5.subMenu.option1"),
+        title: t('menu.option5.subMenu.option1'),
         href:
-          i18next.language === "en"
-            ? "/files/RESULTADOS-ITM-AMOF-2024-VF-ENG-compressed.pdf"
-            : "files/RESULTADOS-ITM-AMOF-2024-VF-compressed.pdf",
-        target: "_blank",
+          i18next.language === 'en'
+            ? '/files/RESULTADOS-ITM-AMOF-2024-VF-ENG-compressed.pdf'
+            : 'files/RESULTADOS-ITM-AMOF-2024-VF-compressed.pdf',
+        target: '_blank',
       },
       /*{
         title: t('menu.option5.subMenu.option2'),
@@ -100,97 +100,97 @@ const menu: MenuItem[] = [
         target: '_blank',
       },*/
       {
-        title: t("menu.option5.subMenu.option3"),
+        title: t('menu.option5.subMenu.option3'),
         href:
-          i18next.language === "en"
-            ? "/files/AFTERSHOW-REPORT-AMOF-ENG-2023.pdf"
-            : "/files/AFTERSHOW-REPORT-AMOF-ESP-2023.pdf",
-        target: "_blank",
+          i18next.language === 'en'
+            ? '/files/AFTERSHOW-REPORT-AMOF-ENG-2023.pdf'
+            : '/files/AFTERSHOW-REPORT-AMOF-ESP-2023.pdf',
+        target: '_blank',
       },
     ],
   },
   {
-    title: t("menu.option6.title"),
-    href: "/#contacto",
+    title: t('menu.option6.title'),
+    href: '/#contacto',
   },
-];
+]
 ---
 
 <StickyHeader
-  class="sticky top-0 z-[200] lg:flex justify-between items-center p-5 gap-5 w-full text-white font-bold menuSecondary"
+  class='sticky top-0 z-[200] lg:flex justify-between items-center p-5 gap-5 w-full text-white font-bold menuSecondary'
 >
   <Astronav closeOnClick>
-    <div class="flex w-full lg:w-auto justify-between items-center">
+    <div class='flex w-full lg:w-auto justify-between items-center'>
       <a href={`${base}/`}>
         <img
-          src="/img/logoAmof.webp"
-          alt="Industrial Transformation Mexico"
-          class="w-32 animate-fade-right animate-infinite"
+          src='/img/logoAmof.webp'
+          alt='Industrial Transformation Mexico'
+          class='w-32 animate-fade-right animate-infinite'
         />
       </a>
-      <div class="block lg:hidden">
-        <MenuIcon class="w-6 h-6 text-white" />
+      <div class='block lg:hidden'>
+        <MenuIcon class='w-6 h-6 text-white' />
       </div>
     </div>
-    <MenuItems class="hidden lg:flex">
-      <ul class="flex flex-col items-center lg:flex-row gap-5 uppercase">
+    <MenuItems class='hidden lg:flex'>
+      <ul class='flex flex-col items-center lg:flex-row gap-5 uppercase'>
         {
           menu.map((menuItem) => (
             <li>
               {menuItem.items ? (
-                <Dropdown class="group">
-                  <button class="flex items-center uppercase">
+                <Dropdown class='group'>
+                  <button class='flex items-center uppercase'>
                     <span>{menuItem.title}</span>
                   </button>
-                  <DropdownItems class="relative">
-                    <div class="lg:absolute bg-black top-2 border shadow rounded p-2 w-max">
+                  <DropdownItems class='relative'>
+                    <div class='lg:absolute bg-black top-2 border shadow rounded p-2 w-max'>
                       <ul>
                         {menuItem.items.map((subItem) => (
-                          <li class="p-2">
+                          <li class='p-2'>
                             {subItem.items ? (
-                              <DropdownSubmenu class="group/submenu">
-                                <button class="flex w-full items-center justify-between uppercase">
+                              <DropdownSubmenu class='group/submenu'>
+                                <button class='flex w-full items-center justify-between uppercase'>
                                   <span>{subItem.title}</span>
                                   <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="3"
-                                    stroke="currentColor"
-                                    class="w-3 h-3 mt-0.5 group-open/submenu:rotate-180"
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    fill='none'
+                                    viewBox='0 0 24 24'
+                                    stroke-width='3'
+                                    stroke='currentColor'
+                                    class='w-3 h-3 mt-0.5 group-open/submenu:rotate-180'
                                   >
                                     <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                      stroke-linecap='round'
+                                      stroke-linejoin='round'
+                                      d='M8.25 4.5l7.5 7.5-7.5 7.5'
                                     />
                                   </svg>
                                 </button>
-                                <DropdownItems class="relative">
-                                  <ul class="lg:absolute bg-black top-0 left-full w-40 border shadow rounded p-2 ">
+                                <DropdownItems class='relative'>
+                                  <ul class='lg:absolute bg-black top-0 left-full w-40 border shadow rounded p-2 '>
                                     {subItem.items.map((nestedSubItem) => (
-                                      <li class="p-2">
+                                      <li class='p-2'>
                                         {nestedSubItem.items ? (
-                                          <DropdownSubmenu class="group/nestedsubmenu">
-                                            <button class="flex w-full items-center justify-between uppercase">
+                                          <DropdownSubmenu class='group/nestedsubmenu'>
+                                            <button class='flex w-full items-center justify-between uppercase'>
                                               <span>{nestedSubItem.title}</span>
                                               <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke-width="3"
-                                                stroke="currentColor"
-                                                class="w-3 h-3 mt-0.5 group-open/nestedsubmenu:rotate-180"
+                                                xmlns='http://www.w3.org/2000/svg'
+                                                fill='none'
+                                                viewBox='0 0 24 24'
+                                                stroke-width='3'
+                                                stroke='currentColor'
+                                                class='w-3 h-3 mt-0.5 group-open/nestedsubmenu:rotate-180'
                                               >
                                                 <path
-                                                  stroke-linecap="round"
-                                                  stroke-linejoin="round"
-                                                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                                  stroke-linecap='round'
+                                                  stroke-linejoin='round'
+                                                  d='M8.25 4.5l7.5 7.5-7.5 7.5'
                                                 />
                                               </svg>
                                             </button>
-                                            <DropdownItems class="relative">
-                                              <ul class="lg:absolute bg-white top-0 left-full w-40 border shadow rounded p-2">
+                                            <DropdownItems class='relative'>
+                                              <ul class='lg:absolute bg-white top-0 left-full w-40 border shadow rounded p-2'>
                                                 {nestedSubItem.items.map(
                                                   (deepSubItem) => (
                                                     <li>
@@ -267,10 +267,10 @@ const menu: MenuItem[] = [
             </li>
           ))
         }
-        <li class="flex items-center md:order-2 button-language">
+        <li class='flex items-center md:order-2 button-language'>
           <LanguageSelector
-            aria-label="Select language"
-            class="block w-full p-2.5 rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+            aria-label='Select language'
+            class='block w-full p-2.5 rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500'
           />
         </li>
       </ul>
