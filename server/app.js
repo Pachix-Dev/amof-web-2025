@@ -74,34 +74,7 @@ app.post("/free-register", async (req, res) => {
     });
   }
 });
-app.post("/free-register-summit", async (req, res) => {
-  const { body } = req;
 
-  try {
-    const data = {
-      uuid: uuidv4(),
-      ...body,
-    };
-    const userResponse = await RegisterModel.create_user_summit({ ...data });
-
-    if (!userResponse.status) {
-      return res.status(500).send({
-        ...userResponse,
-      });
-    }
-
-    return res.send({
-      ...userResponse,
-    });
-  } catch (e) {
-    console.log(e);
-    res.status(500).send({
-      status: false,
-      message:
-        "Hubo un error con el registro, por favor intentalo más tarde...",
-    });
-  }
-});
 app.post("/create-order", async (req, res) => {
   const { body } = req;
 
@@ -157,86 +130,6 @@ app.post("/create-order", async (req, res) => {
               value: body.total,
             },
             description: "ACCESO AMOF 2025",
-          },
-        ],
-      };
-      const data = JSON.stringify(order_data_json);
-
-      fetch(endpoint_url + "/v2/checkout/orders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${access_token}`,
-        },
-        body: data,
-      })
-        .then((res) => res.json())
-        .then((json) => {
-          console.log(json);
-          res.send(json);
-        });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).send(err);
-    });
-});
-
-app.post("/create-order-summit", async (req, res) => {
-  const { body } = req;
-
-  const BASE_PRICE = 300;
-  let expectedTotal = BASE_PRICE;
-
-  // Buscar si hay un descuento en items
-  const discountItem = body.items?.filter((item) => item?.isDiscount);
-  console.log(discountItem);
-
-  if (discountItem.length === 1) {
-    // Buscar el código en la base de datos
-    const codeData = await RegisterModel.check_code_cortesia_summit(
-      discountItem[0].name
-    );
-    if (!codeData.status) {
-      return res.status(400).send({
-        status: false,
-        message: "El código de descuento no es válido.",
-      });
-    }
-
-    // Calcular el descuento
-    const discount = BASE_PRICE * (codeData.result.discount_percent / 100);
-    expectedTotal = BASE_PRICE - discount;
-
-    // Validar que el total recibido sea igual al esperado
-    if (body.total !== expectedTotal) {
-      return res.status(400).send({
-        status: false,
-        message: "El total enviado no coincide con el descuento aplicado.",
-      });
-    }
-  } else {
-    // Si no hay descuento, validar que el total sea igual al precio base
-    if (body.total !== BASE_PRICE) {
-      return res.status(400).send({
-        status: false,
-        message:
-          "Tu compra no pudo ser procesada, la información no es valida...",
-      });
-    }
-  }
-
-  get_access_token()
-    .then(async (access_token) => {
-      let order_data_json = {
-        intent: "CAPTURE",
-        purchase_units: [
-          {
-            amount: {
-              currency_code: "MXN",
-              value: body.total,
-            },
-            description: "ACCESO AMOF SUMMIT 2025",
           },
         ],
       };
@@ -336,6 +229,115 @@ app.post("/complete-order", async (req, res) => {
         "hubo un error al procesar tu compra, por favor intenta mas tarde...",
     });
   }
+});
+
+app.post("/free-register-summit", async (req, res) => {
+  const { body } = req;
+
+  try {
+    const data = {
+      uuid: uuidv4(),
+      ...body,
+    };
+    const userResponse = await RegisterModel.create_user_summit({ ...data });
+
+    if (!userResponse.status) {
+      return res.status(500).send({
+        ...userResponse,
+      });
+    }
+
+    return res.send({
+      ...userResponse,
+    });
+  } catch (e) {
+    console.log(e);
+    res.status(500).send({
+      status: false,
+      message:
+        "Hubo un error con el registro, por favor intentalo más tarde...",
+    });
+  }
+});
+
+app.post("/create-order-summit", async (req, res) => {
+  const { body } = req;
+
+  const BASE_PRICE = 300;
+  let expectedTotal = BASE_PRICE;
+
+  // Buscar si hay un descuento en items
+  const discountItem = body.items?.filter((item) => item?.isDiscount);
+  console.log(discountItem);
+
+  if (discountItem.length === 1) {
+    // Buscar el código en la base de datos
+    const codeData = await RegisterModel.check_code_cortesia_summit(
+      discountItem[0].name
+    );
+    if (!codeData.status) {
+      return res.status(400).send({
+        status: false,
+        message: "El código de descuento no es válido.",
+      });
+    }
+
+    // Calcular el descuento
+    const discount = BASE_PRICE * (codeData.result.discount_percent / 100);
+    expectedTotal = BASE_PRICE - discount;
+
+    // Validar que el total recibido sea igual al esperado
+    if (body.total !== expectedTotal) {
+      return res.status(400).send({
+        status: false,
+        message: "El total enviado no coincide con el descuento aplicado.",
+      });
+    }
+  } else {
+    // Si no hay descuento, validar que el total sea igual al precio base
+    if (body.total !== BASE_PRICE) {
+      return res.status(400).send({
+        status: false,
+        message:
+          "Tu compra no pudo ser procesada, la información no es valida...",
+      });
+    }
+  }
+
+  get_access_token()
+    .then(async (access_token) => {
+      let order_data_json = {
+        intent: "CAPTURE",
+        purchase_units: [
+          {
+            amount: {
+              currency_code: "MXN",
+              value: body.total,
+            },
+            description: "ACCESO AMOF SUMMIT 2025",
+          },
+        ],
+      };
+      const data = JSON.stringify(order_data_json);
+
+      fetch(endpoint_url + "/v2/checkout/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${access_token}`,
+        },
+        body: data,
+      })
+        .then((res) => res.json())
+        .then((json) => {
+          console.log(json);
+          res.send(json);
+        });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send(err);
+    });
 });
 
 app.post("/complete-order-summit", async (req, res) => {

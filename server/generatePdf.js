@@ -143,7 +143,9 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text("- USO DE CFDI", 55)
         .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE NOVIEMBRE DE 2025")
 
-    const qrMainUser = await generateQRDataURL(uuid);
+    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM _VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
+    const qrMainUser = await generateQRDataURL(textQr);
+
     doc.addPage();
     // Draw a dashed cross in the middle of the document
     const midX = doc.page.width / 2;
@@ -164,7 +166,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      doc.restore();
  
  
-      body.typeRegister === 'VISITANTE' ? doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 }) : doc.image('img/header_itm_prensa_2025_final.png', 0, 0, { width: 305 }); 
+    body.typeRegister === 'VISITANTE' ? doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 }) : doc.image('img/header_itm_prensa_2025_final.png', 0, 0, { width: 305 }); 
      // aqui iria el QR con info del usuario    
      doc.image(qrMainUser, 90, 120, { width: 120 });
      
@@ -179,7 +181,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .moveDown(0.5)
      .text(body.company);
  
-      body.typeRegister === 'VISITANTE' ? doc.image('img/footer1_itm_2025_final.png', 0, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_1.png', 0, 328, { width: 305 });
+    body.typeRegister === 'VISITANTE' ? doc.image('img/footer1_itm_2025_final.png', 0, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_1.png', 0, 328, { width: 305 });
      doc
      .font('Helvetica-Bold')
      .fontSize(17)
@@ -333,7 +335,8 @@ async function generatePDF_freePass( body, uuid) {
     const pdfStream = fs.createWriteStream(pdfSave);            
     //const logoVev = path.resolve(__dirname, 'Logo_ITM.jpg');  
     
-    const qrMainUser = await generateQRDataURL(uuid);
+    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM _VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
+    const qrMainUser = await generateQRDataURL(textQr);    
 
     doc.pipe(pdfStream);    
     // Draw a dashed cross in the middle of the document
@@ -353,7 +356,6 @@ async function generatePDF_freePass( body, uuid) {
          .lineTo(doc.page.width, midY)
          .stroke();
      doc.restore();
- 
  
       body.typeRegister === 'VISITANTE' ? doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 }) : doc.image('img/header_itm_prensa_2025_final.png', 0, 0, { width: 305 }); 
      // aqui iria el QR con info del usuario    
