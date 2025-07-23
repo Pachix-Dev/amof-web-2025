@@ -4,7 +4,7 @@ import Marquee from "@/components/shared/Marquee.astro";
 import { visitors } from "@/data/logos.js";
 ---
 
-<section class="mt-20 mb-20">
+<section class="my-20">
   <div class="grid md:grid-cols-1 gap-10 mb-25">
     <!-- <video
       src="/video/SUMMIT-amofv1-opt.mp4"
@@ -13,119 +13,122 @@ import { visitors } from "@/data/logos.js";
       muted
       loop></video> -->
 
-    <div class="text-justify">
-      <div class="w-full flex justify-end">
-        <div class="pe-10 pb-3 pl-2 border-b-2 border-[#252B3B] w-fit text-2xl">
-          {t("about_amof.title")}
+    <div class="lg:flex grid text-justify mx-5">
+      <div class="w-full">
+        <div class="w-full flex justify-end">
+          <div
+            class="pe-10 pb-3 pl-2 border-b-2 border-[#252B3B] w-fit text-2xl"
+          >
+            {t("about_amof.title")}
+          </div>
         </div>
+        <p
+          class="lg:pe-10 lg:ps-10 px-1 mt-10 text-2xl"
+          set:html={t("summit.about_summit")}
+        />
+        <p
+          class="lg:pe-10 pr-1 mt-5 text-2xl text-blue-500 font-bold text-right"
+        >
+          {t("about_amof.title1")}
+        </p>
       </div>
-      <p
-        class="pe-10 ps-10 mt-10 text-2xl"
-        set:html={t("summit.about_summit")}
+      <img
+        class="w-96 h-fit rounded-3xl lg:mx-5"
+        src="/img/summit/about-summit.webp"
+        alt="about summit"
       />
-      <p class="pe-10 mt-5 text-2xl text-blue-500 font-bold text-right">
-        {t("about_amof.title1")}
-      </p>
     </div>
   </div>
 
   <!-- Cifras AMOF -->
   <div class="flex justify-center">
     <p
-      class="text-center text-4xl bg-blue-500 text-white rounded-xl w-full h-fit py-2.5 px-5 mx-10"
+      class="text-center text-4xl bg-blue-500 text-white rounded-xl w-full h-fit py-2.5 lg:px-5 lg:mx-10"
     >
       {t("summit.goals")}
     </p>
   </div>
-
-  <div
-    class="flex flex-col md:flex-row justify-center items-center gap-10 pt-15 px-10"
-  >
-    <img
-      src="/img/summit/conferencia_1.jpg"
-      alt="conferencia en AMOF 2024"
-      loading="lazy"
-      class="w-full md:w-1/2 max-w-screen-md rounded-xl"
-    />
-    <img
-      src="/img/summit/exposicion_1.jpg"
-      alt="conferencia en AMOF 2024"
-      loading="lazy"
-      class="w-full md:w-1/2 max-w-screen-md rounded-xl"
-    />
-  </div>
-
-  <div
-    class="container mx-auto px-4 grid grid-cols-2 md:flex flex-wrap justify-center items-center gap-10 py-10 text-center md:text-left"
-  >
-    <div class="grid md:flex gap-3 items-center justify-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
-        ></path>
-      </svg>
-      <p>
-        <strong>2 {t("summit.cifra_1")}</strong>
-        <br />
-        {t("summit.cifra_1_1")}
-      </p>
+  <div class="lg:flex grid items-center">
+    <div class="flex justify-center items-center gap-10 pt-15 px-10">
+      <img
+        src="/img/summit/goals-summit.webp"
+        alt="conferencia en AMOF 2024"
+        loading="lazy"
+        class="lg:w-max sm:w-fit rounded-xl"
+      />
     </div>
-    <div class="grid md:flex gap-3 items-center justify-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-        ></path>
-      </svg>
-      <p>
-        <strong>20 {t("summit.cifra_2")}</strong>
-        <br />
-        {t("summit.cifra_2_1")}
-      </p>
-    </div>
-    <div class="grid md:flex gap-3 items-center justify-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-        ></path>
-      </svg>
-      <p>
-        <strong>+ 500 {t("summit.cifra_3")}</strong><br />
-        {t("summit.cifra_3_1")}
-      </p>
+
+    <div
+      class="container mx-auto px-4 grid justify-items-center md:justify-items-start gap-10 py-10 text-center md:text-left text-2xl"
+    >
+      <div class="grid md:flex gap-3 items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"
+          ></path>
+        </svg>
+        <p>
+          <strong>2 {t("summit.cifra_1")}</strong>
+          <br />
+          {t("summit.cifra_1_1")}
+        </p>
+      </div>
+      <div class="grid md:flex gap-3 items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+          ></path>
+        </svg>
+        <p>
+          <strong>20 {t("summit.cifra_2")}</strong>
+          <br />
+          {t("summit.cifra_2_1")}
+        </p>
+      </div>
+      <div class="grid md:flex gap-3 items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="bg-[#0578F9] rounded-full p-4 text-white w-16 h-16 mx-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+          ></path>
+        </svg>
+        <p>
+          <strong>+ 500 {t("summit.cifra_3")}</strong><br />
+          {t("summit.cifra_3_1")}
+        </p>
+      </div>
     </div>
   </div>
-
   <style>
     .circle {
       position: absolute;

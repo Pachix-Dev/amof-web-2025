@@ -48,19 +48,19 @@ export const summitProfile = [
     en: "Federal, state and municipal authorities",
   },
   {
-    es: "Oficinas y despachos de urbanismo",
-    en: "Urban planning offices and departments",
-  },
-  {
-    es: "Compradores, concesionarios y empresas de logística",
-    en: "Buyers, dealerships and logistics companies",
-  },
-  {
-    es: "Gestores de flotas, talleres y servicios de atención",
-    en: "Fleet managers, workshops and support services",
+    es: "Cámaras y asociaciones centradas en movilidad y transporte",
+    en: "Chambers and associations focused on mobility and transportation",
   },
   {
     es: "Empresas usuarias de movilidad de la última milla",
-    en: "Companies using last-mile mobility solutions",
+    en: "Companies using last-mile mobility",
+  },
+  {
+    es: "Compradores, concesionarios y empresas de logística",
+    en: "Buyers, dealers, and logistics companies",
+  },
+  {
+    es: "Oficinas y despachos de urbanismo",
+    en: "Urban planning offices and agencies",
   },
 ];
