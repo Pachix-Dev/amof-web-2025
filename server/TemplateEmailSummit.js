@@ -16,7 +16,7 @@ const email_template_summit = async ({
               BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. <BR /> TU REGISTRO SE HA REALIZADO CON ÉXITO.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR s PARTE DE <span style="color:#03CAFE;font-weight:bold;">AMERFICAS´mobility of the future - SUMMIT 2025, </span>EL CAMINO HACIA UNA MOVILIDAD MÁS SOSTENIBLE
+              GRACIAS POR SER PARTE DE <span style="color:#03CAFE;font-weight:bold;">AMERFICAS´mobility of the future - SUMMIT 2025, </span>EL CAMINO HACIA UNA MOVILIDAD MÁS SOSTENIBLE
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Aprovecha la oportunidad de conectar con tomadores de decisión y explorar las últimas tendencias que están redefiniendo la forma en que nos movemos.                    

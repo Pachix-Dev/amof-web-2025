@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 import CustomMultiSelect from './CustomMultiSelect'
 
 import { useState } from 'react'
@@ -41,7 +41,7 @@ export function StepThree({ translates }) {
     incrementStep,
     decrementStep,
     setUser_id,
-  } = useRegisterForm()
+  } = useRegisterFormSummit()
 
   const options = [
     { label: 'Smartcities', value: 'Smartcities' },

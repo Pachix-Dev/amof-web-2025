@@ -1,7 +1,7 @@
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 
 export function DonwloadAccess({ text }) {
-  const { invoiceDownToLoad } = useRegisterForm()
+  const { invoiceDownToLoad } = useRegisterFormSummit()
   return (
     <>
       {<a

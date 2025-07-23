@@ -263,7 +263,7 @@ app.post("/free-register-summit", async (req, res) => {
 app.post("/create-order-summit", async (req, res) => {
   const { body } = req;
 
-  const BASE_PRICE = 300;
+  const BASE_PRICE = 5220;
   let expectedTotal = BASE_PRICE;
 
   // Buscar si hay un descuento en items
@@ -275,6 +275,7 @@ app.post("/create-order-summit", async (req, res) => {
     const codeData = await RegisterModel.check_code_cortesia_summit(
       discountItem[0].name
     );
+    console.log(codeData);
     if (!codeData.status) {
       return res.status(400).send({
         status: false,
@@ -286,6 +287,7 @@ app.post("/create-order-summit", async (req, res) => {
     const discount = BASE_PRICE * (codeData.result.discount_percent / 100);
     expectedTotal = BASE_PRICE - discount;
 
+    console.log(expectedTotal);
     // Validar que el total recibido sea igual al esperado
     if (body.total !== expectedTotal) {
       return res.status(400).send({

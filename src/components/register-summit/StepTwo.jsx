@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import { useRegisterForm } from '../../store/register-form.js'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 import { countries } from '../../data/list_countries'
 import { useEffect, useState } from 'react'
 
@@ -35,7 +35,7 @@ export function StepTwo({ translates }) {
     setPhoneCompany,
     incrementStep,
     decrementStep,
-  } = useRegisterForm()
+  } = useRegisterFormSummit()
 
   const {
     register,

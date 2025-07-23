@@ -1,0 +1,50 @@
+---
+import { changeLanguage, t } from "i18next";
+import Layout from "../layouts/Layout.astro";
+import Confettti from "../components/shared/Confetti";
+import { Redirect } from "../components/register-summit/Redirect.jsx";
+import { DonwloadAccess } from "../components/register-summit/DonwloadAccess";
+
+changeLanguage("es");
+---
+
+<Layout title="AMOF  | Gracias por tu compra">
+  <Redirect client:only="react" />
+  <div class="w-screen h-full p-5 lg:p-20 bg-black">
+    <div
+      class="rounded-lg px-4 ecomondo-bloq-1 w-full h-full shadow-2xl text-white flex flex-col items-center justify-center relative"
+    >
+      <Confettti client:visible />
+
+      <div class="grid md:flex gap-6 place-items-center w-full justify-center">
+        <div class="grid place-items-center place-content-center w-full">
+          <div class="box text-center lg:text-6xl text-5xl" id="box1">
+            {t("thanks_page.purchase")}
+          </div>
+          <img
+            class="mt-10 w-52 z-10"
+            src="/img/logoAmof.webp"
+            alt="amof mobility of the future"
+          /><br /><br />
+          <p class="font-bold text-center">
+            {t("thanks_page.description")}
+          </p>
+          <p class="text-center mb-5">
+            {t("thanks_page.download_pass_text")}
+          </p>
+          <DonwloadAccess
+            client:only="react"
+            text={t("thanks_page.download_pass")}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+<style>
+  .box {
+    color: white;
+    font-weight: 800;
+    animation: aniload 3s;
+  }
+</style>

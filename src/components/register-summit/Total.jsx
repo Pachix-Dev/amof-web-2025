@@ -1,7 +1,7 @@
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 
 export function Total() {
-  const { total } = useRegisterForm()
+  const { total } = useRegisterFormSummit()
 
   function formatAmountMXN(amount) {
     const formattedAmount = new Intl.NumberFormat('es-MX', {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterFormSummit } from '../../store/register-form-summit.js'
 
 export function Coupon({ currentLanguage }) {
   const [isValidCoupon, setIsValidCoupon] = useState(null)
@@ -24,7 +24,7 @@ export function Coupon({ currentLanguage }) {
     setCompleteRegister,
     setInvoiceDownToLoad,
     clear,
-  } = useRegisterForm()
+  } = useRegisterFormSummit()
 
   const urlbase = import.meta.env.DEV
     ? 'http://localhost:3010/'
@@ -73,8 +73,8 @@ export function Coupon({ currentLanguage }) {
         setCompleteRegister(true)
         setInvoiceDownToLoad(data?.invoice)
         currentLanguage === 'es'
-          ? (window.location.href = '/gracias-por-tu-compra')
-          : (window.location.href = '/en/gracias-por-tu-compra')
+          ? (window.location.href = '/summit-gracias-por-tu-compra')
+          : (window.location.href = '/en/summit-gracias-por-tu-compra')
       } else {
         if (items.find((item) => item.isDiscount)) {
           setCouponStatus(
