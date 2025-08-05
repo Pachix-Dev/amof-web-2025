@@ -7,7 +7,8 @@ const Modal = ({ isOpen, onClose, speaker, language }) => {
 
     const bioLang = language === 'es' ? speaker.bio : speaker.bio_en
 
-    const newBio = bioLang.length > 700 ? bioLang.slice(0, 700) + '...' : bioLang
+    const newBio = bioLang.length > 700 ? bioLang.slice(0, 700) + "..." : bioLang;
+    const safeHtml = vermas ? bioLang ?? "" : newBio ?? "";
 
     return (
         <div className='fixed inset-0 z-[200] flex items-center justify-center bg-[#202020c7] p-4'>
@@ -60,15 +61,20 @@ const Modal = ({ isOpen, onClose, speaker, language }) => {
                             </p>
                         </div>
 
-                        <p className='text-base mt-3 text-zinc-100 text-justify'>
-                            {vermas ? bioLang : newBio}
-
-                        </p>
-                        {/* {newBio.length > 700 &&
+                        {speaker.bio ? (
+                            <p
+                                className="text-text-zinc-50  text-base mt-3 text-justify"
+                                dangerouslySetInnerHTML={{ __html: safeHtml }}
+                            ></p>
+                        ) : (
+                            "La descripción aún no está disponible. ¡Mantente al tanto, pronto la publicaremos!"
+                        )}
+                        {
+                            newBio.length > 700 &&
                             <button onClick={() => setVermas(!vermas)} className="mt-5 bg-[#B7560E] text-white font-bold px-2 py-1 rounded-md text-sm hover:bg-[#A9001B] transition-colors duration-300">
                                 {vermas ? 'ver menos...' : 'ver más...'}
                             </button>
-                        } */}
+                        }
                         <div className='mt-4 space-y-2'>
                             {speaker.email !== '' && (
                                 <p className='text-sm flex items-center gap-2 w-fit bg-custom-orange bg-[#0578F9] md:text-sm px-3 py-1 rounded-full shadow-lg'>
