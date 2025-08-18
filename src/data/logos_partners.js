@@ -73,7 +73,7 @@ const exhibitors = [
     { link:'', src: '/img/logos/exhibitors/clarios.webp', alt:'', width: 200, height: 124},
     { link:'', src: '/img/logos/exhibitors/bluesport.webp', alt:'', width: 200, height: 124},
     { link:'', src: '/img/logos/exhibitors/alternev.webp', alt:'', width: 200, height: 124},    
-    { link:'', src: '/img/logo_INA-vertical.webp', alt:'', width: 150, height: 124},
+    //{ link:'', src: '/img/logo_INA-vertical.webp', alt:'', width: 150, height: 124},
     { link:'', src: '/img/logos/exhibitors/giz.webp', alt:'', width: 350},
     
     { link:'', src: '/img/logos/exhibitors/h2mexico.webp', alt:'', width: 350},
@@ -96,11 +96,11 @@ const exhibitors = [
 const sponsors = [
     { src: '/img/italianExhibitionGroup.webp', alt: 'MISUMI', link: 'https://www.iegexpo.it/en/', width: 150 },  
     { src: '/img/deutscheMesse.webp', alt: 'Mitsubishi', link: 'https://www.messe.de/en/', width: 200 },  
-    { src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
+    //{ src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
     { src: '/img/logos/exhibitors/airmobility.webp', alt: 'NSK', link: 'https://airmobility.com.mx/', width: 200 },
     { src: '/img/italianExhibitionGroup.webp', alt: 'MISUMI', link: 'https://www.iegexpo.it/en/', width: 150 },  
     { src: '/img/deutscheMesse.webp', alt: 'Mitsubishi', link: 'https://www.messe.de/en/', width: 200 },  
-    { src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
+    //{ src: '/img/logo_INA-vertical.webp', alt: 'Schneider', link: 'https://ina.com.mx/', width: 120 },
     { src: '/img/logos/exhibitors/airmobility.webp', alt: 'NSK', link: 'https://airmobility.com.mx/', width: 200 },                              
 ]
 
