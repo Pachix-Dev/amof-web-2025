@@ -274,7 +274,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
          align: 'center'
      });
  
-     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2.png', 307, 328, { width: 305 });
+     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final_v.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2_v.png', 307, 328, { width: 305 });
      
      doc.save();
      // Rotate and draw some text
@@ -465,7 +465,7 @@ async function generatePDF_freePass( body, uuid) {
          align: 'center'
      });
  
-     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2.png', 307, 328, { width: 305 });
+     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final_v.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2_v.png', 307, 328, { width: 305 });
      
      doc.save();
      // Rotate and draw some text
