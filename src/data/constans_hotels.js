@@ -131,7 +131,7 @@ const hotels = [
       time_car: '12 min',
       start: 3,
       link: 'https://www.marriott.com/en-us/hotels/mexna-courtyard-mexico-city-toreo/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0',
-      googlemaps: 'https://maps.app.goo.gl/inQFo3jX5AaYAn1HA',
+      googlemaps: 'https://maps.app.goo.gl/N32X6ah6BMKhyzR5A',
       flyer_esp: '/files/flyer_courtyard_toreo.pdf',
       flyer_eng: '/files/flyer_courtyard_toreo.pdf'
     },
