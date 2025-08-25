@@ -14,14 +14,28 @@ export const programs = [
         speakers: [],
       },
       {
-        title: "",
-        title_en: "",
-        description: "",
-        description_en: "",
+        title: "Cadenas que Conectan el Futuro: Fortaleciendo la Movilidad Regional ",
+        title_en: "Chains that Connect the Future: Strengthening Regional Mobility",
+        description: "En un contexto global de disrupciones y oportunidades como el nearshoring, Norteamérica enfrenta el reto de consolidarse como un bloque competitivo en movilidad. Esta conferencia aborda cómo el desarrollo de proveedores, la integración efectiva de la cadena de suministro y la colaboración trinacional son claves para fortalecer la autonomía industrial. A través de iniciativas como el PDP INA–IFC, México se posiciona como motor del cambio, impulsando innovación, talento y sostenibilidad desde la base productiva. La Industria Nacional de Autopartes propone una visión regional donde los proveedores locales son protagonistas del futuro automotriz.",
+        description_en: "In a global context shaped by disruption and nearshoring opportunities, North America must strengthen its position as a competitive mobility hub. This keynote explores how supplier development, integrated value chains, and trinational collaboration are key to achieving industrial resilience. Through initiatives like the INA–IFC Supplier Development Program, Mexico is emerging as a driver of innovation, sustainability, and talent. Representing over 700 manufacturing plants, INA presents a regional vision where local suppliers are not just part of the value chain—they are central to shaping the future of the North American automotive industry.",
         time: "17:30 hrs",
         duration: "45 min",
-        speakers: [],
-      },
+        speakers: [
+            {
+                id: "1",
+                name: "Francisco González",
+                position: "Presidente Ejecutivo",
+                position_en: "Executive President",
+                company: "INA",
+                bio: "Francisco N. González Díaz es Presidente Ejecutivo de la Industria Nacional de Autopartes, A.C., donde representa a más de 700 plantas manufactureras en México. Tiene más de 20 años de experiencia promoviendo a México y su industria. Ha sido Director General de Bancomext y ProMéxico, así como Embajador de México en Alemania. En el ámbito privado, participa como empresario en los sectores salud, comercio exterior, turismo y finanzas. Es licenciado en Administración de Empresas por el ITAM y cuenta con una maestría en Administración por el Tecnológico de Monterrey.",
+                bio_en: "Francisco N. González Díaz is the Executive President of the National Auto Parts Industry, A.C., where he represents more than 700 manufacturing plants in Mexico. He has more than 20 years of experience promoting Mexico and its industry. He has been General Director of Bancomext and ProMéxico, as well as Ambassador of Mexico in Germany. In the private sector, he participates as an entrepreneur in the health, foreign trade, tourism and finance sectors. He has a degree in Business Administration from ITAM and a master's degree in Administration from the Tecnológico de Monterrey.",
+                image: "/img/speakers/francisco_gonzalez_diaz_new.webp",
+                email: "",
+                phone: "",
+                moderador: true
+            },
+        ]
+    },
     ],
   },
   {
