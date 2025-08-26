@@ -9,6 +9,8 @@ import Categories from "@/components/home/Categories.astro";
 import Summit from "@/components/home/Summit.astro";
 import SocialMedia from "@/components/home/SocialMedia.astro";
 import Program from "@/components/home/Program.astro";
+import Highlights from "@/components/home/Highlights.astro";
+import Exhibitors from "@/components/home/Exhibitors.astro";
 
 changeLanguage("en");
 ---
@@ -16,10 +18,12 @@ changeLanguage("en");
 <Layout title='AMOF | Home'>
   <Hero />
   <BecomeExhibitor />
+  <Categories />
+  <Highlights />
+  <Exhibitors />
   <AboutUs />
   <Testimonials />
-  <Categories />
   <Summit />
-  <SocialMedia />
   <Program />
+  <SocialMedia />
 </Layout>

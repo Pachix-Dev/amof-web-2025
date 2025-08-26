@@ -43,11 +43,14 @@ export function Suscribe({ suscribe_label, button }) {
   }
 
   return (
-    <section className='' aria-label='Subscribe to the Flowbite newsletter'>
+    <section
+      className='mt-10 ms-auto'
+      aria-label='Subscribe to the Flowbite newsletter'
+    >
       {/* <p className="mb-5 text-lg lg:text-left text-center font-medium text-white">
             {description}
         </p> */}
-      <div className='container mx-auto'>
+      <div className=''>
         <form
           className=' justify-center  w-full grid md:flex gap-2 items-center'
           id='form-contact'

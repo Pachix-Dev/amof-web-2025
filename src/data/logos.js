@@ -60,17 +60,23 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/airmobility.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/3m.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/hellman.webp', alt:'', width: 200, height: 124 },
-    /*{  src: '/img/logos/exhibitors/siemens_02.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/nemak.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/kia.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/siemens_02.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/cii.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/hitachi.webp', alt:'', width: 150, height: 124 },
-    
+     {  src: '/img/logos/exhibitors/introid.webp', alt:'', width: 200, height: 124 },
+   
+    {  src: '/img/logos/exhibitors/ford.webp', alt:'', width: 150, height: 124},
+    {  src: '/img/logos/exhibitors/velocitycapital.webp', alt:'', width: 150, height: 124},
+    /*
     {  src: '/img/logos/exhibitors/360.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/acsys.webp', alt:'', width: 200, height: 124 },
         
     {  src: '/img/logos/exhibitors/bendix.webp', alt:'', width: 180, height: 124 },
     {  src: '/img/logos/exhibitors/cenex.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/centro_empresarial.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/cii.webp', alt:'', width: 200, height: 124 },
+    
     {  src: '/img/logos/exhibitors/fedex.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/filtermist.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/gob_monterrey.webp', alt:'', width: 200, height: 124 },
@@ -78,12 +84,12 @@ const exhibitors = [
     
     {  src: '/img/logos/exhibitors/hirst.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/idonis.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/introid.webp', alt:'', width: 200, height: 124 },
+   
     {  src: '/img/logos/exhibitors/japma.webp', alt:'', width: 200, height: 124 },    
     {  src: '/img/logos/exhibitors/machine_care.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/mit.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/mtd.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/nemak.webp', alt:'', width: 200, height: 124 },
+    
     {  src: '/img/logos/exhibitors/nuevo_leon.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/pymatek.webp', alt:'', width: 200, height: 124 },    
     {  src: '/img/logos/exhibitors/sliding.webp', alt:'', width: 200, height: 124 },
@@ -97,8 +103,7 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/megaflux.webp', alt:'', width: 350},
     {  src: '/img/logos/exhibitors/ance.webp', alt:'', width: 150, height: 124},            
     {  src: '/img/logos/exhibitors/ciudad_maderas.webp', alt:'', width: 200, height: 124},
-    {  src: '/img/logos/exhibitors/velocitycapital.webp', alt:'', width: 150, height: 124},
-        
+    
     {  src: '/img/logos/exhibitors/cf-arlogo.webp', alt:'', width: 200, height: 124},
     {  src: '/img/logos/exhibitors/BCRlogo.webp', alt:'', width: 200, height: 124},    
     {  src: '/img/logos/exhibitors/conecta_sostenible.webp', alt:'', width: 200, height: 124},*/                                
