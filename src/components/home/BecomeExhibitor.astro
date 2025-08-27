@@ -7,9 +7,9 @@ import { t } from 'i18next'
     class='bg-[url(/img/bg_amof_2.webp)] bg-top bg-no-repeat bg-cover bg-fixed relative text-white text-center py-32'
   >
     <p class='text-5xl uppercase'>[ {t('home.convert_exhibitor')} ]</p>
-    <p class='my-10 text-2xl'>
-      {t('home.description_exhibitor')}
-    </p>
+
+    <p class='ps-10 mt-10 text-2xl' set:html={t('about_amof.description')} />
+
     <a
       href='https://expositor.amofexpo.igeco.mx/'
       target='_blank'
