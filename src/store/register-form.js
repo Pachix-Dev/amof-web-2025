@@ -185,7 +185,7 @@ const useRegisterForm = create(
           total: 300,
         }),
     }),
-    { name: "register-form-amof-v1" }
+    { name: "register-form-amof-v1-free" }
   )
 );
 
