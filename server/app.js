@@ -61,10 +61,18 @@ app.post("/free-register", async (req, res) => {
         ...userResponse,
       });
     }
+    data.user_id = userResponse.insertId;
+    const pdfAtch = await generatePDF_freePass(data, data.uuid );
+    const mailResponse = await sendEmail(data, pdfAtch, data.uuid);
 
     return res.send({
-      ...userResponse,
+        invoice:  `${data.uuid}.pdf`,
+        ...mailResponse,
     });
+    
+    /*return res.send({
+      ...userResponse,
+    });*/
   } catch (e) {
     console.log(e);
     res.status(500).send({
