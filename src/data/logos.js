@@ -52,7 +52,7 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/Bajaj-logo.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/innsol-logo.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/move.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/yade.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/yade.webp', alt:'', width: 150, height: 124 },
 
     {  src: '/img/logos/exhibitors/toyota.webp', alt:'', width: 150},
     {  src: '/img/logos/exhibitors/voltway.webp', alt:'', width: 160, height: 124 },
