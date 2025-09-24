@@ -32,6 +32,7 @@ const partners = [
     {  src: '/img/logos/movilidad3.webp', alt:'', width: 200,  },*/
 ]
 const partners2 = [
+    
     {  src: '/img/logos/Energy-Commerce.webp', alt:'', width: 100, height: 190 },
     {  src: '/img/INDUSTRY_NEWS_MEX.webp', alt:'', width: 100, height: 190 },
     {  src: '/img/madeinchina.webp', alt:'', width: 200, height: 190 },
@@ -42,6 +43,17 @@ const partners2 = [
 ] 
 
 const exhibitors = [
+    {  src: '/img/logos/exhibitors/element.webp', alt:'', width: 200, height: 124},
+    {  src: '/img/logos/exhibitors/Playbolt.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/inno.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/ingedetec.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/ecovo.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/chevrolet.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/Bajaj-logo.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/innsol-logo.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/move.webp', alt:'', width: 200, height: 124 },
+    {  src: '/img/logos/exhibitors/yade.webp', alt:'', width: 200, height: 124 },
+
     {  src: '/img/logos/exhibitors/toyota.webp', alt:'', width: 150},
     {  src: '/img/logos/exhibitors/voltway.webp', alt:'', width: 160, height: 124 },
     {  src: '/img/logos/tecMonterrery.webp', alt:'', width: 80, height: 124 },
@@ -52,7 +64,7 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/keysight.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/weg.webp', alt:'', width: 80, height: 124},
     {  src: '/img/logos/exhibitors/allride.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/element.webp', alt:'', width: 200, height: 124},
+    
     {  src: '/img/logos/exhibitors/sgs.webp', alt:'', width: 150, height: 124 },    
     {  src: '/img/logos/exhibitors/piaggio-commercial.webp', alt:'', width: 150, height: 124},
     {  src: '/img/logos/exhibitors/byd.webp', alt:'', width: 150, height: 124},
@@ -69,14 +81,7 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/ford.webp', alt:'', width: 150, height: 124},
     {  src: '/img/logos/exhibitors/velocitycapital.webp', alt:'', width: 120, height: 124},
     {  src: '/img/logos/exhibitors/tremor-logo.webp', alt:'', width: 120, height: 124},
-    {  src: '/img/logos/exhibitors/Playbolt.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/inno.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/ingedetec.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/ecovo.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/chevrolet.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/Bajaj-logo.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/innsol-logo.webp', alt:'', width: 200, height: 124 },
-    {  src: '/img/logos/exhibitors/move.webp', alt:'', width: 200, height: 124 },
+    
     /*
     {  src: '/img/logos/exhibitors/360.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/acsys.webp', alt:'', width: 200, height: 124 },
