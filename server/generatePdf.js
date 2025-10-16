@@ -140,8 +140,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
         .text("- FOTO DEL RECIBO DE COMPRA", 55)
         .text("- INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)", 55)
-        .text("- USO DE CFDI", 55)
-        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE NOVIEMBRE DE 2025")
+        .text("- USO DE CFDI", 55)        
 
     const textQr = body.typeRegister === 'VISITANTE' ? '@AMF_VIS'+body.user_id+'||||' : '@AMF_PRE'+body.user_id+'||||';
     const qrMainUser = await generateQRDataURL(textQr);
