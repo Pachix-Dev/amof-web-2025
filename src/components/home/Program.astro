@@ -1,9 +1,9 @@
 ---
-import i18n, { t } from "i18next";
+import i18next, { t } from "i18next";
 import { programs } from "../../data/constans_program.js";
 import { Speaker } from "./Speakers.jsx";
 
-const language = i18n.language;
+const language = i18next.language;
 ---
 
 <section
@@ -88,7 +88,11 @@ const language = i18n.language;
 
                       <!-- Descripción -->
                       <div class="text-white/90 text-base md:text-lg leading-relaxed">
-                        {event.description && <p>{event.description_en}</p>}
+                        {
+                          i18next.language === "es"
+                            ? event.description_es
+                            : event.description_en
+                        }
                       </div>
                     </div>
 
@@ -107,7 +111,7 @@ const language = i18n.language;
                                   {speaker.name}
                                 </h5>
                                 <p class="text-white/70 text-xs md:text-sm">
-                                  Ponente
+                                  {language === "es" ? 'Ponente' : 'Speaker'}
                                 </p>
                               </div>
                             </div>
@@ -125,15 +129,6 @@ const language = i18n.language;
         </div>
       ))}
     </div>
-
-    <!-- Call to action -->
-    <div class="text-center mt-12">
-      <p class="text-lg md:text-xl mb-6 text-white/90">
-        {t("home.program_8")}
-      </p>
-      <button class="bg-gradient-to-r from-[#0578F9] to-[#212ee4] hover:from-[#0568e0] hover:to-[#1e29d1] px-8 py-3 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105">
-        {t("home.program_9")}
-      </button>
-    </div>
+   
   </div>
 </section>
