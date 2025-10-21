@@ -1,0 +1,376 @@
+---
+import Layout from "../layouts/Layout.astro";
+import i18next, { t, changeLanguage } from "i18next";
+
+changeLanguage("es");
+
+const base = i18next.language === "es" ? "" : `/${i18next.language}`;
+---
+
+<Layout title='AMOF | PLANO 2026'>
+  <!-- Hero Section -->
+  <div
+    class='bg-gradient-to-br from-[#1E293B] via-[#1C48E0] to-[#2554fa] py-20'
+  >
+    <div class='container mx-auto px-4'>
+      <div class='text-center text-white'>
+        <h1 class='text-4xl md:text-6xl font-bold mb-6 uppercase'>
+          <span
+            class='block text-2xl md:text-3xl font-semibold text-white/80 mb-2'
+          >
+            AMOF 2026
+          </span>
+          {i18next.language === 'es' ? 'Plano del evento' : 'Event floor plan'}
+        </h1>
+        <div class='w-24 h-1 bg-white mx-auto rounded-full mb-6'></div>
+        <p class='text-xl text-white/90 max-w-3xl mx-auto'>
+          {
+            i18next.language === 'es'
+              ? 'Explora la distribución completa del evento y planifica tu visita de manera eficiente'
+              : 'Explore the complete event layout and plan your visit efficiently'
+          }
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF Viewer Section -->
+  <div class='bg-gray-50 py-12'>
+    <div class='container mx-auto px-4'>
+      <div class='max-w-7xl mx-auto'>
+        <!-- Toolbar -->
+        <div
+          class='bg-white rounded-t-2xl shadow-lg border-b border-gray-200 p-4'
+        >
+          <div
+            class='flex flex-col sm:flex-row items-center justify-between gap-4'
+          >
+            <div class='flex items-center gap-4'>
+              <div class='flex items-center gap-2'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='h-6 w-6 text-[#1C48E0]'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+                  ></path>
+                </svg>
+                <h2 class='text-xl font-bold text-gray-900'>
+                  {
+                    i18next.language === 'es'
+                      ? 'Plano interactivo'
+                      : 'Interactive floor plan'
+                  }
+                </h2>
+              </div>
+
+              <div
+                class='hidden sm:flex items-center gap-2 text-sm text-[#1C48E0]'
+              >
+                <span class='w-2 h-2 bg-green-500 rounded-full'></span>
+                <span
+                  >{
+                    i18next.language === 'es'
+                      ? 'Documento cargado'
+                      : 'Document loaded'
+                  }</span
+                >
+              </div>
+            </div>
+
+            <div class='flex items-center gap-3'>
+              <!-- Download Button -->
+              <a
+                href='/files/Floorplan-AMOF-ITM-2025v10.pdf'
+                download
+                class='group inline-flex items-center gap-2 px-4 py-2 bg-[#1C48E0] text-white rounded-lg hover:bg-[#1d4eff] transition-colors duration-300'
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='h-4 w-4 group-hover:translate-y-1 transition-transform duration-300'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+                  ></path>
+                </svg>
+                <span class='font-medium'>
+                  {i18next.language === 'es' ? 'Descargar' : 'Download'}
+                </span>
+              </a>
+
+              <!-- Fullscreen Button -->
+              <button
+                onclick='toggleFullscreen()'
+                class='group inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-[#1C48E0] rounded-lg hover:bg-gray-50 transition-colors duration-300'
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='h-4 w-4 group-hover:scale-110 transition-transform duration-300'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4'
+                  ></path>
+                </svg>
+                <span class='font-medium hidden sm:inline'>
+                  {
+                    i18next.language === 'es'
+                      ? 'Pantalla completa'
+                      : 'Fullscreen'
+                  }
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PDF Container -->
+        <div
+          class='relative bg-white rounded-b-2xl shadow-2xl overflow-hidden'
+          id='pdf-container'
+        >
+          <div class='relative'>
+            <!-- Loading Overlay -->
+            <div
+              id='pdf-loading'
+              class='absolute inset-0 bg-gray-100 flex items-center justify-center z-10'
+            >
+              <div class='text-center'>
+                <div
+                  class='animate-spin rounded-full h-12 w-12 border-b-2 border-[#1C48E0] mx-auto mb-4'
+                >
+                </div>
+                <p class='text-[#1C48E0] font-medium'>
+                  {
+                    i18next.language === 'es'
+                      ? 'Cargando plano...'
+                      : 'Loading floor plan...'
+                  }
+                </p>
+              </div>
+            </div>
+
+            <!-- PDF Iframe -->
+            <iframe
+              id='pdf-iframe'
+              src='/files/Floorplan-AMOF-ITM-2025v10.pdf'
+              class='w-full h-[100vh] border-0'
+              onload='hidePdfLoading()'
+              title={i18next.language === 'es'
+                ? 'Plano RE+ Mexico 2026'
+                : 'RE+ Mexico 2026 Floor Plan'}></iframe>
+          </div>
+        </div>
+
+        <!-- Alternative Download Section (Fallback) -->
+        <div
+          class='mt-8 bg-white rounded-2xl p-6 shadow-lg border border-gray-200'
+        >
+          <div
+            class='flex flex-col md:flex-row items-center justify-between gap-6'
+          >
+            <div class='flex items-start gap-4'>
+              <div
+                class='w-12 h-12 bg-[#1C48E0]/10 rounded-xl flex items-center justify-center flex-shrink-0'
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='h-6 w-6 text-[#1C48E0]'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class='text-lg font-bold text-gray-900 mb-2'>
+                  {
+                    i18next.language === 'es'
+                      ? '¿No puedes ver el plano?'
+                      : "Can't see the floor plan?"
+                  }
+                </h3>
+                <p class='text-gray-600'>
+                  {
+                    i18next.language === 'es'
+                      ? 'Si tienes problemas para visualizar el documento, puedes descargarlo directamente o abrirlo en una nueva pestaña.'
+                      : 'If you have trouble viewing the document, you can download it directly or open it in a new tab.'
+                  }
+                </p>
+              </div>
+            </div>
+
+            <div class='flex flex-col sm:flex-row gap-3'>
+              <a
+                href='/files/Floorplan-AMOF-ITM-2025v10.pdf'
+                target='_blank'
+                rel='noopener noreferrer'
+                class='group inline-flex items-center gap-2 px-6 py-3 border border-[#1C48E0] text-[#1C48E0] rounded-lg hover:bg-[#184aff] hover:text-white transition-colors duration-300'
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='h-4 w-4'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                  ></path>
+                </svg>
+                <span class='font-medium'>
+                  {
+                    i18next.language === 'es'
+                      ? 'Abrir en nueva pestaña'
+                      : 'Open in new tab'
+                  }
+                </span>
+              </a>
+
+              <a
+                href='/files/Floorplan-AMOF-ITM-2025v10.pdf'
+                download
+                class='group inline-flex items-center gap-2 px-6 py-3 bg-[#1C48E0] text-white rounded-lg hover:bg-[#1c4dff] transition-colors duration-300'
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class='h-4 w-4 group-hover:translate-y-1 transition-transform duration-300'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2'
+                    d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+                  ></path>
+                </svg>
+                <span class='font-medium'>
+                  {i18next.language === 'es' ? 'Descargar PDF' : 'Download PDF'}
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+  // Función para ocultar el loading del PDF
+  function hidePdfLoading() {
+    const loading = document.getElementById('pdf-loading')
+    if (loading) {
+      loading.style.display = 'none'
+    }
+  }
+
+  // Función para pantalla completa
+  function toggleFullscreen() {
+    const container = document.getElementById('pdf-container')
+
+    if (!document.fullscreenElement) {
+      container.requestFullscreen().catch((err) => {
+        console.log(`Error attempting to enable fullscreen: ${err.message}`)
+      })
+    } else {
+      document.exitFullscreen()
+    }
+  }
+
+  // Auto-hide loading después de 5 segundos como fallback
+  setTimeout(() => {
+    hidePdfLoading()
+  }, 5000)
+
+  // Detectar cambios en pantalla completa
+  document.addEventListener('fullscreenchange', () => {
+    const iframe = document.getElementById('pdf-iframe')
+    if (document.fullscreenElement) {
+      iframe.style.height = '100vh'
+    } else {
+      iframe.style.height = '80vh'
+    }
+  })
+</script>
+
+<style>
+  /* Mejoras en el iframe */
+  #pdf-iframe {
+    border: none;
+    background: #f9fafb;
+  }
+
+  /* Animaciones personalizadas */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  /* Mejoras en botones */
+  button:focus,
+  a:focus {
+    outline: 2px solid #5e5884;
+    outline-offset: 2px;
+  }
+
+  /* Loading spinner mejorado */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    #pdf-iframe {
+      height: 70vh;
+    }
+
+    #pdf-container.fullscreen #pdf-iframe {
+      height: 100vh;
+    }
+  }
+</style>
