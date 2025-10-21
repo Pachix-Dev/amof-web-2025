@@ -44,7 +44,7 @@ const partners2 = [
 
 const exhibitors = [
     {  src: '/img/logos/exhibitors/element.webp', alt:'', width: 200, height: 124},
-    {  src: '/img/logos/exhibitors/Playbolt.webp', alt:'', width: 200, height: 124 },
+    //{  src: '/img/logos/exhibitors/Playbolt.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/inno.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/ingedetec.webp', alt:'', width: 200, height: 124 },
     {  src: '/img/logos/exhibitors/ecovo.webp', alt:'', width: 200, height: 124 },
