@@ -11,10 +11,9 @@ export const programs = [
         description_en: "",
         time: "11:00 hrs",
         duration: "60 min",
+        escenario: "Leaders of tomorrow",
         speakers: [],
-      },
-      
-      
+      },            
       {
         "title": "Perspectivas actuales y futuras en baterías para la movilidad eléctrica",
         "title_en": "Current and Future Perspectives on Batteries for Electric Mobility",
@@ -22,6 +21,7 @@ export const programs = [
         "description_en": "Mobility is constantly evolving, and lithium batteries are fundamental to the electrification of propulsion. This presentation will analyze the present and future of batteries in light vehicles, addressing their technological evolution and value chains at a global level. The information to be presented comes from S&P Global Mobility databases, which provide valuable and up-to-date data on market trends and players, allowing for a deep understanding of their impact on the automotive industry and adjacent sectors.",
         "time": "17:25 hrs",
         "duration": "45 min",
+        escenario: "Leaders of tomorrow",
         "speakers": [
             {
                 "id": "1",
@@ -62,6 +62,7 @@ export const programs = [
         "description_en": "The automotive industry is undergoing a historic transformation: in the next ten years, it will change more than in the last century. Electromobility is accelerating evolution in manufacturing, batteries, and customer experience, while the concept of Software Defined Vehicle redefines how vehicles are designed, produced, and connected. This new paradigm opens business opportunities in materials innovation, recyclability, and digital technologies. Additionally, factors such as climate change, geopolitical and regulatory pressure are driving this transition, positioning innovative companies as leaders in the future of sustainable mobility.",
         "time": "15:10 hrs",
         "duration": "45 min",
+        "escenario": "Transformation Area",
         "speakers": [
             {
                 "id": "1",
@@ -85,6 +86,7 @@ export const programs = [
         description_en: "In a global context shaped by disruption and nearshoring opportunities, North America must strengthen its position as a competitive mobility hub. This keynote explores how supplier development, integrated value chains, and trinational collaboration are key to achieving industrial resilience. Through initiatives like the INA–IFC Supplier Development Program, Mexico is emerging as a driver of innovation, sustainability, and talent. Representing over 700 manufacturing plants, INA presents a regional vision where local suppliers are not just part of the value chain—they are central to shaping the future of the North American automotive industry.",
         time: "17:30 hrs",
         duration: "45 min",
+        escenario: "Leaders of tomorrow",
         speakers: [
             {
                 id: "1",
@@ -107,7 +109,6 @@ export const programs = [
     day: 3,
     date: "13 de noviembre",
     date_en: "November 13th",
-
     events: [
       {
         title: "",
@@ -126,6 +127,7 @@ export const programs = [
         "img": "/img/program/amof.png",
         "time": "12:15 hrs",
         "duration": "60 min",
+        "escenario": "Leaders of tomorrow",
         "speakers": [
             {
                 "id": "1",
@@ -188,6 +190,7 @@ export const programs = [
         "description_en": "",
         "time": "14:15 hrs",
         "duration": "40 min",
+        "escenario": "Leaders of tomorrow",
         "speakers": [
             {
                 "id": "1",
