@@ -81,6 +81,7 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/ford.webp', alt:'', width: 150, height: 124},
     {  src: '/img/logos/exhibitors/velocitycapital.webp', alt:'', width: 120, height: 124},
     {  src: '/img/logos/exhibitors/tremor-logo.webp', alt:'', width: 120, height: 124},
+    {  src: '/img/logos/exhibitors/ulab.jpeg', alt:'', width: 120, height: 124},
     
     /*
     {  src: '/img/logos/exhibitors/360.webp', alt:'', width: 200, height: 124 },
