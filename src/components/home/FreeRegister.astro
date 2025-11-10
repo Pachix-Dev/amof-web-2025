@@ -10,31 +10,27 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
   class='relative lab-bg py-10 container mx-auto px-4 bg-center bg-cover overflow-hidden bg-transparent bg-opacity-50 backdrop-blur-sm'
 >
   <div class='grid md:grid-cols-2 gap-6'>
-    <div class='grid place-content-between gap-5'>
+    <div class='gap-5'>
       <p
         data-aos='fade-right'
         data-aos-duration='1000'
-        class='text-white text-3xl xl:text-5xl font-extrabold'
+        class='text-white text-3xl xl:text-6xl font-extrabold'
       >
         {t('home.titleITM')}
       </p>
       <div data-aos='fade-down' data-aos-duration='1000'>
-        <p class='font-extrabold text-white text-3xl'>
-          {t('home.titleCounter')}, CENTRO BANAMEX, CDMX
-        </p>
-        {/*<p class='text-white text-xl' set:html={t('home.dateEvent')} />*/}
         <p class='mt-5 text-white text-xl pe-5'>
           * {t('home.credential')}
         </p>
-        <p class='mt-5 text-white text-xl pe-5'>
-          * {t('home.date_text_cost')}
+        <p class='mt-5 text-center text-2xl font-bold text-yellow-500'>
+          {t('register.description_student')}
         </p>
       </div>
     </div>
     <div
       data-aos='fade-up'
       data-aos-duration='1000'
-      class='grid gap-6 place-content-center place-items-center'
+      class='grid gap-3 place-content-center place-items-center'
     >
       <CounterDown
         client:only='react'
@@ -44,9 +40,17 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         segundos={t('home.seconds')}
         fecha='11 nov 2025 09:00:00'
       />
-      <div
-        class='container mx-auto py-5 px-4 rounded-xl flex justify-center items-center gap-5'
-      >
+      <div class='container mx-auto py-5 px-4 rounded-xl'>
+        <p class='mt-5 text-white text-xl pe-5 text-center'>
+          * {t('home.register_finish')}
+          {t('home.date_text_cost')}
+        </p>
+        <p class='mt-5 font-extrabold text-white text-2xl text-center'>
+          {t('home.titleCounter')}
+        </p>
+        <p class='text-white text-xl pe-5 text-center'>CENTRO BANAMEX, CDMX</p>
+        {
+          /* 
         <a
           href={`${base}/registro`}
           class='card p-5 hover:scale-105 ease-in-out duration-300'
@@ -56,8 +60,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           >
         </a>
 
-        {
-          /* 
+        
         <p class='text-white text-center text-2xl font-bold'>
           {t('home.proximo')}
         </p>

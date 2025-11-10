@@ -189,7 +189,8 @@
     "program_8": "COMING SOON",
     "program_9": "MORE INFORMATION",
     "media_platino": "Media Partners PLATINUM",
-    "media_oro": "Media Partners GOLD"
+    "media_oro": "Media Partners GOLD",
+    "register_finish": "Online registration has ended, you can register on site,"
   },
   "about_amof": {
     "title": "Future Mobility Exhibition",
@@ -246,6 +247,7 @@
     "button_register": "REGISTER NOW",
     "title": "Registration",
     "description": "Please check that your information is correct",
+    "description_student": "Free access for students is only valid on November 13 from 15:00 hrs. to 17:00 hrs.",
     "button": "Register for free",
     "text_1": "If you have already registered and want to improve your experience",
     "button_1": "Get vip programme",
@@ -709,7 +711,7 @@
     "title2": "Welcome to the third edition of the mobility fair of the future!",
     "slogan": "The path to more sustainable mobility",
     "date": "September 30 th - October 1 st",
-    "info_1": "Registration is open and has a cost of $5,220 pesos VAT included.",
+    "info_1": "has a cost of $5,220 pesos VAT included.",
     "info_2": "Includes access to coffee break continuous both days, and lunch the first day of the congress.",
     "about_summit": "<strong>AMOF – SUMMIT in Aguascalientes seeks to drive the transformation of the current mobility</strong> in Mexico and Latin America, bringing innovation, technology and sustainability together in a single platform where all decision makers of the mobility future ecosystem converge. <br /><br />The partnership between the Government of Aguascalientes, INA, and IGECO to organize this conference paves the way for more sustainable and efficient mobility in the region, addressing the areas of Smart Cities, Electric Vehicles, and Charging Solutions, as well as new transportation and micro-mobility technologies.",
     "text_reveal_1": "Join to our event <strong>Summit & Showroom</strong>. Take the opportunity to connect with decision makers and explore the latest trends that are redefining the way we move.",
