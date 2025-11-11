@@ -193,6 +193,19 @@ export const programs = [
         "escenario": "Leaders of tomorrow",
         "speakers": [
             {
+                "id": "3",
+                "name": "Eduardo Arredondo - Moderador",
+                "position": "Associate Founder",
+                "position_en": "Associate Founder",
+                "company": "Hyvel",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/Eduardo_Arredondo.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
                 "id": "1",
                 "name": "Alejandro Oseguera",
                 "position": "CEO and Business Development",
