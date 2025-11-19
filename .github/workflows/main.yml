@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+name: 🚀 Deploy website on push master branchs
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: deploy frontend to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: '${{ secrets.SFTP_USERNAME }}'
+          server: '${{ secrets.SERVER }}'
+          port: '${{ secrets.SSH_PORT }}'
+          local_path: './dist/*'
+          remote_path: '/home/hfmexico/public_html/amofexpo.igeco.mx/'
+          sftp_only: true
+          password: '${{ secrets.SFTP_PASSWORD }}'
