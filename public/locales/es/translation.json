@@ -770,5 +770,46 @@
     "p2_sub_desc_10": "Networking coctel Co-patrocinio del coctel de networking del Congreso, para 400 personas, incluye: Banners en sala del coctel, Agradecimiento en mensaje de bienvenida",
     "tipoA": "Patrocinios Disponibles",
     "tipoB": "USD + IVA"
+  },
+  "rates": {
+    "title": "STANDS",
+    "sub-title": "TARIFAS DE PARTICIPACIÓN",
+    "presale": "Precio de Preventa",
+    "regular": "Precio Regular",
+    "rate1": {
+      "title1": "Sustainable Hub 2 m2",
+      "price1": "USD 1,800 + IVA",
+      "priece2": "¡Ahora!  USD 900 + IVA",
+      "title2": "INCLUYE",
+      "topic1": "Alfombra estándar",
+      "topic2": "Rótulo en vinil",
+      "topic3": "Mobiliario estándar",
+      "topic4": "Contacto eléctrico de 110v",
+      "topic5": "2 gafetes para el personal",
+      "topic6": "Mención en el directorio"
+    },
+    "rate2": {
+      "title1": "Stan equipado 9 m2",
+      "price1": "USD 3,330 + IVA",
+      "title2": "INCLUYE",
+      "topic1": "Alfombra estándar",
+      "topic2": "Mamparas divisorias",
+      "topic3": "Antepecho con rótulo en vinil",
+      "topic4": "Iluminación",
+      "topic5": "Mobiliario estándar",
+      "topic6": "Contacto eléctrico de 110v",
+      "topic7": "Gafetes de expositor",
+      "topic8": "Mención en el directorio"
+    },
+    "rate3": {
+      "title1": "Superficie Libre 18 m2 mínimo",
+      "price1": "USD 320 / m2 + IVA",
+      "title2": "INCLUYE",
+      "topic1": "Espacio para stand",
+      "topic2": "Gafetes de expositor",
+      "topic3": "Mención en el directorio",
+      "topic4": "No incluye alfombra, construcción, mobiliario, servicios"
+    },
+    "text_invitation": "Contáctanos para saber más de nuestros espacios"
   }
 }
