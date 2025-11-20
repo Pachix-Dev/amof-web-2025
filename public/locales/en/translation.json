@@ -190,7 +190,11 @@
     "program_9": "MORE INFORMATION",
     "media_platino": "Media Partners PLATINUM",
     "media_oro": "Media Partners GOLD",
-    "register_finish": "Online registration has ended, you can register on site,"
+    "register_finish": "Online registration has ended, you can register on site,",
+    "eco_description": "<strong> ECOMONDO MEXICO </strong> integrates the Mobility of the Future sector by <strong> AMERICAS' Mobility of the Future </strong>, consolidating a comprehensive vision where smart, low-emission, efficient, and inclusive mobility is recognized as an essential component of sustainable development.",
+    "eco_desc_01":"The mobility of the future is smart, inclusive, and circular.",
+    "eco_desc_02":"The mobility of the future represents a transformative paradigm that transcends transportation for people and goods to become a comprehensive ecosystem that responds to social, environmental, and economic needs. <br /> With the support of <strong> ECOMONDO MEXICO </strong>, Latin America's environmental technology and circular economy fair, we will address the challenges of future mobility, seeking greater connectivity with efficient, low-emission transportation systems, as well as urban and logistics infrastructure that promotes optimal city planning by integrating micro-mobility and electromobility as sustainable alternatives for moving people and goods."
+
   },
   "about_amof": {
     "title": "Future Mobility Exhibition",
