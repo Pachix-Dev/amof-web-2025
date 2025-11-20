@@ -100,7 +100,6 @@
     "category3": "Servicios de movilidad e innovaciones",
     "category3_1": "Inteligencia artificial para movilidad",
     "category3_2": "Sistemas avanzados de asistencia al conductor (ADAS)",
-    
     "category3_4": "Servicios inteligentes de gestión del tráfico e intersecciones inteligentes",
     "category3_5": "Servicios inteligentes para gestión tráfico en carreteras y caminos",
     "category3_6": "Aplicaciones/Plataformas de movilidad",
@@ -193,8 +192,14 @@
     "media_oro": "Socios de Medios ORO",
     "register_finish": "El registro en linea ha finalizado, podras realizar tu registro en sitio,",
     "eco_description": "<strong> ECOMONDO MEXICO </strong>integra el sector de Movilidad del Futuro by <strong> AMERICAS' Mobility of the Future </strong> consolidando una visión integral donde la movilidad inteligente, baja en emisiones, eficiente e inclusiva se reconoce como un componente esencial para el desarrollo sostenible.",
-    "eco_desc_01":"La movilidad del futuro es inteligente, inclusiva y circular.",
-    "eco_desc_02":"La movilidad del futuro representa un paradigma transformador que trasciende como forma de transporte para personas y mercancías, para convertirse en un ecosistema integral que responde a las necesidades sociales, ambientales y económicas. <br/> Con el respaldo de <strong> ECOMONDO MEXICO </strong>, la feria de tecnología ambiental y economía circular de Latinoamérica, abordaremos los retos de la movilidad del futuro, buscando una mayor conectividad con sistemas de transporte eficientes y bajos en emisiones, así como una infraestructura urbana y logística que impulse una óptima planeación de las ciudades integrando la micromovilidad y electromovilidad como alternativa sustentable de desplazamiento de personas y mercancías."
+    "eco_desc_01": "La movilidad del futuro es inteligente, inclusiva y circular.",
+    "eco_desc_02": "La movilidad del futuro representa un paradigma transformador que trasciende como forma de transporte para personas y mercancías, para convertirse en un ecosistema integral que responde a las necesidades sociales, ambientales y económicas. <br/> Con el respaldo de <strong> ECOMONDO MEXICO </strong>, la feria de tecnología ambiental y economía circular de Latinoamérica, abordaremos los retos de la movilidad del futuro, buscando una mayor conectividad con sistemas de transporte eficientes y bajos en emisiones, así como una infraestructura urbana y logística que impulse una óptima planeación de las ciudades integrando la micromovilidad y electromovilidad como alternativa sustentable de desplazamiento de personas y mercancías.",
+    "cifras_1": "Conferencias de alto nivel",
+    "cifras_2": "Expositores",
+    "cifras_3": "Visitantes nacionales e internacionales",
+    "cifras_4": "Fieldtrips empresariales",
+    "cifras_5": "Eventos de networking",
+    "cifras_conjunto": "Cifras en conjunto con RE+ MEXICO 2026"
   },
   "about_amof": {
     "title": "ACERCA DEL EVENTO",
