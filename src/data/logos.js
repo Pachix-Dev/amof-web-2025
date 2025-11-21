@@ -151,4 +151,32 @@ const strategicAllies2026 = [
     {  src: '/img/strategicAlliesEA/aneas.webp', alt:'', width: 200, height: 190 },
 ]
 
-export {partners, exhibitors ,visitors,partners2, strategicAllies2026 }
+const mediaPartners = [
+    { src: '/img/mediaPartners/biosfera.webp' },
+    { src: '/img/mediaPartners/clean-tech.webp' },
+    { src: '/img/mediaPartners/construccion.webp' },
+    { src: '/img/mediaPartners/consultoria.webp' },
+    { src: '/img/mediaPartners/cosmos.webp' },
+    { src: '/img/mediaPartners/cuatroCero.webp' },
+    { src: '/img/mediaPartners/dpl.webp' },
+    { src: '/img/mediaPartners/empresas-verdes.webp' },
+    { src: '/img/mediaPartners/energia-hoy.webp' },
+    { src: '/img/mediaPartners/energy-commerce.webp' },
+    { src: '/img/mediaPartners/factor-energetico.webp' },
+    { src: '/img/mediaPartners/GERENCIA AMBIENTAL.webp' },
+    { src: '/img/mediaPartners/global-energy-v2.webp' },
+    { src: '/img/mediaPartners/global-industries_v2.webp' },
+    { src: '/img/mediaPartners/GreentologyV2.webp' },
+    { src: '/img/mediaPartners/heraldoHorizontal.webp' },
+    { src: '/img/mediaPartners/Industria_360.webp' },
+    { src: '/img/mediaPartners/INDUSTRY_NEWS_MEX.webp' },
+    { src: '/img/mediaPartners/MADE_IN_CHINA_COM.webp' },
+    { src: '/img/mediaPartners/mexico-industry.webp' },
+    { src: '/img/mediaPartners/petroleo-energia.webp' },
+    { src: '/img/mediaPartners/PV_MAGAZINE.webp' },
+    { src: '/img/mediaPartners/renewablematter.webp' },
+    { src: '/img/mediaPartners/retema.webp' },
+    { src: '/img/mediaPartners/vanguardia-industrial.webp' },
+]
+
+export {partners, exhibitors ,visitors,partners2, strategicAllies2026, mediaPartners }

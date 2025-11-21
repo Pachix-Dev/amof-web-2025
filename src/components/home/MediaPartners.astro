@@ -1,0 +1,14 @@
+---
+import { mediaPartners } from '@/data/logos'
+import { t } from 'i18next'
+import Sponsors from '../shared/Sponsors.astro'
+---
+
+<div class='py-5 container mx-auto px-4'>
+  <div class='my-5'>
+    <p class='font-bold uppercase text-4xl text-center mb-6 text-black'>
+      {t('home.medios')}
+    </p>
+    <Sponsors logos={ mediaPartners } />
+  </div>
+</div>
