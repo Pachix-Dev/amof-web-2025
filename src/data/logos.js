@@ -123,4 +123,32 @@ const exhibitors = [
     {  src: '/img/logos/exhibitors/conecta_sostenible.webp', alt:'', width: 200, height: 124},*/                                
 ]
 
-export {partners, exhibitors ,visitors,partners2}
+const strategicAllies2026 = [
+    {  src: '/img/strategicAlliesEA/amh.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/aladyr.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/aexc.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/amrre.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/anes.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/camexItal.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/cicej.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/cidett_photoroom.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/cluster_plasticos+.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/cnbiogas.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/comce.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/comure.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/coparmex.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/elgranbajio.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/Embajada_Britanica_Negro.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/GDL-GDL_positivo.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/h2_méxico.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/HHM_CMYK.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/ierunam.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/Logo-ARS.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/logopmrj.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/onudi.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/amb.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/canacintra.webp', alt:'', width: 200, height: 190 },
+    {  src: '/img/strategicAlliesEA/aneas.webp', alt:'', width: 200, height: 190 },
+]
+
+export {partners, exhibitors ,visitors,partners2, strategicAllies2026 }
