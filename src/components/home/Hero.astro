@@ -2,12 +2,24 @@
 import { TextReveal } from "../magicui/text-reveal";
 import { t } from "i18next";
 import FreeRegister from "./FreeRegister.astro";
+import i18next from "i18next";
+
+
+const lang = i18next.language;
+
 ---
 
 <section class="relative overflow-hidden h-auto md:h-screen">
   <video
-    src="/video/amof_eco_video_2026.mp4"
-    poster="/img/amof_eco_poster.webp"
+    src={lang === "en" 
+      ? "/video/AMOF_ECO_VIDEO_ENG_2026.mp4"
+      : "/video/AMOF_A_ECO_VIDEO_2026.mp4"
+    }
+    poster={
+      lang === "en" 
+      ? "/img/amof_eco_poster_en.webp"
+      : "/img/amof_eco_poster.webp"
+    }
     muted
     loop
     playsinline
