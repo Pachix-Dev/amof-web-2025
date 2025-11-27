@@ -22,12 +22,16 @@ const rates_eco = {
                 "en": "Regular Price"
             },
             "early_price": {
-                "es": "6,400 MXN / m² + IVA",
-                "en": "6,400 MXN / sqm + VAT"
+                "es": "6,400 MXN",
+                "en": "6,400 MXN"
             },
             "regular_price": {
-                "es": "6,720 MXN / m² + IVA",
-                "en": "6,720 MXN / sqm + VAT"
+                "es": "6,720 MXN",
+                "en": "6,720 MXN"
+            },
+            "per_sqm": {
+                "es": "por m² + IVA (9 m² mínimo)",
+                "en": "per sqm + VAT (9 sqm minimum)"
             },
             "includes_title": {
                 "es": "Incluye",
@@ -73,19 +77,23 @@ const rates_eco = {
             },
             "early_price_title": {
                 "es": "Precio de preventa",
-                "en": "Early Bird"
+                "en": "Early Bird Price"
             },
             "regular_price_title": {
                 "es": "Precio Regular",
                 "en": "Regular Price"
             },
             "early_price": {
-                "es": "7,400 MXN / m² + IVA",
-                "en": "7,400 MXN / sqm + VAT"
+                "es": "7,400 MXN",
+                "en": "7,400 MXN"
             },
             "regular_price": {
-                "es": "7,800 MXN / m² + IVA",
-                "en": "7,800 MXN / sqm + VAT"
+                "es": "7,800 MXN",
+                "en": "7,800 MXN"
+            },
+            "per_sqm": {
+                "es": "por m² + IVA (9m² mínimo)",
+                "en": "per sqm + VAT (9 sqm minimum)"
             },
             "includes_title": {
                 "es": "Incluye",
