@@ -1,38 +1,31 @@
 ---
-import { t } from 'i18next'
+import { t } from "i18next";
+import TestimonialGrid from "./TestimonialGrid.jsx";
+
+// URLs de posts de Instagram (el componente agregará /embed automáticamente)
+const instagramVideos = [
+  "https://www.instagram.com/p/DQK5Uw0jRkv/",
+  "https://www.instagram.com/p/DQFDZv0De5o/",
+  "https://www.instagram.com/p/DPMXMhdDvLb/",
+  "https://www.instagram.com/p/DNrCSy8WNih/",
+  "https://www.instagram.com/p/DMYPBbbNYdH/",
+  "https://www.instagram.com/p/DA_MD9_CdlR/",
+];
 ---
 
-<section class='mt-10 py-10 container mx-auto' id='visitantes'>
-  <p class='text-3xl text-center font-bold text-gray-600 uppercase'>
-    {t('home.testimonial')} 2024
-  </p>
-  <div class='mt-5 grid md:grid-cols-4'>
-    <div class='p-4'>
-      <lite-youtube
-        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-        videoid='M0B11f_T6n4'
-        videotitle='CII IA'></lite-youtube>
-    </div>
-    <div class='p-4'>
-      <lite-youtube
-        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-        videoid='-KUgZBE8uo8'
-        videotitle='Siemens'></lite-youtube>
-    </div>
-    <div class='p-4'>
-      <lite-youtube
-        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-        videoid='8rhpeCXaK70'
-        videotitle='Air mobility'></lite-youtube>
-    </div>
-    <div class='p-4'>
-      <lite-youtube
-        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-        videoid='9HbPYEh6f3w'
-        videotitle='Air mobility'></lite-youtube>
-    </div>
-  </div>
+<section
+  class="mt-10 py-10 container mx-auto"
+  id="visitantes"
+  data-aos="fade-zoom-in"
+  data-aos-easing="ease-in-back"
+  data-aos-delay="500"
+  data-aos-offset="0"
+>
+  <h2
+    class="text-[#2366e7] text-4xl md:text-5xl font-extrabold text-center md:p-10 uppercase"
+  >
+    {t("home.testimonial")}
+  </h2>
+  <!-- Grid de videos de Instagram -->
+  <TestimonialGrid instagramUrls={instagramVideos} client:load />
 </section>
-<script>
-  import '@justinribeiro/lite-youtube'
-</script>
