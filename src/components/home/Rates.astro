@@ -79,6 +79,9 @@ const ACCENT_COLORS = ["#3346D3", "#E65E2F"];
               </div>
 
               <!-- Features List -->
+                <p class="text-center font-bold text-lg uppercase tracking-wide px-8 mb-4" style={`color: ${accent}`}>
+                {language === "en" ? rate.includes_title.en : rate.includes_title.es}
+                </p>
               <ul class="px-8 space-y-6 text-gray-700 text-[15px]">
                 {rate.items.map((item) => (
                   <li class="flex gap-3">
