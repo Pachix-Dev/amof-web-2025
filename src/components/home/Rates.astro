@@ -9,7 +9,7 @@ const ACCENT_COLORS = ["#3346D3", "#E65E2F"];
 
 <section class="my-20 px-4 sm:px-0">
   <!-- Header Section -->
-  <div class="flex md:flex-row flex-col justify-center items-center md:gap-10">
+  <div class="flex md:flex-row flex-col justify-center items-center md:gap-10" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="800">
     <h1
       class="md:text-right text-center font-extrabold text-3xl sm:text-4xl md:text-5xl pb-4 uppercase text-[#2366e7]"
     >
@@ -26,7 +26,7 @@ const ACCENT_COLORS = ["#3346D3", "#E65E2F"];
   </div>
 
   <!-- Rates Grid -->
-  <div class="min-h-screen flex flex-col items-center py-12 px-4 sm:px-0">
+  <div class="min-h-screen flex flex-col items-center py-12 px-4 sm:px-0" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="1000">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl w-full">
       {rates_eco.rates.map((rate, idx) => {
         const accent = ACCENT_COLORS[idx % ACCENT_COLORS.length];

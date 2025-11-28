@@ -1,12 +1,12 @@
 .gridSection {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
   color: #222;
@@ -14,19 +14,20 @@
 
 .subtitle {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #666;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem;
 }
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 0 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 0.5rem;
 }
 
 .gridItem {
@@ -38,35 +39,94 @@
 }
 
 .gridItem:hover {
-  transform: translateY(-4px);
+  transform: translateY(-20px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 .video {
   width: 100%;
-  min-height: 500px;
-  max-height: 700px;
+  min-height: 400px;
+  max-height: 650px;
   border: none;
   display: block;
 }
 
-@media (max-width: 768px) {
-  .gridContainer {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+/* Tablet */
+@media (min-width: 640px) {
+  .gridSection {
+    padding: 2.5rem 1rem;
   }
-  
-  .video {
-    min-height: 450px;
-  }
-  
+
   .title {
     font-size: 2rem;
   }
+
+  .subtitle {
+    font-size: 1.05rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  .video {
+    min-height: 450px;
+  }
 }
 
-@media (max-width: 480px) {
+/* Desktop */
+@media (min-width: 1024px) {
+  .gridSection {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
   .video {
-    min-height: 400px;
+    min-height: 500px;
+    max-height: 700px;
+  }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+  .gridSection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .video {
+    min-height: 380px;
+  }
+
+  .gridItem:hover {
+    transform: translateY(-2px);
   }
 }
