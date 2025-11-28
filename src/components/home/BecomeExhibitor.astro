@@ -1,5 +1,10 @@
 ---
 import { t } from "i18next";
+
+import i18next from "i18next";
+
+
+const lang = i18next.language;
 ---
 
 <section>
@@ -51,7 +56,10 @@ import { t } from "i18next";
         set:html={t("home.eco_description")}
       />
       <a
-        href="https://expositor.amofexpo.igeco.mx/"
+        href= { lang === "en" 
+          ? "https://expositor.amofexpo.igeco.mx/en/" 
+          : "https://expositor.amofexpo.igeco.mx/" 
+        }
         target="_blank"
         class="mt-8 inline-flex items-center justify-center gap-2 rounded-full border-2 border-white px-6 py-3 text-xl md:text-2xl font-semibold text-white hover:bg-white/10 transition duration-300 mx-auto uppercase"
         aria-label="quiero ser expositor"
