@@ -813,5 +813,18 @@
       "topic4": "No incluye alfombra, construcción, mobiliario, servicios"
     },
     "text_invitation": "Contáctanos para saber más de nuestros espacios"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "Únete como expositor en AMOF 2026 y conecta con líderes en movilidad sustentable. <br />Para más información sobre oportunidades de patrocinio y participación, comunícate con nosotros directamente.",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "address": "Dirección",
+    "form_title": "Envíanos un mensaje",
+    "form_name": "Nombre",
+    "form_email": "Correo Electrónico",
+    "form_subject": "Asunto",
+    "form_message": "Mensaje",
+    "form_button": "Enviar Mensaje"
   }
 }
