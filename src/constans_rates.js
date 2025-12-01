@@ -33,6 +33,10 @@ const rates_eco = {
                 "es": "por m² + IVA (9 m² mínimo)",
                 "en": "per sqm + VAT (9 sqm minimum)"
             },
+            "early_price_validity": {
+                "es": "PRECIO VÁLIDO DE PREVENTA HASTA EL 15 DE ENERO DE 2026",
+                "en": "EARLY BIRD PRICE VALID UNTIL JANUARY 15, 2026"
+            },
             "includes_title": {
                 "es": "Incluye",
                 "en": "Includes"
@@ -94,6 +98,10 @@ const rates_eco = {
             "per_sqm": {
                 "es": "por m² + IVA (9m² mínimo)",
                 "en": "per sqm + VAT (9 sqm minimum)"
+            },
+            "early_price_validity": {
+                "es": "PRECIO VÁLIDO DE PREVENTA HASTA EL 15 DE ENERO DE 2026",
+                "en": "EARLY BIRD PRICE VALID UNTIL JANUARY 15, 2026"
             },
             "includes_title": {
                 "es": "Incluye",
