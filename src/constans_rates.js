@@ -30,8 +30,8 @@ const rates_eco = {
                 "en": "6,720 MXN"
             },
             "per_sqm": {
-                "es": "por m² + IVA (9 m² mínimo)",
-                "en": "per sqm + VAT (9 sqm minimum)"
+                "es": "por m² + IVA (18 m² mínimo)",
+                "en": "per sqm + VAT (18 sqm minimum)"
             },
             "early_price_validity": {
                 "es": "PRECIO VÁLIDO DE PREVENTA HASTA EL 15 DE ENERO DE 2026",
