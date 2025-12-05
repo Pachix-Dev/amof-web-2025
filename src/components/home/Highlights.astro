@@ -2,111 +2,126 @@
 import { Numbers } from '../shared/Numbers.jsx'
 import { t } from 'i18next'
 ---
-<section class='md:my-10'>
-  <div class='container mx-auto px-4 my-10'>
-    <p
-      data-aos='fade-up'
-      data-aos-duration='1500'
-      class='text-[#2366e7] text-4xl md:text-5xl font-extrabold text-center md:p-10 uppercase'
-    >
-      Highlights
-    </p>
+<section class="mt-10">
+  <p class="text-[#2366e7] text-4xl md:text-5xl font-extrabold text-center uppercase">
+    Highlights
+  </p>
+  <div class="grid grid-cols-2 md:flex md:justify-center gap-4 md:gap-8 px-4">
+    <!-- Card 1: Cifras 1 -->
     <div
-      class='grid grid-cols-2 md:flex md:flex-row md:flex-wrap gap-2 mt-10 justify-center mx-auto'
+      class="h-[500px] md:w-[200px] mt-10 relative overflow-hidden shadow-2xl shadow-[#181a1c]"
+      data-aos="zoom-in"
+      data-aos-delay="300"
     >
+      <img 
+        src="/img/highlights/hgt_amof_01.webp" 
+        alt="Highlight 1" 
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
       <div
-        data-aos='fade-up'
-        data-aos-duration='1600'
-        class='text-center rounded-tr-3xl rounded-bl-3xl p-5 shadow-lg border-l-4 card-background text-white font-bold'
+        class="absolute inset-0 bg-gradient-to-t from-[#2366e7] from-2% via-transparent via-50% to-transparent px-2 pb-6 text-white flex items-end"
       >
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke-width='1.5'
-          stroke='currentColor'
-          class='h-16 w-16 mx-auto mb-3'
+        <p
+          class="text-center uppercase font-extrabold text-lg md:text-xl leading-tight w-full"
         >
-          <path
-            stroke-linecap='round'
-            stroke-linejoin='round'
-            d='M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z'
-          ></path>
-        </svg>
-
-        <p class='font-extrabold text-4xl opacity-0'>+</p>
-        <p>
-          {t('home.cifras_1')}
+          {t("home.cifras_1")}
         </p>
-      </div>
-
-      <div
-        data-aos='fade-up'
-        data-aos-duration='1700'
-        class='text-center rounded-tr-3xl rounded-bl-3xl p-5 shadow-lg border-l-4 card-background text-white font-bold'
-      >
-        <img src='/img/iconsegmentos2.png' class='mx-auto mb-3 h-16' />
-        <p class='font-extrabold text-4xl'>
-          + <Numbers client:only='react' number='220' duration='5' />
-        </p>
-        <p>{t('home.cifras_2')}</p>
-      </div>
-
-      <div
-        data-aos='fade-up'
-        data-aos-duration='1800'
-        class='text-center rounded-tr-3xl rounded-bl-3xl p-5 shadow-lg border-l-4 card-background text-white font-bold'
-      >
-        <img src='/img/iconsegmentos3.png' class='mx-auto mb-3 h-16' />
-        <p class='font-extrabold text-4xl'>
-          + <Numbers client:only='react' number='11000' duration='5' />
-        </p>
-        <p>
-          {t('home.cifras_3')}
-        </p>
-      </div>
-
-      <div
-        data-aos='fade-up'
-        data-aos-duration='2000'
-        class='text-center rounded-tr-3xl rounded-bl-3xl p-5 shadow-lg border-l-4 card-background text-white font-bold'
-      >
-        <img src='/img/iconsegmentos5.png' class='mx-auto mb-3 h-16' />
-        <p class='font-extrabold text-4xl opacity-0'>+</p>
-        <p>{t('home.cifras_4')}</p>
-      </div>
-      <div
-        data-aos='fade-up'
-        data-aos-duration='2000'
-        class='text-center rounded-tr-3xl rounded-bl-3xl p-5 shadow-lg border-l-4 card-background text-white font-bold'
-      >
-        <img src='/img/iconsegmentos4.png' class='mx-auto mb-3 h-16' />
-        <p class='font-extrabold text-4xl opacity-0'>+</p>
-        <p>{t('home.cifras_5')}</p>
       </div>
     </div>
-    <p data-aos='fade-up' data-aos-duration='1500' class='mt-10 text-center italic font-semibold text-gray-600'>
+
+    <!-- Card 2: Cifras 2 (220 con Numbers) -->
+    <div
+      class="h-[500px] md:w-[200px] mt-10 relative overflow-hidden shadow-2xl shadow-[#181a1c]"
+      data-aos="zoom-in"
+      data-aos-delay="600"
+    >
+      <img 
+        src="/img/highlights/hgt_02.webp" 
+        alt="Highlight 2" 
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#2366e7] from-2% via-transparent via-30% to-transparent px-2 pb-6 text-white flex items-end justify-center"
+      >
+        <p class="text-center uppercase font-extrabold leading-tight w-full">
+          <span class="block font-extrabold text-3xl md:text-4xl mb-2">
+            +<Numbers client:only="react" number="220" duration="5" />
+          </span>
+          <span class="block text-lg md:text-xl">{t("home.cifras_2")}</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3: Cifras 3 (11000 con Numbers) -->
+    <div
+      class="h-[500px] md:w-[200px] mt-10 relative overflow-hidden shadow-2xl shadow-[#181a1c]"
+      data-aos="zoom-in"
+      data-aos-delay="900"
+    >
+      <img 
+        src="/img/highlights/hgt_amof_03.webp" 
+        alt="Highlight 3" 
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#2366e7] from-2% via-transparent via-40% to-transparent px-2 pb-6 text-white flex items-end"
+      >
+        <p class="text-center uppercase font-extrabold leading-tight w-full">
+          <span class="block font-extrabold text-3xl md:text-4xl mb-2"
+            >+<Numbers client:only="react" number="11000" duration="5" /></span
+          >
+          <span class="block text-sm md:text-sm text-center">
+            {t("home.cifras_3")}
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4: Cifras 4 -->
+    <div
+      class="h-[500px] md:w-[200px] mt-10 relative overflow-hidden shadow-2xl shadow-[#181a1c]"
+      data-aos="zoom-in"
+      data-aos-delay="1200"
+    >
+      <img 
+        src="/img/highlights/hgt_amof_04.webp" 
+        alt="Highlight 4" 
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#2366e7] from-2% via-transparent via-40% to-transparent px-2 pb-6 text-white flex items-end"
+      >
+        <p
+          class="text-center uppercase font-extrabold text-lg md:text-xl leading-tight w-full"
+        >
+          {t("home.cifras_4")}
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 5: Cifras 5 -->
+    <div
+      class="h-[500px] md:w-[200px] mt-10 relative overflow-hidden shadow-2xl shadow-[#181a1c]"
+      data-aos="zoom-in"
+      data-aos-delay="1500"
+    >
+      <img 
+        src="/img/highlights/hgt_amof_05.webp" 
+        alt="Highlight 5" 
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-[#2366e7] from-2% via-transparent via-40% to-transparent px-2 pb-6 text-white flex items-end"
+      >
+        <p
+          class="text-center uppercase font-extrabold text-lg md:text-xl leading-tight w-full"
+        >
+          {t("home.cifras_5")}
+        </p>
+      </div>
+    </div>
+  </div>
+  <p data-aos='fade-up' data-aos-duration='1500' class='mt-10 text-center italic font-semibold text-gray-600'>
       * {t('home.cifras_conjunto')} *
     </p>
-  </div>
 </section>
-<style>
-  .card-background {
-    background: linear-gradient(
-      135deg,
-      #004e9e 0%,
-      #0071bc 25%,
-      #0aa37a 60%,
-      #2b9361 100%
-    );
-    color: #ffffff;
-    background-size: 200% 200%;
-    transition: background-position 0.6s ease, box-shadow 0.3s ease;
-    box-shadow: 0 6px 18px rgba(11, 62, 94, 0.12);
-  }
-
-  .card-background:hover {
-    background-position: 100% 0;
-    box-shadow: 0 10px 30px rgba(11, 62, 94, 0.18);
-  }
-</style>
