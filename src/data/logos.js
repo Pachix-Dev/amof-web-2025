@@ -1,3 +1,5 @@
+import src from "node_modules/astro-i18next/src"
+
 const visitors = [
     {  src: '/img/logos/grupoPosadas.webp', alt:'Grupo Posadas', width: 200, height: 190 },
     {  src: '/img/logos/femsa.webp', alt:'Interjet', width: 200, height: 190 },
@@ -124,6 +126,9 @@ const exhibitors = [
 ]
 
 const strategicAllies2026 = [
+    { src: '/img/strategicAlliesEA/WEBAMIVE.webp', alt:'', width: 200, height: 190 },
+    { src: '/img/strategicAlliesEA/camara_verde.webp', alt:'', width: 200, height: 190 },
+
     {  src: '/img/strategicAlliesEA/amh.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/strategicAlliesEA/aladyr.webp', alt:'', width: 200, height: 190 },
     {  src: '/img/strategicAlliesEA/aexc.webp', alt:'', width: 200, height: 190 },
