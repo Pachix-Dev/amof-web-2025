@@ -822,5 +822,9 @@
     "placeholder_message": "Write your message here",
     "send": "Send message",
     "success_message": "Your message has been sent successfully. We will get back to you as soon as possible."
+  },
+  "hero": {
+    "description": "The Future Mobility Fair",
+    "date_event": "April 14 – 16, 2026"
   }
 }

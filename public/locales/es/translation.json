@@ -826,5 +826,9 @@
     "form_subject": "Asunto",
     "form_message": "Mensaje",
     "form_button": "Enviar Mensaje"
+  },
+  "hero": {
+    "description": "La Feria de la Movilidad del Futuro",
+    "date_event": "del 14 al 16 abril, 2026"
   }
 }
