@@ -1,6 +1,7 @@
 ---
-import { t } from "i18next";
 import TestimonialGrid from "./TestimonialGrid.jsx";
+import i18next, { t } from "i18next";
+const language = i18next.language;
 
 // URLs de posts de Instagram (el componente agregará /embed automáticamente)
 const instagramVideos = [
@@ -8,8 +9,41 @@ const instagramVideos = [
   "https://www.instagram.com/p/DQFDZv0De5o/",
   "https://www.instagram.com/p/DPMXMhdDvLb/",
   "https://www.instagram.com/p/DNrCSy8WNih/",
-  "https://www.instagram.com/p/DMYPBbbNYdH/",
   "https://www.instagram.com/p/DA_MD9_CdlR/",
+];
+
+// Información de testimonios (nombre, cita relevante y cargo opcional)
+const testimonials = [
+  {
+    name: "Montserrat Marino",
+    quote: "Creemos en el poder de plataformas como AMOF para conectar con nuevas oportunidades y dar visibilidad al trabajo que se hace en México. Aquí es donde el sector se transforma.",
+    quote_en: "We believe in the power of platforms like AMOF to connect with new opportunities and give visibility to the work being done in Mexico. This is where the sector transforms.",
+    position: "Export sales executive"
+  },
+  {
+    name: "Jorge Carlos Obregón",
+    quote: "AMOF es la expo referente en la ecomovilidad a nivel nacional",
+    quote_en: "AMOF is the leading expo in ecomobility at the national level",
+    position: "Director Comercial"
+  },
+  {
+    name: "Carlos Barrera",
+    quote: " AMOF es el puente que brinda visibilidad, confianza y presencia en el mercado de la movilidad eléctrica en México",
+    quote_en: "AMOF is the bridge that provides visibility, trust, and presence in the electric mobility market in Mexico",
+    position: "RAP MOVE Light"
+  },
+  {
+    name: "Omar Torres",
+    quote: "Es una plataforma para el desarrollar tecnologíco, investigación hacia la mejora en la tecologia de vehiculos  y negocios en movilidad en México",
+    quote_en: "It is a platform for technological development, research towards the improvement of vehicle technology and mobility business in Mexico",
+    position: "Director"
+  },
+  {
+    name: "V-ON",
+    quote: "Espacio donde puedes conocer las nuevas tecnologías en movilidad eléctrica y sustentable.",
+    quote_en: "A space where you can learn about new technologies in electric and sustainable mobility.",
+    position: ""
+  }
 ];
 ---
 
@@ -28,6 +62,6 @@ const instagramVideos = [
   >
     {t("home.testimonial")}
   </h2>
-  <!-- Grid de videos de Instagram -->
-  <TestimonialGrid instagramUrls={instagramVideos} client:load />
+  <!-- Grid de videos de Instagram con información de testimonios -->
+  <TestimonialGrid instagramUrls={instagramVideos} testimonials={testimonials} language={language} client:load />
 </section>
