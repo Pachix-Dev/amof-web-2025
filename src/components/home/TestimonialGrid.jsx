@@ -5,7 +5,7 @@ import styles from "./TestimonialGrid.module.css";
  * Componente para mostrar un grid de videos embebidos de Instagram con información del testimonio
  * @param {Object} props
  * @param {string[]} props.instagramUrls - Lista de URLs de posts de Instagram
- * @param {Array<{name: string, quote: string, quote_en: string}>} props.testimonials - Lista de testimonios con nombre y cita relevante
+ * @param {Array<{name: string, quote: string, quote_en: string, position: string, position_en: string, company: string}>} props.testimonials - Lista de testimonios con nombre y cita relevante
  * @param {string} props.language - Idioma actual (es/en)
  */
 const TestimonialGrid = ({ instagramUrls = [], testimonials = [], language = 'es' }) => {
@@ -22,6 +22,11 @@ const TestimonialGrid = ({ instagramUrls = [], testimonials = [], language = 'es
           const quoteText = language === 'en' && testimonial.quote_en 
             ? testimonial.quote_en 
             : testimonial.quote;
+          
+          // Seleccionar el puesto según el idioma
+          const positionText = language === 'en' && testimonial.position_en
+            ? testimonial.position_en
+            : testimonial.position;
           
           return (
             <div key={idx} className={styles.gridItem}>
@@ -47,8 +52,11 @@ const TestimonialGrid = ({ instagramUrls = [], testimonials = [], language = 'es
                     )}
                     <div className={styles.authorInfo}>
                       <p className={styles.authorName}>{testimonial.name}</p>
-                      {testimonial.position && (
-                        <p className={styles.authorPosition}>{testimonial.position}</p>
+                      {positionText && (
+                        <p className={styles.authorPosition}>{positionText}</p>
+                      )}
+                      {testimonial.company && (
+                        <p className={styles.authorCompany}>{testimonial.company}</p>
                       )}
                     </div>
                   </div>

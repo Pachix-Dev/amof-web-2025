@@ -228,6 +228,16 @@
   font-style: normal;
 }
 
+.authorCompany {
+  margin: 0;
+  font-size: 0.775rem;
+  color: #64748b;
+  font-weight: 500;
+  padding-left: 0;
+  line-height: 1.35;
+  font-style: normal;
+}
+
 @media (min-width: 640px) {
   .gridSection {
     padding: 6rem 2rem;
