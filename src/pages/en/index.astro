@@ -15,11 +15,13 @@ import Rates from "@/components/home/Rates.astro";
 import StrategicAllies from "@/components/home/StrategicAllies.astro";
 import MediaPartners from "@/components/home/MediaPartners.astro";
 import Contact from "@/components/shared/Contact.astro";
+import HomePopup from "@/components/home/HomePopup.jsx";
 
 changeLanguage("en");
 ---
 
 <Layout title='AMOF | Home'>
+  <HomePopup client:load />
   <Hero />
   <BecomeExhibitor />
   <Categories />
