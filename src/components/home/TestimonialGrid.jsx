@@ -35,7 +35,6 @@ const TestimonialGrid = ({ instagramUrls = [], testimonials = [], language = 'es
                 title={`Instagram testimonial ${idx + 1}`}
                 frameBorder="0"
                 scrolling="no"
-                allowTransparency="true"
                 allow="encrypted-media"
                 className={styles.video}
               />

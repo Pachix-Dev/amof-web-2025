@@ -1,14 +1,44 @@
 ---
-import { TextReveal } from "../magicui/text-reveal";
 import { t } from "i18next";
-import FreeRegister from "./FreeRegister.astro";
 import i18next from "i18next";
 
-
 const lang = i18next.language;
-
 ---
 
+<section class="relative w-full h-screen max-h-screen md:h-auto md:aspect-video overflow-hidden flex items-center justify-center bg-black">
+  <video
+    src="/video/amof_eco_trans.mp4"
+    poster="/img/back_amof_eco_trans.webp"
+    muted
+    loop
+    playsinline
+    autoplay
+    class="w-full h-full object-cover"
+  ></video>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    section {
+      height: auto;
+    }
+  }
+
+  @media (min-width: 769px) {
+    section {
+      height: 630px;
+    }
+  }
+
+  video {
+    display: block;
+  }
+</style>
+
+
+
+
+<!-- ---
 <section class="relative overflow-hidden min-h-screen md:h-screen flex items-center justify-center">
   <video
     src="/video/amof_back_2026.mp4"
@@ -20,11 +50,11 @@ const lang = i18next.language;
     class="absolute inset-0 w-full h-full object-cover"
   ></video>
   
-  <!-- información del evento -->
+  información del evento
   <div class="absolute inset-0 bg-gradient-to-br from-[#0d1b2a]/80 via-[#1b263b]/70 to-[#2366e7]/60 flex items-center justify-center py-8 md:py-4">
     <div class="text-center text-white px-3 max-w-5xl w-full" data-aos="zoom-in" data-aos-duration="1200">
       
-      <!-- Fecha con diseño destacado -->
+      Fecha con diseño destacado
       <div class="mb-3 md:mb-4 relative inline-block w-full sm:w-auto" data-aos="fade-up" data-aos-delay="200">
         <div class="absolute inset-0 bg-gradient-to-r from-[#2366e7] to-[#0d6e3c] blur-xl opacity-50"></div>
         <div class="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-xl md:rounded-2xl px-4 py-2 sm:px-5 sm:py-2.5 md:px-8 md:py-3.5 mx-2 sm:mx-0">
@@ -34,7 +64,7 @@ const lang = i18next.language;
         </div>
       </div>
       
-      <!-- Logo -->
+      Logo
       <div class="relative mb-3 md:mb-5" data-aos="fade-up" data-aos-delay="400">
         <div class="absolute inset-0 bg-gradient-to-r from-[#2366e7]/30 via-white/20 to-[#0d6e3c]/30 blur-3xl"></div>
         <img 
@@ -44,12 +74,12 @@ const lang = i18next.language;
         />
       </div>
       
-      <!-- Descripción - La Feria de la Movilidad -->
+      Descripción - La Feria de la Movilidad
       <div class="mb-3 md:mb-4" data-aos="fade-up" data-aos-delay="600">
         <p class="text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide drop-shadow-lg leading-tight font-bold px-2" set:html={t("hero.description")} /> 
       </div>
       
-      <!-- Lugar con iconos -->
+      Lugar con iconos
       <div class="mb-4 md:mb-5" data-aos="fade-up" data-aos-delay="800">
         <div class="flex items-center justify-center gap-2 mb-1">
           <svg class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#2366e7]" fill="currentColor" viewBox="0 0 20 20">
@@ -64,7 +94,7 @@ const lang = i18next.language;
         </p>
       </div>
       
-      <!-- Botón CTA moderno y llamativo -->
+      Botón CTA moderno y llamativo
       <div class="flex justify-center items-center px-4 mb-4 md:mb-5">
         <a 
           href={lang === "en" ? "https://ecomondomexico.com.mx/en/registro/" : "https://ecomondomexico.com.mx/registro/"}
@@ -80,7 +110,7 @@ const lang = i18next.language;
         </a>
       </div>
       
-      <!-- Logos de Organizadores -->
+      Logos de Organizadores
       <div class="flex items-center justify-center gap-6 md:gap-10">
         <img 
           src="/img/igeco_bn.webp" 
@@ -96,4 +126,4 @@ const lang = i18next.language;
     </div>
   </div>
 </section>
-
+ -->
