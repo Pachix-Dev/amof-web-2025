@@ -48,30 +48,16 @@ const ACCENT_COLORS = ["#3346D3", "#E65E2F"];
 
               <!-- Pricing Section -->
               <div class="text-center py-6">
-                <!-- Early Bird Price -->
                 <h2
                   class="text-lg sm:text-xl font-bold tracking-wide uppercase"
                   style={`color: ${accent}`}
                 >
-                  {language === "en" ? rate.early_price_title.en : rate.early_price_title.es}
+                  {language === "en" ? rate.regular_price_title.en : rate.regular_price_title.es}
                 </h2>
                 <p class="mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold">
-                  {language === "en" ? rate.early_price.en : rate.early_price.es}
-                </p>
-                <p class="mt-2 text-base text-gray-600 italic">
-                  {language === "en" ? rate.per_sqm.en : rate.per_sqm.es}
-                </p>
-                <p class="mt-2 px-12 font-semibold text-sm text-red-700"> * {language === "en" ? rate.early_price_validity.en : rate.early_price_validity.es} </p>
-                <hr class="mt-6 mb-6 border-gray-300" />
-
-                <!-- Regular Price -->
-                <p class="text-base sm:text-lg font-bold tracking-wide uppercase text-gray-700">
-                  {language === "en" ? rate.regular_price_title.en : rate.regular_price_title.es}
-                </p>
-                <p class="mt-2 text-2xl sm:text-3xl font-extrabold text-gray-800">
                   {language === "en" ? rate.regular_price.en : rate.regular_price.es}
                 </p>
-                <p class="text-base text-gray-600 italic">
+                <p class="mt-2 text-base text-gray-600 italic">
                   {language === "en" ? rate.per_sqm.en : rate.per_sqm.es}
                 </p>
                 <hr class="mt-6 mb-4 border-gray-300" />
